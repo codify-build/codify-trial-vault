@@ -6,10 +6,9 @@ date: {{date}}
 
 # Voice
 
-How you sound. Your tone, your language, your anti-language.
+How you sound. Your tone, your language, the words you'd never use. This ensures every output sounds like you — not a chatbot.
 
-Run the Voice Extraction to populate this file:
-Type `/extract voice` in the chat pane.
+Type `/extract voice` in the chat pane to fill this in — or `/import` to extract it from emails, posts, or presentations you've already written.
 
 ---
 

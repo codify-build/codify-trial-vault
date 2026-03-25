@@ -1,18 +1,20 @@
 # Your Business Brain
 
-This is where your expertise lives. Browse your files anytime. Everything backs up automatically.
+30 years of expertise. One vault. Every decision, insight, and framework you've built — captured, connected, and compounding.
+
+This is your Context Architecture. The AI reads it before generating anything, so your outputs sound like you, not a generic chatbot.
 
 ---
 
-## Your Files
+## What's Inside
 
-| Folder | What's inside |
+| Folder | What it holds |
 |--------|--------------|
-| **00-Context** | Your core identity — what you believe, who you serve, what you sell, how you sound |
-| **01-Decisions** | Strategic decisions you've made and why |
-| **02-Research** | Market intelligence and competitor data |
-| **03-Outputs** | Content generated from your expertise — ads, emails, proposals |
-| **04-Daily** | Quick daily notes |
+| **Context** | Your core identity — what you believe, who you serve, what you sell, how you sound |
+| **Decisions** | Strategic decisions you've made and the reasoning behind them |
+| **Research** | Market intelligence, competitor data, industry signals |
+| **Outputs** | Content generated from your expertise — ads, emails, proposals, campaigns |
+| **Daily** | Session notes and quick observations |
 
 ---
 
@@ -21,18 +23,20 @@ This is where your expertise lives. Browse your files anytime. Everything backs 
 Open these to see how your vault is growing:
 
 - **Context Power** — How rich is your reference stack?
-- **Staleness Tracker** — Which files need a refresh?
 - **Reference Health** — How connected is your knowledge?
+- **What Needs Attention** — Which files need a refresh?
 
 Find them in the `_dashboards` folder.
 
 ---
 
-## How It Gets Smarter
+## The Compound Loop
 
-Every time you add a decision, log research, or enrich a Context file, your AI outputs improve. That's the compound loop.
+Every decision you log, every piece of research you add, every extraction session — it all feeds back into better outputs. Your vault doesn't decay like a consultant's report. It compounds.
 
-Your architect handles the technical side. You focus on your expertise.
+Week 1: Basic identity files.
+Month 3: A reference stack that generates campaigns in your exact voice.
+Year 1: A digital twin of your professional judgment.
 
 ---
 
@@ -42,7 +46,7 @@ Everything is yours. Stored on your machine and backed up to your private vault 
 
 [View your vault online →](https://github.com/GITHUB_USERNAME/VAULT_REPO_NAME)
 
-No data hostages. If you ever stop using Codify, you keep all your files — on your machine and online.
+No data hostages. No vendor lock-in. If you ever stop using Codify, you keep every file — on your machine and online.
 
 ---
 

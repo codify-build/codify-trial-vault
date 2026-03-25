@@ -6,10 +6,9 @@ date: {{date}}
 
 # Soul
 
-Your core identity. What you believe. Why you exist. What makes your approach different.
+Your core identity. What you believe. Why you exist. What makes your approach different from everyone else in your industry.
 
-Run the Context Extraction to populate this file:
-Type `/extract soul` in the chat pane.
+Type `/extract soul` in the chat pane to fill this in — or `/import` to extract it from existing material you've already written.
 
 ---
 

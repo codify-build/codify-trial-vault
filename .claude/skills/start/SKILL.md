@@ -1,6 +1,6 @@
 ---
 name: start
-description: "Welcome screen for Codify. Shows the client what they can do."
+description: "Welcome screen for Codify. Shows what's available."
 ---
 
 # /start — Welcome to Codify
@@ -11,27 +11,27 @@ When the client runs `/start`, display this welcome message:
 
 **Welcome to Codify**
 
-This is your **Business Brain** — a secure vault where you capture who you are, what you sell, who buys, and how you sound. AI reads this context before generating anything, so outputs improve as your vault gets richer.
+This is your **Context Architecture** — a secure vault where your expertise compounds over time. The AI reads everything here before generating anything, so your outputs reflect your judgment, not generic best practices.
 
-## Your Skills (What You Can Run)
+## What You Can Do
 
 | Command | What It Does |
 |---------|-------------|
-| `/start` | You're here. Shows this welcome screen. |
-| `/extract` | Context Extraction — answer questions, build your identity files. |
-| `/import` | Paste proposals, emails, or website copy — I'll mine them into your identity files. |
-| `/generate` | Create ads, emails, posts, and proposals from your Context files. |
-| `/enrich` | Deepen your Context files with follow-up questions. |
-| `/audit` | Check your vault health — what's strong, what needs work. |
-| `/scout` | Cross-reference your context against market signals. |
-| `/brief` | Morning brief — overnight activity, vault health, open tasks. |
+| `/start` | You're here. |
+| `/extract` | Build your identity files — answer questions about your business, expertise, and point of view. |
+| `/import` | Already have proposals, emails, or website copy? Paste them in — I'll extract your identity from what you've already written. |
+| `/generate` | Create ads, emails, posts, and proposals grounded in your expertise. |
+| `/enrich` | Go deeper on any identity file — the more depth, the better your outputs. |
+| `/audit` | See your vault health — what's strong, what needs work. |
+| `/scout` | Cross-reference your context against market signals and opportunities. |
+| `/brief` | Get a summary — vault health, recent activity, recommended focus. |
 
 ## Quick Start
 
-If this is your first time, type `/extract soul` to start building your identity.
+If this is your first time, type `/extract soul` to start capturing your core identity.
 
-If your vault is already set up, type `/audit` to see where you stand.
+If you have existing material (proposals, website copy, emails), type `/import` — it's faster.
 
 ---
 
-Do NOT mention git, GitHub, terminal, CLI, or any technical infrastructure. The client sees Obsidian and this chat. That's it.
+Do NOT mention git, GitHub, terminal, CLI, API, MCP, or any technical infrastructure. This client is a senior executive with decades of expertise. Speak to their intelligence, not their technical ability. They care about protecting their legacy and scaling their judgment — not about the plumbing.

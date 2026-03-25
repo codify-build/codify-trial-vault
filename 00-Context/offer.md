@@ -6,10 +6,9 @@ date: {{date}}
 
 # Offer
 
-What you sell. The transformation you deliver. Why it's worth paying for.
+The transformation you deliver. What changes for your client. Why it's worth paying for.
 
-Run the Offer Extraction to populate this file:
-Type `/extract offer` in the chat pane.
+Type `/extract offer` in the chat pane to fill this in — or `/import` to extract it from proposals or case studies you already have.
 
 ---
 

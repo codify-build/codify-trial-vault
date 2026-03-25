@@ -6,10 +6,9 @@ date: {{date}}
 
 # Audience
 
-Who buys from you. What they struggle with. How they talk about their problems.
+Who buys from you. What they struggle with. How they describe their problems in their own words.
 
-Run the Audience Extraction to populate this file:
-Type `/extract audience` in the chat pane.
+Type `/extract audience` in the chat pane to fill this in — or `/import` to extract it from proposals, emails, or testimonials you already have.
 
 ---
 
