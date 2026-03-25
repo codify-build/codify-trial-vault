@@ -2,9 +2,9 @@
 type: dashboard
 ---
 
-# Staleness Tracker
+# What Needs Attention
 
-Files that need your attention. Stale context = stale AI outputs.
+Files that need a refresh. Stale context = stale outputs.
 
 ---
 
@@ -13,16 +13,16 @@ Files that need your attention. Stale context = stale AI outputs.
 ```dataview
 TABLE
   dateformat(file.mtime, "yyyy-MM-dd") as "Last Updated",
-  choice(date(now) - file.mtime > dur(30 days), "🔴 Overdue", choice(date(now) - file.mtime > dur(14 days), "🟡 Review Soon", "🟢 Current")) as "Status"
+  choice(date(now) - file.mtime > dur(30 days), "🔴 Overdue", choice(date(now) - file.mtime > dur(14 days), "🟡 Review soon", "🟢 Current")) as "Status"
 FROM "00-Context"
 SORT file.mtime ASC
 ```
 
 ---
 
-## Orphaned Files
+## Unconnected Files
 
-Files with no outgoing links (not connected to your knowledge graph):
+Files not linked to anything else in your vault:
 
 ```dataview
 LIST
@@ -32,9 +32,7 @@ WHERE length(file.outlinks) = 0
 
 ---
 
-## Action Items
-
-Open tasks across your vault:
+## Open Tasks
 
 ```dataview
 TASK

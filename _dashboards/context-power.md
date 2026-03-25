@@ -2,20 +2,20 @@
 type: dashboard
 ---
 
-# Context Power Dashboard
+# Context Power
 
-Your reference stack at a glance. The more complete your Context files, the better your AI outputs.
+Your business brain at a glance. The more complete your Context files, the better your outputs.
 
 ---
 
-## Context File Health
+## Your Context Files
 
 ```dataview
 TABLE
-  choice(length(file.outlinks) > 2, "🔗 Connected", "⚠️ Isolated") as "Links",
-  choice(file.size > 500, "✅ Rich", choice(file.size > 200, "📝 Draft", "🔲 Empty")) as "Depth",
+  choice(length(file.outlinks) > 2, "🔗 Connected", "⚠️ Needs links") as "Connections",
+  choice(file.size > 500, "✅ Strong", choice(file.size > 200, "📝 Getting there", "🔲 Empty")) as "Strength",
   dateformat(file.mtime, "yyyy-MM-dd") as "Last Updated",
-  choice(date(now) - file.mtime > dur(14 days), "🔴 Stale", "🟢 Fresh") as "Freshness"
+  choice(date(now) - file.mtime > dur(14 days), "🔴 Needs refresh", "🟢 Current") as "Freshness"
 FROM "00-Context"
 SORT file.name ASC
 ```
@@ -27,11 +27,10 @@ SORT file.name ASC
 ```dataview
 TABLE
   dateformat(date, "yyyy-MM-dd") as "Date",
-  status as "Status",
-  length(file.outlinks) as "Cross-Refs"
+  status as "Status"
 FROM "01-Decisions"
 SORT date DESC
-LIMIT 10
+LIMIT 5
 ```
 
 ---
@@ -40,16 +39,15 @@ LIMIT 10
 
 ```dataview
 TABLE
-  dateformat(date, "yyyy-MM-dd") as "Date",
-  length(file.outlinks) as "Cross-Refs"
+  dateformat(date, "yyyy-MM-dd") as "Date"
 FROM "02-Research"
 SORT date DESC
-LIMIT 10
+LIMIT 5
 ```
 
 ---
 
-## Staleness Alert
+## Needs Attention
 
 Files not updated in 14+ days:
 
@@ -62,15 +60,14 @@ SORT file.mtime ASC
 
 ---
 
-## Your Compound Score
+## Your Vault at a Glance
 
-| Metric | Count |
-|--------|-------|
+| What | Count |
+|------|-------|
 | Context files | `$= dv.pages('"00-Context"').length` |
-| Decisions logged | `$= dv.pages('"01-Decisions"').length` |
-| Research files | `$= dv.pages('"02-Research"').length` |
-| Outputs generated | `$= dv.pages('"03-Outputs"').length` |
+| Decisions | `$= dv.pages('"01-Decisions"').length` |
+| Research | `$= dv.pages('"02-Research"').length` |
+| Outputs | `$= dv.pages('"03-Outputs"').length` |
 | Daily notes | `$= dv.pages('"04-Daily"').length` |
-| **Total vault files** | `$= dv.pages().length` |
 
-> The more files, the more cross-references. The more cross-references, the better your AI understands your business. That's the compound loop.
+> More files = more connections. More connections = better outputs. That's how your vault gets smarter over time.

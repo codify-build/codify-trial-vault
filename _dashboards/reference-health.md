@@ -4,53 +4,43 @@ type: dashboard
 
 # Reference Health
 
-How deep is your context? Deeper files = better AI outputs.
+How deep is your context? Deeper files = better outputs.
 
 ---
 
-## File Depth by Folder
+## Context File Strength
 
-### Context Files (Core Identity)
 ```dataview
 TABLE
-  file.size as "Size (bytes)",
-  choice(file.size > 1000, "Compounding", choice(file.size > 500, "Working", choice(file.size > 200, "Draft", "Skeleton"))) as "Depth Level",
-  length(file.outlinks) as "Outlinks",
-  length(file.inlinks) as "Inlinks"
+  choice(file.size > 1000, "🟢 Deep", choice(file.size > 500, "🟡 Solid", choice(file.size > 200, "🟠 Getting there", "🔴 Empty"))) as "Strength",
+  length(file.outlinks) as "Links to other files",
+  length(file.inlinks) as "Referenced by"
 FROM "00-Context"
 SORT file.size DESC
 ```
 
-### Depth Levels
-- **Skeleton** — Template only. No real content yet.
-- **Draft** — Some answers filled in. Needs enrichment.
-- **Working** — Solid content. Cross-referenced. Usable by AI.
-- **Compounding** — Deep, linked, actively maintained. Your moat.
+### What the levels mean
+- **Empty** — Template only. Run `/extract` to fill it in.
+- **Getting there** — Some answers. Run `/enrich` to go deeper.
+- **Solid** — Good content. Connected to other files. AI can use this well.
+- **Deep** — Rich, linked, actively maintained. This is your competitive edge.
 
 ---
 
-## Cross-Reference Density
+## Most Connected Files
 
-Most connected files in your vault:
+Your best-linked files — these make your outputs strongest:
 
 ```dataview
 TABLE
-  length(file.outlinks) + length(file.inlinks) as "Total Connections",
-  length(file.outlinks) as "Links Out",
-  length(file.inlinks) as "Links In"
+  length(file.outlinks) + length(file.inlinks) as "Total Connections"
 FROM ""
 SORT (length(file.outlinks) + length(file.inlinks)) DESC
-LIMIT 15
+LIMIT 10
 ```
 
 ---
 
-## Content Generation Readiness
+## Ready to Generate?
 
-```dataview
-TABLE WITHOUT ID
-  "Context files at Working+ depth" as "Metric",
-  length(filter(dv.pages('"00-Context"'), (p) => p.file.size > 500)) as "Count"
-```
-
-> When all 4 Context files hit "Working" depth, you're ready to generate high-fidelity outputs. Until then, keep enriching.
+When your Context files reach "Solid" strength, your outputs will be sharp and specific. Until then, keep enriching with `/enrich` or import more material with `/import`.

@@ -36,9 +36,13 @@ Your architect handles the technical side. You focus on your expertise.
 
 ---
 
-## Your Data
+## Your Secure Backup
 
-Everything is yours. Stored on your machine. Backed up securely. No data hostages. If you ever stop using Codify, you keep all your files.
+Everything is yours. Stored on your machine and backed up to your private vault online.
+
+[View your vault online →](https://github.com/GITHUB_USERNAME/VAULT_REPO_NAME)
+
+No data hostages. If you ever stop using Codify, you keep all your files — on your machine and online.
 
 ---
 
