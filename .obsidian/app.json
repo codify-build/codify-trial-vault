@@ -5,5 +5,8 @@
   "attachmentFolderPath": "_attachments",
   "showLineNumber": true,
   "strictLineBreaks": false,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "userIgnoreFilters": [
+    "_architect"
+  ]
 }
