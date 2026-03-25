@@ -1,5 +1,5 @@
 ---
-type: soul
+type: context
 status: draft
 date: {{date}}
 ---
@@ -9,7 +9,7 @@ date: {{date}}
 What you sell. The transformation you deliver. Why it's worth paying for.
 
 Run the Offer Extraction to populate this file:
-**Command Palette → "Codify: Offer Extraction"**
+Type `/extract offer` in the chat pane.
 
 ---
 

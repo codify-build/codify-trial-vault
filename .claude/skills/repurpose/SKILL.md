@@ -22,7 +22,7 @@ Read the file from `03-Outputs/`. Identify its core message, proof points, and C
 
 ### 2. Read Voice
 
-Read `00-Soul/voice.md` to maintain consistency across all versions.
+Read `00-Context/voice.md` to maintain consistency across all versions.
 
 ### 3. Generate Versions
 

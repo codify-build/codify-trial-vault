@@ -4,11 +4,11 @@ type: dashboard
 
 # Context Power Dashboard
 
-Your reference stack at a glance. The more complete your Soul files, the better your AI outputs.
+Your reference stack at a glance. The more complete your Context files, the better your AI outputs.
 
 ---
 
-## Soul File Health
+## Context File Health
 
 ```dataview
 TABLE
@@ -16,7 +16,7 @@ TABLE
   choice(file.size > 500, "✅ Rich", choice(file.size > 200, "📝 Draft", "🔲 Empty")) as "Depth",
   dateformat(file.mtime, "yyyy-MM-dd") as "Last Updated",
   choice(date(now) - file.mtime > dur(14 days), "🔴 Stale", "🟢 Fresh") as "Freshness"
-FROM "00-Soul"
+FROM "00-Context"
 SORT file.name ASC
 ```
 
@@ -55,7 +55,7 @@ Files not updated in 14+ days:
 
 ```dataview
 LIST
-FROM "00-Soul" OR "01-Decisions"
+FROM "00-Context" OR "01-Decisions"
 WHERE date(now) - file.mtime > dur(14 days)
 SORT file.mtime ASC
 ```
@@ -66,7 +66,7 @@ SORT file.mtime ASC
 
 | Metric | Count |
 |--------|-------|
-| Soul files | `$= dv.pages('"00-Soul"').length` |
+| Context files | `$= dv.pages('"00-Context"').length` |
 | Decisions logged | `$= dv.pages('"01-Decisions"').length` |
 | Research files | `$= dv.pages('"02-Research"').length` |
 | Outputs generated | `$= dv.pages('"03-Outputs"').length` |

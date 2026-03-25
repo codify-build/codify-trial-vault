@@ -1,11 +1,11 @@
 ---
 name: enrich
-description: "Deepen a Soul file by asking follow-up questions based on what's already there. Moves files from Draft to Compounding."
+description: "Deepen a Context file by asking follow-up questions based on what's already there. Moves files from Draft to Compounding."
 ---
 
 # /enrich — Deepen Your Reference Files
 
-Reads an existing Soul file and asks targeted follow-up questions to move it from Draft → Working → Compounding depth.
+Reads an existing Context file and asks targeted follow-up questions to move it from Draft → Working → Compounding depth.
 
 ## Usage
 
@@ -21,7 +21,7 @@ Reads an existing Soul file and asks targeted follow-up questions to move it fro
 
 ### 1. Read the Target File
 
-Read the file in `00-Soul/`. Assess current depth:
+Read the file in `00-Context/`. Assess current depth:
 - Count sections with content vs. empty sections
 - Check for cross-references (`[[links]]`)
 - Measure specificity (vague vs. concrete)

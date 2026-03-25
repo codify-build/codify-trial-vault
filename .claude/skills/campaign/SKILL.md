@@ -1,11 +1,11 @@
 ---
 name: campaign
-description: "Full pipeline — generate ad + email + post + landing page from Soul files, then distribute everything. One command, full campaign."
+description: "Full pipeline — generate ad + email + post + landing page from Context files, then distribute everything. One command, full campaign."
 ---
 
 # /campaign — Full Campaign Pipeline
 
-One skill. Full campaign. Reads your Soul files, generates every asset, and distributes them to live channels.
+One skill. Full campaign. Reads your Context files, generates every asset, and distributes them to live channels.
 
 This is the highest-value skill in the system. It's the reason context compounds into revenue.
 
@@ -22,7 +22,7 @@ This is the highest-value skill in the system. It's the reason context compounds
 ### 1. Load Full Context
 
 Read in order:
-1. All `00-Soul/` files
+1. All `00-Context/` files
 2. Last 5 `01-Decisions/`
 3. Last 5 `02-Research/`
 4. Last 5 `03-Outputs/` (to avoid repeating)
@@ -32,7 +32,7 @@ Read in order:
 If topic specified, use it. Otherwise, ask:
 "What's this campaign about? (new offer, event, content push, seasonal, retarget)"
 
-Cross-reference the topic against Soul files to find:
+Cross-reference the topic against Context files to find:
 - The audience pain point it addresses (from `audience.md`)
 - The transformation it promises (from `offer.md`)
 - The voice it should use (from `voice.md`)
@@ -56,7 +56,7 @@ Create these in sequence, each building on the last:
 - Save to `03-Outputs/[date]-campaign-email-[slug].md`
 
 **Asset 3: LinkedIn Post**
-- Contrarian take or data point from Soul files
+- Contrarian take or data point from Context files
 - Short paragraphs, white space
 - Ends with observation, not hard CTA
 - Save to `03-Outputs/[date]-campaign-post-[slug].md`
@@ -109,11 +109,11 @@ distributed:
   - channel: [list]
     date: [today]
 source_files:
-  - 00-Soul/soul.md
-  - 00-Soul/audience.md
-  - 00-Soul/offer.md
-  - 00-Soul/voice.md
+  - 00-Context/soul.md
+  - 00-Context/audience.md
+  - 00-Context/offer.md
+  - 00-Context/voice.md
 ---
 ```
 
-This tracks what campaigns ran, what context they used, and where they went. Over time, this data compounds — showing which Soul file elements drive the best campaigns.
+This tracks what campaigns ran, what context they used, and where they went. Over time, this data compounds — showing which Context file elements drive the best campaigns.

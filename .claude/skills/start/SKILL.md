@@ -18,14 +18,13 @@ This is your **Business Brain** — a secure vault where you capture who you are
 | Command | What It Does |
 |---------|-------------|
 | `/start` | You're here. Shows this welcome screen. |
-| `/extract` | Soul Mining — answer questions, build your identity files. |
+| `/extract` | Context Extraction — answer questions, build your identity files. |
 | `/import` | Paste proposals, emails, or website copy — I'll mine them into your identity files. |
-| `/generate` | Create ads, emails, posts, and proposals from your Soul files. |
-| `/enrich` | Deepen your Soul files with follow-up questions. |
+| `/generate` | Create ads, emails, posts, and proposals from your Context files. |
+| `/enrich` | Deepen your Context files with follow-up questions. |
 | `/audit` | Check your vault health — what's strong, what needs work. |
 | `/scout` | Cross-reference your context against market signals. |
 | `/brief` | Morning brief — overnight activity, vault health, open tasks. |
-| `/update` | Check for the latest Codify updates. Your files are never touched. |
 
 ## Quick Start
 

@@ -8,7 +8,7 @@ This is where your expertise lives. Browse your files anytime. Everything backs 
 
 | Folder | What's inside |
 |--------|--------------|
-| **00-Soul** | Your core identity — what you believe, who you serve, what you sell, how you sound |
+| **00-Context** | Your core identity — what you believe, who you serve, what you sell, how you sound |
 | **01-Decisions** | Strategic decisions you've made and why |
 | **02-Research** | Market intelligence and competitor data |
 | **03-Outputs** | Content generated from your expertise — ads, emails, proposals |
@@ -30,7 +30,7 @@ Find them in the `_dashboards` folder.
 
 ## How It Gets Smarter
 
-Every time you add a decision, log research, or enrich a Soul file, your AI outputs improve. That's the compound loop.
+Every time you add a decision, log research, or enrich a Context file, your AI outputs improve. That's the compound loop.
 
 Your architect handles the technical side. You focus on your expertise.
 

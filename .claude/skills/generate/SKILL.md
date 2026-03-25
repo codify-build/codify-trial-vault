@@ -1,11 +1,11 @@
 ---
 name: generate
-description: "Generate high-fidelity outputs (ads, emails, proposals, posts) from your Soul files. Context > Prompts."
+description: "Generate high-fidelity outputs (ads, emails, proposals, posts) from your Context files. Context > Prompts."
 ---
 
 # /generate — Output Generation from Context
 
-Reads your Soul files in `00-Soul/` and generates business outputs that sound like you. The more complete your Soul files, the better the output.
+Reads your Context files in `00-Context/` and generates business outputs that sound like you. The more complete your Context files, the better the output.
 
 ## Usage
 
@@ -23,10 +23,10 @@ Reads your Soul files in `00-Soul/` and generates business outputs that sound li
 ### 1. Read the Reference Stack
 
 Before generating ANYTHING, read these files in order:
-1. `00-Soul/soul.md` — Who they are
-2. `00-Soul/audience.md` — Who they serve
-3. `00-Soul/offer.md` — What they sell
-4. `00-Soul/voice.md` — How they sound
+1. `00-Context/soul.md` — Who they are
+2. `00-Context/audience.md` — Who they serve
+3. `00-Context/offer.md` — What they sell
+4. `00-Context/voice.md` — How they sound
 
 Also scan:
 - `01-Decisions/` — Recent decisions (last 5 by date)
@@ -34,8 +34,8 @@ Also scan:
 
 ### 2. Check Depth
 
-Before generating, assess Soul file completeness:
-- If any Soul file is at Skeleton depth (< 200 bytes), warn:
+Before generating, assess Context file completeness:
+- If any Context file is at Skeleton depth (< 200 bytes), warn:
   "Your [file] is thin. Output quality will improve if you run `/extract [file]` first. Generate anyway?"
 - If all files are at Working+ depth, proceed.
 
@@ -62,16 +62,16 @@ type: output
 format: [ad|email|post|proposal|brief|landing]
 date: [today]
 source_files:
-  - 00-Soul/soul.md
-  - 00-Soul/audience.md
-  - 00-Soul/offer.md
-  - 00-Soul/voice.md
+  - 00-Context/soul.md
+  - 00-Context/audience.md
+  - 00-Context/offer.md
+  - 00-Context/voice.md
 ---
 ```
 
 ### 5. Before/After (Optional)
 
 If the user asks, show the delta:
-- Generate the same output WITHOUT reading Soul files (generic)
+- Generate the same output WITHOUT reading Context files (generic)
 - Show both side by side
 - The difference is the proof that context > prompts

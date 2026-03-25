@@ -1,5 +1,5 @@
 ---
-type: soul
+type: context
 status: draft
 date: {{date}}
 ---
@@ -8,8 +8,8 @@ date: {{date}}
 
 Your core identity. What you believe. Why you exist. What makes your approach different.
 
-Run the Soul Mining extraction to populate this file:
-**Command Palette → "Codify: Soul Mining"**
+Run the Context Extraction to populate this file:
+Type `/extract soul` in the chat pane.
 
 ---
 

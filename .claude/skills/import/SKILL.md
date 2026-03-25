@@ -1,11 +1,11 @@
 ---
 name: import
-description: "Import existing documents — proposals, emails, website copy, PDFs — and mine them into Soul files. Faster than answering questions from scratch."
+description: "Import existing documents — proposals, emails, website copy, PDFs — and mine them into Context files. Faster than answering questions from scratch."
 ---
 
 # /import — Mine Your Existing Documents
 
-Instead of answering 22 questions from scratch, the client pastes or points to documents they've already written. Claude reads them and extracts Soul-level insights automatically.
+Instead of answering 22 questions from scratch, the client pastes or points to documents they've already written. Claude reads them and extracts Context-level insights automatically.
 
 ## Usage
 
@@ -15,7 +15,7 @@ Instead of answering 22 questions from scratch, the client pastes or points to d
 /import audience     → Mine documents for buyer insights
 /import offer        → Mine documents for offer/value prop
 /import voice        → Mine documents for tone and language
-/import all          → Mine documents across all Soul files
+/import all          → Mine documents across all Context files
 ```
 
 ## Procedure
@@ -43,21 +43,21 @@ Read everything they provide. Look for:
 - **Offer signals** — transformations promised, deliverables, guarantees, pricing rationale
 - **Voice signals** — tone, recurring phrases, anti-language, emotional register
 
-### 3. Extract to Soul Files
+### 3. Extract to Context Files
 
-For each Soul file that has relevant material:
+For each Context file that has relevant material:
 
-1. Read the existing `00-Soul/[file].md`
+1. Read the existing `00-Context/[file].md`
 2. Fill in sections that match the imported content
 3. Preserve the client's exact language — do NOT rewrite their voice
 4. Add `imported_from: [source description]` to the frontmatter
-5. Add cross-references between Soul files where relevant (`[[audience]]`, `[[offer]]`, etc.)
+5. Add cross-references between Context files where relevant (`[[audience]]`, `[[offer]]`, etc.)
 
 Write the updated file. Use this frontmatter:
 
 ```markdown
 ---
-type: soul
+type: context
 status: draft
 date: [today's date]
 imported_from: [brief description of source documents]

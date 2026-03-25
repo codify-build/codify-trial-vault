@@ -5,7 +5,7 @@ description: "Cross-reference your context against market signals. Surface oppor
 
 # /scout — Opportunity Scouting
 
-Reads your Soul files and cross-references them against market data to surface revenue opportunities unique to your expertise. Generic AI finds generic opportunities. Your AI — loaded with your context — finds opportunities only you can see.
+Reads your Context files and cross-references them against market data to surface revenue opportunities unique to your expertise. Generic AI finds generic opportunities. Your AI — loaded with your context — finds opportunities only you can see.
 
 ## Usage
 
@@ -21,7 +21,7 @@ Reads your Soul files and cross-references them against market data to surface r
 ### 1. Load Full Context
 
 Read in order:
-1. All `00-Soul/` files
+1. All `00-Context/` files
 2. Last 10 `01-Decisions/` files
 3. Last 10 `02-Research/` files
 4. Last 5 `03-Outputs/` files (to avoid repeating)
@@ -38,7 +38,7 @@ Based on mode:
 
 **Competitors:**
 - Search web for competitors mentioned in research files
-- Compare their positioning to your Soul files
+- Compare their positioning to your Context files
 - Identify gaps they're not covering that you can
 
 **Content:**
@@ -57,8 +57,8 @@ For each opportunity, provide:
 - **The signal** — What data point triggered this
 - **The gap** — Why nobody else is doing this
 - **The play** — What you'd actually do
-- **The source** — Which Soul files informed this insight
+- **The source** — Which Context files informed this insight
 
 ### 4. Save to Research
 
-Write findings to `02-Research/[date]-scout-[mode].md` with proper frontmatter and cross-references to the Soul files that informed the analysis.
+Write findings to `02-Research/[date]-scout-[mode].md` with proper frontmatter and cross-references to the Context files that informed the analysis.

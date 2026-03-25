@@ -1,5 +1,5 @@
 ---
-type: soul
+type: context
 status: draft
 date: {{date}}
 ---
@@ -9,7 +9,7 @@ date: {{date}}
 How you sound. Your tone, your language, your anti-language.
 
 Run the Voice Extraction to populate this file:
-**Command Palette → "Codify: Voice Extraction"**
+Type `/extract voice` in the chat pane.
 
 ---
 

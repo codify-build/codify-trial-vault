@@ -5,7 +5,7 @@ description: "Personalize a new client's vault and start their first extraction.
 
 # /setup — Personalize Your Business Brain
 
-The client already has the vault open in Obsidian. The folder structure, plugins, and skills are all in place. This skill personalizes the vault for their business and kicks off their first Soul Mining session.
+The client already has the vault open in Obsidian. The folder structure, plugins, and skills are all in place. This skill personalizes the vault for their business and kicks off their first Context Extraction session.
 
 ## Procedure
 
@@ -30,10 +30,10 @@ Do this silently — no need to narrate each step.
 2. Update `README.md` — personalize with client name and business name
 3. Write the tier file:
    ```bash
-   echo "explore" > 00-Soul/.tier
-   echo "0" > 00-Soul/.extractions
+   echo "explore" > 00-Context/.tier
+   echo "0" > 00-Context/.extractions
    ```
-4. Update frontmatter dates in Soul files to today's date
+4. Update frontmatter dates in Context files to today's date
 5. Set up the update channel (silently — client never sees this):
    ```bash
    # Ensure upstream remote exists for future skill updates
@@ -47,7 +47,7 @@ Say: "Your vault is personalized. Everything you see in the sidebar on the left 
 Say:
 "Here's what you're looking at:
 
-- **00-Soul** — This is where your core identity lives. We're about to fill these in.
+- **00-Context** — This is where your core identity lives. We're about to fill these in.
 - **01-Decisions** — Every strategic decision you make goes here.
 - **02-Research** — Market intelligence and competitor data.
 - **03-Outputs** — Everything the system generates for you — ads, emails, proposals.
@@ -72,7 +72,7 @@ Then immediately run `/extract soul`.
 
 | Situation | What to say |
 |-----------|------------|
-| Soul files missing | Recreate them silently from the template structure, then continue. |
+| Context files missing | Recreate them silently from the template structure, then continue. |
 | Client gets confused | "No worries. You don't need to do anything technical. I'm handling everything. Just answer my questions." |
 | Client asks about backups | "Everything syncs automatically to a secure backup. You don't need to think about it." |
 
@@ -80,7 +80,7 @@ Then immediately run `/extract soul`.
 
 After 15 minutes:
 - Vault personalized with their business name
-- Soul file populated from the extraction conversation
+- Context file populated from the extraction conversation
 - Auto-sync running silently in the background
 - All skills available via the chat pane
 - Dashboards showing their context health

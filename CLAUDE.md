@@ -6,7 +6,7 @@ This file tells any AI assistant how to work inside your vault. It's the handsha
 
 ## Vault Structure
 
-- `00-Soul/` — Core identity files. Who you are, what you sell, who buys, how you sound.
+- `00-Context/` — Core identity files. Who you are, what you sell, who buys, how you sound.
 - `01-Decisions/` — Strategic decisions with dates. Why you chose what you chose.
 - `02-Research/` — Market intelligence, competitor analysis, trend data.
 - `03-Outputs/` — Generated content: ads, emails, proposals, landing pages.
@@ -16,10 +16,10 @@ This file tells any AI assistant how to work inside your vault. It's the handsha
 
 All work runs through terminal skills in `.claude/skills/`:
 - `/setup` — Initialize a new client vault
-- `/extract` — Soul Mining interviews (soul, audience, offer, voice)
-- `/import` — Mine existing documents (proposals, emails, website copy) into Soul files
-- `/generate` — Create outputs from Soul files (ads, emails, posts, proposals)
-- `/enrich` — Deepen thin Soul files with follow-up questions
+- `/extract` — Context Extraction interviews (soul, audience, offer, voice)
+- `/import` — Mine existing documents (proposals, emails, website copy) into Context files
+- `/generate` — Create outputs from Context files (ads, emails, posts, proposals)
+- `/enrich` — Deepen thin Context files with follow-up questions
 - `/audit` — Check vault health
 - `/scout` — Cross-reference context against market signals
 - `/update` — Pull latest Codify skills and system updates (never touches client data)
@@ -29,7 +29,7 @@ All work runs through terminal skills in `.claude/skills/`:
 - **Frontmatter is required.** Every file starts with YAML frontmatter:
   ```yaml
   ---
-  type: soul | decision | research | output | daily
+  type: context | decision | research | output | daily
   status: active | draft | archived
   date: YYYY-MM-DD
   ---
@@ -53,16 +53,16 @@ When creating new files:
 - Market data, competitor intel, trends → `02-Research/`
 - Generated content (ads, emails, proposals) → `03-Outputs/`
 - Daily reflections and session logs → `04-Daily/`
-- Never modify `00-Soul/` files casually — these are your foundation. Enrich deliberately via `/enrich`.
+- Never modify `00-Context/` files casually — these are your foundation. Enrich deliberately via `/enrich`.
 
 ## The Compound Loop
 
 Your vault gets smarter because:
 1. You capture decisions and research daily
-2. Those files link back to your Soul files
+2. Those files link back to your Context files
 3. AI reads the full graph before generating anything
 4. Outputs improve because context compounds
-5. Monthly review hardens the best insights into permanent Soul files
+5. Monthly review hardens the best insights into permanent Context files
 
 ---
 

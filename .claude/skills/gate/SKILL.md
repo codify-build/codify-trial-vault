@@ -9,7 +9,7 @@ Every skill checks the client's tier before executing. The tier is stored in the
 
 ## Tier Config
 
-The file `00-Soul/.tier` stores the client's tier:
+The file `00-Context/.tier` stores the client's tier:
 
 ```
 explore
@@ -23,7 +23,7 @@ The architect sets this during `/setup`. It's a plain text file — no YAML, no 
 
 Every skill SKILL.md includes a tier requirement in its frontmatter. Before executing, check:
 
-1. Read `00-Soul/.tier`
+1. Read `00-Context/.tier`
 2. Compare against the skill's required tier
 3. If the client's tier is sufficient, run the skill
 4. If not, show the upgrade message
@@ -56,7 +56,7 @@ Everything in Explore (unlimited extractions), plus:
 | Skill | Description |
 |-------|-------------|
 | `/extract` | Unlimited — all 4 files, re-enterable |
-| `/enrich` | Deepen existing Soul files |
+| `/enrich` | Deepen existing Context files |
 | `/generate` | Create outputs (ad, email, post, proposal) |
 | `/scout` | Opportunity scouting |
 | `/think` | Research → decide → codify |
@@ -97,14 +97,14 @@ When a client tries a locked skill:
 
 ## Extraction Limit (Explore Only)
 
-For Explore tier, track extraction count in `00-Soul/.extractions`:
+For Explore tier, track extraction count in `00-Context/.extractions`:
 
 ```
 2
 ```
 
 Increment after each `/extract` run. At 3, show:
-"You've used your 3 free extractions. Your Soul files are already improving your outputs — imagine what happens with all 4 files fully enriched. Upgrade to Architect to unlock unlimited extraction."
+"You've used your 3 free extractions. Your Context files are already improving your outputs — imagine what happens with all 4 files fully enriched. Upgrade to Architect to unlock unlimited extraction."
 
 ## Notes
 

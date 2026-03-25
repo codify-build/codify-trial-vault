@@ -1,5 +1,5 @@
 ---
-type: soul
+type: context
 status: draft
 date: {{date}}
 ---
@@ -9,7 +9,7 @@ date: {{date}}
 Who buys from you. What they struggle with. How they talk about their problems.
 
 Run the Audience Extraction to populate this file:
-**Command Palette → "Codify: Audience Extraction"**
+Type `/extract audience` in the chat pane.
 
 ---
 

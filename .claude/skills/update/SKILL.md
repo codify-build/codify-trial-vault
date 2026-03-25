@@ -1,46 +1,33 @@
 ---
 name: update
-description: "Pull the latest skills, dashboards, and architecture from Codify without touching client data."
+description: "Architect-only skill. Pull the latest Codify skills and system files. Run during Brain Sync sessions, not by the client."
 ---
 
-# /update — Update Your Business Brain
+# /update — System Update (Architect Only)
 
-Pulls the latest Codify skills, dashboards, and system files from the template repo. Never touches client data (Soul files, decisions, research, outputs, daily notes).
+This skill is for the **architect** to run during Brain Sync sessions. The client should never run this directly — they'll see technical output that doesn't make sense to them.
 
-## What Gets Updated
+## When to Run
 
-| Updated (from Codify) | Never Touched (yours) |
-|-----------------------|----------------------|
-| `.claude/skills/` | `00-Soul/` |
-| `_dashboards/` | `01-Decisions/` |
-| `_templates/` | `02-Research/` |
-| `CLAUDE.md` | `03-Outputs/` |
-| `.obsidian/plugins/` | `04-Daily/` |
+- During monthly Brain Sync calls
+- After releasing new skills or dashboard updates
+- Before onboarding a client on a new tier
 
 ## Procedure
 
 ### 1. Check for Upstream Remote
 
 ```bash
-# Check if upstream remote exists
-git remote -v | grep upstream
+git remote get-url upstream 2>/dev/null || git remote add upstream https://github.com/mike-scott-darwin/codify-vault-template.git
 ```
 
-If upstream is missing, add it silently:
-
-```bash
-git remote add upstream https://github.com/mike-scott-darwin/codify-vault-template.git
-```
-
-### 2. Fetch Latest Updates
+### 2. Fetch and Apply Updates
 
 ```bash
 git fetch upstream main --quiet
 ```
 
-### 3. Pull Only System Files
-
-Do NOT merge the full branch. Cherry-pick only the system directories:
+Pull only system files — never touch client data:
 
 ```bash
 # Update skills
@@ -55,59 +42,38 @@ git checkout upstream/main -- _templates/ 2>/dev/null || true
 # Update system config
 git checkout upstream/main -- CLAUDE.md
 
-# Update plugin configs (not plugin binaries — those are large)
-git checkout upstream/main -- .obsidian/community-plugins.json
-git checkout upstream/main -- .obsidian/plugins/agent-client/data.json 2>/dev/null || true
+# Update plugin configs
+git checkout upstream/main -- .obsidian/community-plugins.json 2>/dev/null || true
 ```
 
-### 4. Commit the Update
+### 3. Commit and Sync
 
 ```bash
 git add -A
-git commit -m "[update] Codify system update — $(date +%Y-%m-%d)" --allow-empty
-git push origin main --quiet
+git diff --cached --quiet || git commit -m "[update] Codify system update — $(date +%Y-%m-%d)"
+git push origin main --quiet 2>/dev/null || true
 ```
 
-### 5. Report
+### 4. Report
 
-Say:
-"Your system is up to date. Here's what changed:"
+Say: "System updated. New skills and dashboards are live."
 
-Then list any new or modified skills. If nothing changed:
+If nothing changed: "Already on the latest version."
 
-"You're already on the latest version. Nothing to update."
+## What Gets Updated vs. What's Protected
 
-## Auto-Update on Startup
-
-This skill can be triggered automatically. When Claude Code starts in a vault, check the last update date:
-
-```bash
-# Check last update timestamp
-LAST_UPDATE=$(git log --oneline --grep="Codify system update" -1 --format="%cd" --date=short 2>/dev/null)
-TODAY=$(date +%Y-%m-%d)
-
-if [ "$LAST_UPDATE" != "$TODAY" ]; then
-    # Run update silently
-    git fetch upstream main --quiet 2>/dev/null
-    git checkout upstream/main -- .claude/skills/ 2>/dev/null
-    git checkout upstream/main -- _dashboards/ 2>/dev/null
-    git checkout upstream/main -- CLAUDE.md 2>/dev/null
-    git add -A
-    git diff --cached --quiet || git commit -m "[update] Codify system update — $TODAY" --quiet
-fi
-```
-
-## Tone
-
-- **Invisible.** The client should barely notice this happening.
-- **Quick.** This should take under 5 seconds.
-- **Safe.** Never touch Soul files, decisions, research, outputs, or daily notes.
+| Updated (Codify system) | Protected (client data) |
+|------------------------|------------------------|
+| `.claude/skills/` | `00-Context/` |
+| `_dashboards/` | `01-Decisions/` |
+| `_templates/` | `02-Research/` |
+| `CLAUDE.md` | `03-Outputs/` |
+| `.obsidian/plugins/` | `04-Daily/` |
 
 ## Error Handling
 
-| Situation | What to do |
-|-----------|-----------|
-| No internet | Skip silently. Say nothing. Try again next time. |
-| Merge conflict in CLAUDE.md | Keep the client's version. System files should never conflict with client data. |
-| Upstream repo not accessible | Skip silently. The vault works fine without updates. |
-| Client asks what happened | "I checked for system updates. Your files are untouched — I only update the tools." |
+| Situation | Action |
+|-----------|--------|
+| No internet | Say "Can't reach the update server. We'll try next session." |
+| Upstream not accessible | Say "Update channel isn't configured yet. I'll set it up." Then add the remote. |
+| Merge conflict | Keep the client's version. Investigate manually. |

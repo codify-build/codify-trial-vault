@@ -1,11 +1,11 @@
 ---
 name: extract
-description: "Run Soul Mining extraction interviews via Claude Code. Populates Soul files through conversation."
+description: "Run Context Extraction interviews via Claude Code. Populates Context files through conversation."
 ---
 
-# /extract — Soul Mining via Conversation
+# /extract — Context Extraction via Conversation
 
-Run guided extraction interviews through the chat pane. Conversational — the client just answers questions. Answers are written directly to the Soul files in `00-Soul/`.
+Run guided extraction interviews through the chat pane. Conversational — the client just answers questions. Answers are written directly to the Context files in `00-Context/`.
 
 ## Usage
 
@@ -28,13 +28,13 @@ Parse the user's input to determine which file to extract. If no argument, ask:
 
 ### 2. Read Existing File
 
-Before asking questions, read the target file in `00-Soul/`. If it already has content, acknowledge what's there and focus on gaps.
+Before asking questions, read the target file in `00-Context/`. If it already has content, acknowledge what's there and focus on gaps.
 
 ### 3. Run the Interview
 
 Ask questions **one at a time.** Wait for the answer before asking the next one. Use natural, conversational language — not a form.
 
-#### Soul Mining Questions (soul.md)
+#### Context Extraction Questions (soul.md)
 1. "If someone at a party asked what you do, what would you say?"
 2. "What's the one thing you believe about your industry that most people get wrong?"
 3. "Describe a moment when you knew your approach was different from everyone else's."
@@ -66,11 +66,11 @@ Ask questions **one at a time.** Wait for the answer before asking the next one.
 
 ### 4. Write to File
 
-After all questions are answered, write the structured output to the appropriate `00-Soul/` file. Use this format:
+After all questions are answered, write the structured output to the appropriate `00-Context/` file. Use this format:
 
 ```markdown
 ---
-type: soul
+type: context
 status: draft
 date: [today's date]
 extracted_via: claude-code
@@ -89,7 +89,7 @@ Preserve the client's exact language where possible. Clean up grammar only if it
 
 ### 5. Cross-Reference
 
-After writing, scan the answer for references to other Soul files:
+After writing, scan the answer for references to other Context files:
 - If they mention their audience → add `[[audience]]` link
 - If they mention their offer → add `[[offer]]` link
 - If they mention their voice/tone → add `[[voice]]` link

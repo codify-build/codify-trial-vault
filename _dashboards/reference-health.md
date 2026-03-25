@@ -10,14 +10,14 @@ How deep is your context? Deeper files = better AI outputs.
 
 ## File Depth by Folder
 
-### Soul Files (Core Identity)
+### Context Files (Core Identity)
 ```dataview
 TABLE
   file.size as "Size (bytes)",
   choice(file.size > 1000, "Compounding", choice(file.size > 500, "Working", choice(file.size > 200, "Draft", "Skeleton"))) as "Depth Level",
   length(file.outlinks) as "Outlinks",
   length(file.inlinks) as "Inlinks"
-FROM "00-Soul"
+FROM "00-Context"
 SORT file.size DESC
 ```
 
@@ -49,8 +49,8 @@ LIMIT 15
 
 ```dataview
 TABLE WITHOUT ID
-  "Soul files at Working+ depth" as "Metric",
-  length(filter(dv.pages('"00-Soul"'), (p) => p.file.size > 500)) as "Count"
+  "Context files at Working+ depth" as "Metric",
+  length(filter(dv.pages('"00-Context"'), (p) => p.file.size > 500)) as "Count"
 ```
 
-> When all 4 Soul files hit "Working" depth, you're ready to generate high-fidelity outputs. Until then, keep enriching.
+> When all 4 Context files hit "Working" depth, you're ready to generate high-fidelity outputs. Until then, keep enriching.

@@ -20,7 +20,7 @@ Generates a daily executive summary from your vault. What changed overnight, wha
 
 Check for changes since last brief:
 - New files in `01-Decisions/`, `02-Research/`
-- Modified Soul files
+- Modified Context files
 - New outputs generated
 - Recent git commits (via `git log --since="24 hours ago"`)
 

@@ -10,7 +10,8 @@ Try before you buy. Limited extraction, see the system work.
 
 | Skill | What it does |
 |-------|-------------|
-| `/extract` | Soul Mining — 3 free extractions, then locked |
+| `/extract` | Context Extraction — 3 free extractions, then locked |
+| `/import` | Paste existing docs — mine them into Context files (counts as extraction) |
 | `/score` | Show your Context Power score |
 | `/help` | How the system works |
 
@@ -24,13 +25,14 @@ All skills unlocked. DIY — you run the terminal yourself.
 | Skill | What it does |
 |-------|-------------|
 | `/extract` | Unlimited extraction (soul, audience, offer, voice) |
-| `/enrich` | Deepen existing Soul files |
+| `/import` | Mine existing documents into Context files — unlimited |
+| `/enrich` | Deepen existing Context files |
 | `/generate` | Create outputs (ad, email, post, proposal, landing, vsl) |
 | `/audit` | Vault health check |
 | `/scout` | Opportunity scouting from context + market |
 | `/think` | Research → decide → codify workflow |
 | `/brainstorm` | Generate ideas from your reference stack |
-| `/refine` | Improve an existing output using Soul files |
+| `/refine` | Improve an existing output using Context files |
 | `/voice` | Check if content matches your voice.md |
 | `/score` | Context Power score with trend |
 | `/help` | Full documentation |
@@ -80,7 +82,7 @@ The architect configures these connections during Phase 2. The client never sees
 ## The Upgrade Path
 
 ```
-Explore (free) → "My Soul file improved my output by 40%"
+Explore (free) → "My Context file improved my output by 40%"
      ↓
 Architect ($497/mo) → "I want all the skills, I'll run it myself"
      ↓

@@ -11,7 +11,7 @@ Scans your entire vault and reports on context health. Identifies what needs att
 
 ```
 /audit               → Full vault audit
-/audit soul          → Audit Soul files only
+/audit context       → Audit Context files only
 /audit stale         → Show files not updated in 14+ days
 /audit orphans       → Show files with no cross-references
 ```
@@ -21,7 +21,7 @@ Scans your entire vault and reports on context health. Identifies what needs att
 ### 1. Scan All Files
 
 Read every file in:
-- `00-Soul/` — Core identity
+- `00-Context/` — Core identity
 - `01-Decisions/` — Strategic decisions
 - `02-Research/` — Market intelligence
 - `03-Outputs/` — Generated content
@@ -44,10 +44,10 @@ Read every file in:
 **Connection Score:**
 - Count `[[links]]` in and out
 - Flag files with zero connections (orphans)
-- Flag Soul files that reference each other (good)
+- Flag Context files that reference each other (good)
 
 **Completeness Score:**
-- Check each Soul file for empty sections (marked with `<!-- -->` comments)
+- Check each Context file for empty sections (marked with `<!-- -->` comments)
 - Calculate percentage of sections filled
 
 ### 3. Generate Report
@@ -59,7 +59,7 @@ Output a structured report:
 
 ### Overall Context Power: [score]/100
 
-### Soul Files
+### Context Files
 | File | Depth | Freshness | Connections | Completeness |
 |------|-------|-----------|-------------|--------------|
 | soul.md | Working | Fresh | 3 in / 2 out | 85% |
