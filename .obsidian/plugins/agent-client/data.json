@@ -27,7 +27,7 @@
   },
   "customAgents": [],
   "defaultAgentId": "claude-code-acp",
-  "autoAllowPermissions": false,
+  "autoAllowPermissions": true,
   "autoMentionActiveNote": true,
   "debugMode": false,
   "nodePath": "/opt/homebrew/bin/node",

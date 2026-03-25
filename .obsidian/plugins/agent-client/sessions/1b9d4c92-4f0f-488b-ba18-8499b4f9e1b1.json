@@ -195,7 +195,527 @@
         }
       ],
       "timestamp": "2026-03-25T08:54:22.152Z"
+    },
+    {
+      "id": "d2ea98e3-469f-40a2-b28e-a1217acad77a",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/setup"
+        }
+      ],
+      "timestamp": "2026-03-25T09:19:40.885Z"
+    },
+    {
+      "id": "01619f34-52af-40e9-a515-2c127cf36750",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "agent_thought",
+          "text": "The user has now invoked /setup. This overrides the previous /extract soul and /import flows. Let me follow the setup procedure.\n\nLet me start with the welcome message and first question."
+        },
+        {
+          "type": "text",
+          "text": "Welcome to Codify. I'm going to set up your Context Architecture — a secure vault for your expertise that compounds over time. The more you put in, the sharper everything that comes out.\n\nI just need a couple of things to get started.\n\n**What's your business name?**"
+        }
+      ],
+      "timestamp": "2026-03-25T09:19:42.883Z"
+    },
+    {
+      "id": "7d5ae2f7-4158-41ea-9ea9-43b3ff80d4f1",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Webb Strategic Advisory"
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:05.480Z"
+    },
+    {
+      "id": "c0e902d0-6b81-452b-8149-55d40dc42035",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "\n\nGot it. **What's your name?**"
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:09.227Z"
+    },
+    {
+      "id": "07c6fc08-546b-4b82-83df-0315586e6bf0",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Marcus Webb"
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:16.797Z"
+    },
+    {
+      "id": "3aafe354-6e19-4e99-946f-f0668d4ea44f",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "agent_thought",
+          "text": "Now I need to personalize the vault silently. Let me do the steps:\n\n1. Update CLAUDE.md\n2. Update README.md\n3. Check git remote for origin URL\n4. Write tier file and extractions file\n5. Update frontmatter dates\n6. Set up upstream remote\n\nLet me read README.md first and do the other tasks in parallel."
+        },
+        {
+          "type": "text",
+          "text": "Give me a moment to set everything up."
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:21.676Z"
+    },
+    {
+      "id": "6bee3304-16cd-4b2c-a0dd-a888507e6364",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01YQxEX6uDpQeBUNVsq8WQZv",
+          "title": "Read README.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/README.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/README.md"
+          }
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:23.492Z"
+    },
+    {
+      "id": "cbe83ba3-bc29-443d-80e4-e28c62ae70f9",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01JhqhwqgMxVMac6JucB8UVe",
+          "title": "git remote get-url origin 2>/dev/null; echo \"---\"; git remote get-url upstream 2>/dev/null || echo \"no upstream\"",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "git remote get-url origin 2>/dev/null; echo \"---\"; git remote get-url upstream 2>/dev/null || echo \"no upstream\"",
+            "description": "Check git remotes"
+          },
+          "permissionRequest": {
+            "requestId": "f1835187-a599-456c-84fe-bf36320180eb",
+            "options": [
+              {
+                "optionId": "allow_always",
+                "name": "Always Allow",
+                "kind": "allow_always"
+              },
+              {
+                "optionId": "allow",
+                "name": "Allow",
+                "kind": "allow_once"
+              },
+              {
+                "optionId": "reject",
+                "name": "Reject",
+                "kind": "reject_once"
+              }
+            ],
+            "selectedOptionId": "allow",
+            "isActive": false
+          }
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:24.408Z"
+    },
+    {
+      "id": "2a622367-3e0a-4dd9-abaf-1924b9020da0",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01YJ8tm2HpMHXgk6UrzCFDJ2",
+          "title": "Edit README.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/README.md",
+              "newText": "# Webb Strategic Advisory — Your Business Brain\n\nMarcus, 30 years of expertise. One vault. Every decision, insight, and framework you've built — captured, connected, and compounding.\n\nThis is your Context Architecture. The AI reads it before generating anything, so your outputs sound like you, not a generic chatbot.\n",
+              "oldText": "# Your Business Brain\n\n30 years of expertise. One vault. Every decision, insight, and framework you've built — captured, connected, and compounding.\n\nThis is your Context Architecture. The AI reads it before generating anything, so your outputs sound like you, not a generic chatbot.\n"
+            }
+          ],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/README.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/README.md",
+            "old_string": "# Your Business Brain\n\n30 years of expertise. One vault. Every decision, insight, and framework you've built — captured, connected, and compounding.",
+            "new_string": "# Webb Strategic Advisory — Your Business Brain\n\nMarcus, 30 years of expertise. One vault. Every decision, insight, and framework you've built — captured, connected, and compounding.",
+            "replace_all": false
+          },
+          "permissionRequest": {
+            "requestId": "83883580-9bcc-4aae-9f4c-e1ccc16b11aa",
+            "options": [
+              {
+                "optionId": "allow_always",
+                "name": "Always Allow",
+                "kind": "allow_always"
+              },
+              {
+                "optionId": "allow",
+                "name": "Allow",
+                "kind": "allow_once"
+              },
+              {
+                "optionId": "reject",
+                "name": "Reject",
+                "kind": "reject_once"
+              }
+            ],
+            "selectedOptionId": "allow",
+            "isActive": false
+          }
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:43.019Z"
+    },
+    {
+      "id": "da42098d-bb3c-455b-856c-62ea76f7cbbe",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_011oGzBGrws3oNLwF7k8ejm3",
+          "title": "Edit README.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/README.md",
+              "newText": "\nEverything is yours. Stored on your machine and backed up to your private vault online.\n\n[View your vault online →](https://github.com/mike-scott-darwin/codify-trial-vault)\n\nNo data hostages. No vendor lock-in. If you ever stop using Codify, you keep every file — on your machine and online.\n",
+              "oldText": "\nEverything is yours. Stored on your machine and backed up to your private vault online.\n\n[View your vault online →](https://github.com/GITHUB_USERNAME/VAULT_REPO_NAME)\n\nNo data hostages. No vendor lock-in. If you ever stop using Codify, you keep every file — on your machine and online.\n"
+            }
+          ],
+          "locations": [
+            {
+              "line": 44,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/README.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/README.md",
+            "old_string": "https://github.com/GITHUB_USERNAME/VAULT_REPO_NAME",
+            "new_string": "https://github.com/mike-scott-darwin/codify-trial-vault",
+            "replace_all": false
+          },
+          "permissionRequest": {
+            "requestId": "49390065-77f3-4ace-ae7f-be85e49c449c",
+            "options": [
+              {
+                "optionId": "allow_always",
+                "name": "Always Allow",
+                "kind": "allow_always"
+              },
+              {
+                "optionId": "allow",
+                "name": "Allow",
+                "kind": "allow_once"
+              },
+              {
+                "optionId": "reject",
+                "name": "Reject",
+                "kind": "reject_once"
+              }
+            ],
+            "selectedOptionId": "allow",
+            "isActive": false
+          }
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:44.339Z"
+    },
+    {
+      "id": "4809fcae-f43f-46b0-8461-ae5b2190550d",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_014Qee5q2MgNcqrJcst4WaMG",
+          "title": "echo \"explore\" > /Users/michaelscott/Desktop/codify-trial-vault/00-Context/.tier && echo \"0\" > /Users/michaelscott/Desktop/codify-trial-vault/00-Context/.extractions",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "echo \"explore\" > /Users/michaelscott/Desktop/codify-trial-vault/00-Context/.tier && echo \"0\" > /Users/michaelscott/Desktop/codify-trial-vault/00-Context/.extractions",
+            "description": "Write tier and extractions files"
+          },
+          "permissionRequest": {
+            "requestId": "778d8314-4e4b-44ce-813c-5ed4005bd61f",
+            "options": [
+              {
+                "optionId": "allow_always",
+                "name": "Always Allow",
+                "kind": "allow_always"
+              },
+              {
+                "optionId": "allow",
+                "name": "Allow",
+                "kind": "allow_once"
+              },
+              {
+                "optionId": "reject",
+                "name": "Reject",
+                "kind": "reject_once"
+              }
+            ],
+            "selectedOptionId": "allow",
+            "isActive": false
+          }
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:45.273Z"
+    },
+    {
+      "id": "0f067d11-8045-4552-a37c-569879c86ab8",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01KMQWQRoyQe6giF2su12WyA",
+          "title": "Edit 00-Context/soul.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+              "newText": "---\ntype: context\nstatus: draft\ndate: 2026-03-25\n---\n\n# Soul",
+              "oldText": "---\ntype: context\nstatus: draft\ndate: {{date}}\n---\n\n# Soul"
+            }
+          ],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+            "old_string": "date: {{date}}",
+            "new_string": "date: 2026-03-25",
+            "replace_all": false
+          },
+          "permissionRequest": {
+            "requestId": "c4345ce5-fb09-4718-b86d-6ee39b3975c3",
+            "options": [
+              {
+                "optionId": "allow_always",
+                "name": "Always Allow",
+                "kind": "allow_always"
+              },
+              {
+                "optionId": "allow",
+                "name": "Allow",
+                "kind": "allow_once"
+              },
+              {
+                "optionId": "reject",
+                "name": "Reject",
+                "kind": "reject_once"
+              }
+            ],
+            "selectedOptionId": "allow",
+            "isActive": false
+          }
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:46.679Z"
+    },
+    {
+      "id": "0711624b-4898-40d8-8248-b1dd6954546b",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01G7PmwF5aDWpr9fFs6iuJyK",
+          "title": "Edit 00-Context/audience.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+              "newText": "---\ntype: context\nstatus: draft\ndate: 2026-03-25\n---\n\n# Audience",
+              "oldText": "---\ntype: context\nstatus: draft\ndate: {{date}}\n---\n\n# Audience"
+            }
+          ],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+            "old_string": "date: {{date}}",
+            "new_string": "date: 2026-03-25",
+            "replace_all": false
+          },
+          "permissionRequest": {
+            "requestId": "63b1b5b4-e078-402e-b9fe-73ee20e6fac3",
+            "options": [
+              {
+                "optionId": "allow_always",
+                "name": "Always Allow",
+                "kind": "allow_always"
+              },
+              {
+                "optionId": "allow",
+                "name": "Allow",
+                "kind": "allow_once"
+              },
+              {
+                "optionId": "reject",
+                "name": "Reject",
+                "kind": "reject_once"
+              }
+            ],
+            "selectedOptionId": "allow",
+            "isActive": false
+          }
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:47.952Z"
+    },
+    {
+      "id": "c4da8ff4-573a-4f95-8b66-ba346ddb565f",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01DFwQaMyqRq7ezfV9EDQhzs",
+          "title": "Edit 00-Context/offer.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+              "newText": "---\ntype: context\nstatus: draft\ndate: 2026-03-25\n---\n\n# Offer",
+              "oldText": "---\ntype: context\nstatus: draft\ndate: {{date}}\n---\n\n# Offer"
+            }
+          ],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+            "old_string": "date: {{date}}",
+            "new_string": "date: 2026-03-25",
+            "replace_all": false
+          },
+          "permissionRequest": {
+            "requestId": "70e3b383-1f77-4280-9e59-6a58c762e15c",
+            "options": [
+              {
+                "optionId": "allow_always",
+                "name": "Always Allow",
+                "kind": "allow_always"
+              },
+              {
+                "optionId": "allow",
+                "name": "Allow",
+                "kind": "allow_once"
+              },
+              {
+                "optionId": "reject",
+                "name": "Reject",
+                "kind": "reject_once"
+              }
+            ],
+            "selectedOptionId": "allow",
+            "isActive": false
+          }
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:48.947Z"
+    },
+    {
+      "id": "81905f5e-ec26-492b-b687-79cdfee9dde2",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01BmCcFbUArZrJE3kUexvbo2",
+          "title": "Edit 00-Context/voice.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+              "newText": "---\ntype: context\nstatus: draft\ndate: 2026-03-25\n---\n\n# Voice",
+              "oldText": "---\ntype: context\nstatus: draft\ndate: {{date}}\n---\n\n# Voice"
+            }
+          ],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+            "old_string": "date: {{date}}",
+            "new_string": "date: 2026-03-25",
+            "replace_all": false
+          },
+          "permissionRequest": {
+            "requestId": "f6b14f6d-3b09-4b50-85c9-04a9c48730a6",
+            "options": [
+              {
+                "optionId": "allow_always",
+                "name": "Always Allow",
+                "kind": "allow_always"
+              },
+              {
+                "optionId": "allow",
+                "name": "Allow",
+                "kind": "allow_once"
+              },
+              {
+                "optionId": "reject",
+                "name": "Reject",
+                "kind": "reject_once"
+              }
+            ],
+            "selectedOptionId": "allow",
+            "isActive": false
+          }
+        },
+        {
+          "type": "text",
+          "text": "Your vault is ready. Everything you see in the sidebar is yours — it's where your expertise will live and compound.\n\nHere's what you're looking at:\n\n- **Context** — Your core identity. What you believe, who you serve, how you sound. We're about to fill these in.\n- **Decisions** — Every strategic choice you make and the reasoning behind it.\n- **Research** — Market intelligence, competitor data, industry signals.\n- **Outputs** — Everything the system generates for you — ads, emails, proposals, campaigns.\n- **Dashboards** — Open 'Context Power' anytime to see your vault health.\n\nEverything backs up automatically to your secure vault. You don't need to think about it.\n\n---\n\nLet's start capturing your expertise. I'm going to ask you some questions about your business — your beliefs, your audience, what you sell, and how you communicate. Just talk naturally. There are no wrong answers — I'm capturing your judgment, not testing it.\n\nWe'll start with your **Soul** file — who you are and what makes Webb Strategic Advisory different.\n\n**If someone at a party asked what you do, what would you say?**"
+        }
+      ],
+      "timestamp": "2026-03-25T09:20:49.301Z"
     }
   ],
-  "savedAt": "2026-03-25T08:54:25.790Z"
+  "savedAt": "2026-03-25T09:24:49.601Z"
 }

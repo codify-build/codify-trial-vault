@@ -1,6 +1,6 @@
-# Your Business Brain
+# Webb Strategic Advisory — Your Business Brain
 
-30 years of expertise. One vault. Every decision, insight, and framework you've built — captured, connected, and compounding.
+Marcus, 30 years of expertise. One vault. Every decision, insight, and framework you've built — captured, connected, and compounding.
 
 This is your Context Architecture. The AI reads it before generating anything, so your outputs sound like you, not a generic chatbot.
 
@@ -44,7 +44,7 @@ Year 1: A digital twin of your professional judgment.
 
 Everything is yours. Stored on your machine and backed up to your private vault online.
 
-[View your vault online →](https://github.com/GITHUB_USERNAME/VAULT_REPO_NAME)
+[View your vault online →](https://github.com/mike-scott-darwin/codify-trial-vault)
 
 No data hostages. No vendor lock-in. If you ever stop using Codify, you keep every file — on your machine and online.
 

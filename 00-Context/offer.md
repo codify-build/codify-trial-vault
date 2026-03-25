@@ -1,7 +1,7 @@
 ---
 type: context
 status: draft
-date: {{date}}
+date: 2026-03-25
 ---
 
 # Offer
