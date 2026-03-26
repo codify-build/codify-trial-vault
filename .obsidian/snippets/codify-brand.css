@@ -1,7 +1,19 @@
 /*
- * CODIFY — Executive Intelligence System
- * Brand theme for Obsidian
- * Dark, minimal, premium. Not a note app.
+ * CODIFY — Brand System
+ *
+ * Brand:        Codify
+ * Tagline:      Your context, compounding.
+ * Primary:      #1a9e6b (Codify Green — muted, trust, intelligence)
+ * Hover:        #158559
+ * Dark BG:      #0d0f12
+ * Text:         #c8cdd5
+ * Font:         Inter (body) / JetBrains Mono (code)
+ * Weight:       300 body, 400 UI, 500 headings
+ * Tone:         Dark, minimal, premium. Executive tool, not a note app.
+ *
+ * Usage:        This snippet brands Obsidian as Codify.
+ *               Title bar reads "Codify". Accent colour is Codify Green.
+ *               All shadows removed. Light font weight throughout.
  */
 
 /* ============================================
@@ -18,7 +30,7 @@
   --background-modifier-form-field: #13161b;
   --background-modifier-hover: rgba(255, 255, 255, 0.04);
   --background-modifier-active-hover: rgba(255, 255, 255, 0.06);
-  --background-modifier-success: rgba(45, 212, 146, 0.12);
+  --background-modifier-success: rgba(26, 158, 107, 0.12);
   --background-modifier-error: rgba(255, 85, 85, 0.12);
 
   /* Text */
@@ -29,31 +41,31 @@
   --text-on-accent-inverted: #c8cdd5;
 
   /* Accent — Codify green (trust, growth, intelligence) */
-  --interactive-accent: #2dd492;
-  --interactive-accent-hover: #25b87e;
-  --text-accent: #2dd492;
-  --text-accent-hover: #25b87e;
+  --interactive-accent: #1a9e6b;
+  --interactive-accent-hover: #158559;
+  --text-accent: #1a9e6b;
+  --text-accent-hover: #158559;
 
   /* Tags */
-  --tag-color: #2dd492;
-  --tag-background: rgba(45, 212, 146, 0.1);
-  --tag-color-hover: #25b87e;
-  --tag-background-hover: rgba(45, 212, 146, 0.15);
+  --tag-color: #1a9e6b;
+  --tag-background: rgba(26, 158, 107, 0.1);
+  --tag-color-hover: #158559;
+  --tag-background-hover: rgba(26, 158, 107, 0.15);
 
   /* Scrollbar */
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.08);
-  --scrollbar-active-thumb-bg: rgba(45, 212, 146, 0.3);
+  --scrollbar-active-thumb-bg: rgba(26, 158, 107, 0.3);
 
   /* Graph */
-  --graph-line: rgba(45, 212, 146, 0.15);
-  --graph-node: #2dd492;
+  --graph-line: rgba(26, 158, 107, 0.15);
+  --graph-node: #1a9e6b;
   --graph-node-focused: #fff;
-  --graph-node-tag: #2dd492;
+  --graph-node-tag: #1a9e6b;
   --graph-node-attachment: #6b7280;
 
   /* Vault name color */
-  --vault-name-color: #2dd492;
+  --vault-name-color: #1a9e6b;
 }
 
 .theme-light {
@@ -134,12 +146,12 @@ body {
 
 .nav-file-title:hover,
 .nav-folder-title:hover {
-  background-color: rgba(45, 212, 146, 0.06);
+  background-color: rgba(26, 158, 107, 0.06);
 }
 
 .nav-file-title.is-active {
-  background-color: rgba(45, 212, 146, 0.1);
-  color: #2dd492;
+  background-color: rgba(26, 158, 107, 0.1);
+  color: #1a9e6b;
 }
 
 /* Folder icons — subtle */
@@ -165,19 +177,19 @@ body {
 /* Links */
 .markdown-rendered a,
 .cm-hmd-internal-link {
-  color: #2dd492;
+  color: #1a9e6b;
   text-decoration: none;
 }
 
 .markdown-rendered a:hover {
-  color: #25b87e;
+  color: #158559;
   text-decoration: underline;
 }
 
 /* Blockquotes — executive memo style */
 .markdown-rendered blockquote {
-  border-left: 3px solid #2dd492;
-  background-color: rgba(45, 212, 146, 0.04);
+  border-left: 3px solid #1a9e6b;
+  background-color: rgba(26, 158, 107, 0.04);
   padding: 12px 16px;
   margin: 16px 0;
   border-radius: 0 6px 6px 0;
@@ -187,8 +199,8 @@ body {
 /* Inline code — commands like /extract, /enrich pop with colour */
 .markdown-rendered code,
 .cm-inline-code {
-  background-color: rgba(45, 212, 146, 0.1);
-  color: #2dd492;
+  background-color: rgba(26, 158, 107, 0.1);
+  color: #1a9e6b;
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 0.88em;
@@ -226,7 +238,7 @@ body {
 
 .markdown-rendered th {
   background-color: #13161b;
-  color: #2dd492;
+  color: #1a9e6b;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 11px;
@@ -290,13 +302,13 @@ body {
 }
 
 .agent-client-input textarea:focus {
-  border-color: #2dd492;
-  box-shadow: 0 0 0 2px rgba(45, 212, 146, 0.15);
+  border-color: #1a9e6b;
+  box-shadow: none;
 }
 
 /* Chat messages */
 .agent-client-message.user {
-  background-color: rgba(45, 212, 146, 0.08);
+  background-color: rgba(26, 158, 107, 0.08);
   border-radius: 8px;
 }
 
@@ -312,7 +324,7 @@ body {
 
 .dataview.table-view-table th {
   background-color: #13161b;
-  color: #2dd492;
+  color: #1a9e6b;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 11px;
@@ -328,7 +340,7 @@ body {
    9. HIDE OBSIDIAN BRANDING
    ============================================ */
 
-/* Hide "Obsidian" from title bar where possible */
+/* Title bar → Codify */
 .titlebar-text {
   font-size: 0;
 }
@@ -336,12 +348,27 @@ body {
 .titlebar-text::after {
   content: "Codify";
   font-size: 13px;
-  font-weight: 600;
-  color: #6b7280;
-  letter-spacing: 0.05em;
+  font-weight: 400;
+  color: #1a9e6b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-/* Hide help/about links that reference Obsidian */
+/* Vault name in sidebar → Codify branded */
+.workspace-drawer-vault-name {
+  font-size: 0;
+}
+
+.workspace-drawer-vault-name::after {
+  content: "Codify";
+  font-size: 12px;
+  font-weight: 400;
+  color: #1a9e6b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Hide Obsidian help/about references */
 .side-dock-settings .setting-item:has(.setting-item-name:empty) {
   display: none;
 }
@@ -360,7 +387,7 @@ body {
 }
 
 .frontmatter-container .frontmatter-section-label {
-  color: #2dd492;
+  color: #1a9e6b;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 10px;
@@ -373,11 +400,11 @@ body {
    ============================================ */
 
 .graph-view.color-fill {
-  color: #2dd492;
+  color: #1a9e6b;
 }
 
 .graph-view.color-line {
-  color: rgba(45, 212, 146, 0.2);
+  color: rgba(26, 158, 107, 0.2);
 }
 
 .graph-view.color-text {
@@ -390,7 +417,7 @@ body {
    ============================================ */
 
 .callout[data-callout="tip"] {
-  --callout-color: 45, 212, 146;
+  --callout-color: 26, 158, 107;
 }
 
 .callout[data-callout="warning"] {
@@ -413,11 +440,11 @@ body {
    ============================================ */
 
 .search-result-file-title {
-  color: #2dd492;
+  color: #1a9e6b;
   font-weight: 600;
 }
 
 .search-result-file-matched-text {
   color: #f0f2f5;
-  background-color: rgba(45, 212, 146, 0.15);
+  background-color: rgba(26, 158, 107, 0.15);
 }
