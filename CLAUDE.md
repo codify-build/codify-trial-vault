@@ -36,8 +36,10 @@ All work runs through skills in `.claude/skills/`:
   type: context | decision | research | output | daily
   status: active | draft | archived
   date: YYYY-MM-DD
+  last-updated: YYYY-MM-DD HH:MM
   ---
   ```
+- **Always update `last-updated`** when modifying any file. Use the current date and time (24h format). This tells the client when each file was last touched.
 - **Use Obsidian links.** Write `[[soul]]` not `[soul](soul.md)`. Double brackets create the knowledge graph.
 - **Cross-reference everything.** When a decision relates to the audience, link it: `[[audience]]`. This builds the compound loop.
 - **Date your files.** Decisions and research use format: `YYYY-MM-DD-topic-slug.md`

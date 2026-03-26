@@ -60,6 +60,7 @@ Write the updated file. Use this frontmatter:
 type: context
 status: draft
 date: [today's date]
+last-updated: [today's date and time, e.g. 2026-03-26 14:30]
 imported_from: [brief description of source documents]
 extracted_via: claude-code
 ---

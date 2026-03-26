@@ -63,6 +63,8 @@ Examples:
 
 Weave new answers into the existing file. Don't overwrite — add depth to existing sections or create new subsections.
 
+Update the `last-updated` field in the frontmatter to the current date and time (e.g. `last-updated: 2026-03-26 14:30`).
+
 Add cross-references where new content connects to other files.
 
 ### 5. Report Progress

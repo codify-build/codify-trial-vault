@@ -61,6 +61,7 @@ Include frontmatter:
 type: output
 format: [ad|email|post|proposal|brief|landing]
 date: [today]
+last-updated: [today's date and time, e.g. 2026-03-26 14:30]
 source_files:
   - 00-Context/soul.md
   - 00-Context/audience.md
