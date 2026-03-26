@@ -4,27 +4,133 @@ How the distribution skills (`/publish`, `/campaign`, `/repurpose`) connect to l
 
 ---
 
-## Architecture
+## Architecture — The Codify Compound Loop
+
+The system has three layers. The client sees one (Obsidian). The architect operates two (Claude Code + MCP tools). The server runs one autonomously (OpenClaw). Context flows through all three and compounds at every step.
 
 ```
-Client's Vault (Obsidian)         Architect's Environment              OpenClaw (M1 Mac Mini)
-────────────────────────          ──────────────────────              ──────────────────────
-00-Context/ ──────────────────→   Claude Code reads Context files
-03-Outputs/ ←─────────────────    Claude Code writes outputs
-                                        │                                     │
-                                        ├── Gmail MCP ──→ Email sends         ├── Morning Brief (5:30 AM)
-                                        ├── GoHighLevel MCP ──→ Social, SMS   ├── Overnight Research (2:00 AM)
-                                        ├── Telegram Bot ──→ Briefs, Alerts   ├── Content Queue Polling
-                                        └── (future) Substack, Beehiiv        └── Competitor Monitoring
-                                                                                     │
-                                                                              Telegram @Codify_build_bot
-                                                                              ├── Ops → morning briefs
-                                                                              ├── Research → overnight findings
-                                                                              ├── Content → drafts for approval
-                                                                              └── General → quick questions
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║                              THE CODIFY COMPOUND LOOP                                   ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+  LAYER 1: CLIENT (Obsidian — Desktop)          LAYER 2: ARCHITECT (Claude Code + MCP)
+  ─────────────────────────────────────          ─────────────────────────────────────────
+
+  ┌──────────────────────────────────┐           ┌─────────────────────────────────────┐
+  │  SOVEREIGN VAULT (GitHub/Forgejo)│           │  CLAUDE CODE (Terminal / Agent)      │
+  │                                  │           │                                     │
+  │  00-Context/                     │──────────>│  Reads ALL context before generating │
+  │    soul.md      ◄──┐             │           │                                     │
+  │    audience.md  ◄──┤ Cross-refs  │           │  Skills:                            │
+  │    offer.md     ◄──┤ compound    │           │    /extract  ──> writes Context/    │
+  │    voice.md     ◄──┘ over time   │           │    /enrich   ──> deepens Context/   │
+  │                                  │           │    /import   ──> mines docs into    │
+  │  01-Decisions/                   │           │                  Context/            │
+  │    2026-03-26-pricing.md ────────│───┐       │    /ad       ──> writes Outputs/    │
+  │    2026-03-25-positioning.md ────│───┤       │    /email    ──> writes Outputs/    │
+  │                                  │   │       │    /content  ──> writes Outputs/    │
+  │  02-Research/                    │   │       │    /proposal ──> writes Outputs/    │
+  │    2026-03-26-competitor-x.md ───│───┤       │    /landing  ──> writes Outputs/    │
+  │    2026-03-25-market-trends.md ──│───┤       │    /research ──> writes Research/   │
+  │                                  │   │       │    /audit    ──> vault health check │
+  │  03-Outputs/                     │<──┘       │    /brief    ──> morning summary    │
+  │    ad-spring-2026.md             │           │                                     │
+  │    email-cold-outreach.md        │           │  THE KEY: Every output is informed  │
+  │    proposal-acme.md              │           │  by every context file. More context │
+  │                                  │           │  = better outputs. That's the       │
+  │  04-Daily/                       │           │  compound effect.                   │
+  │    session notes                 │           │                                     │
+  │                                  │           └──────────────┬──────────────────────┘
+  │  _dashboards/                    │                          │
+  │    Context Power (depth score)   │                          │ MCP CONNECTIONS
+  │    What Needs Attention          │                          │ (Architect-side only)
+  │    Reference Health              │                          │
+  └──────────────────────────────────┘                          │
+           │                                     ┌──────────────┴──────────────────────┐
+           │  Obsidian Git                       │  DISTRIBUTION ENGINE                │
+           │  auto-syncs                         │                                     │
+           │  every 10 min                       │  Gmail MCP ────────> Email sends    │
+           ▼                                     │  GoHighLevel MCP ──> Social posts   │
+  ┌──────────────────────────────────┐           │                  ──> SMS campaigns  │
+  │  GITHUB / FORGEJO (Backup)       │           │                  ──> Blog posts     │
+  │                                  │           │  YouTube MCP ────> Transcript pull  │
+  │  Version-controlled. Sovereign.  │           │  Gemini MCP ─────> Deep research   │
+  │  Every change tracked. Portable. │           │                  ──> Image gen      │
+  │  Client owns it. We manage it.   │           │  (Future) ───────> Substack         │
+  │                                  │           │                  ──> Beehiiv         │
+  └──────────────────────────────────┘           │                  ──> LinkedIn API   │
+                                                 └─────────────────────────────────────┘
+
+
+  LAYER 3: ALWAYS-ON ENGINE (Private Server — VPS)
+  ─────────────────────────────────────────────────
+
+  ┌────────────────────────────────────────────────────────────────────────────────────┐
+  │  OPENCLAW — Runs while the client sleeps                                          │
+  │                                                                                    │
+  │  ┌─────────────────────────────┐     ┌──────────────────────────────────────────┐  │
+  │  │  SCHEDULED JOBS             │     │  TELEGRAM BOT (@Codify_build_bot)        │  │
+  │  │                             │     │                                          │  │
+  │  │  5:30 AM  Morning Brief     │────>│  Ops Channel                             │  │
+  │  │           Vault health      │     │    Morning brief lands on phone          │  │
+  │  │           Open tasks        │     │    Staleness alerts                      │  │
+  │  │           Competitor signals │     │    Vault health warnings                │  │
+  │  │                             │     │                                          │  │
+  │  │  2:00 AM  Deep Research     │────>│  Research Channel                        │  │
+  │  │           Market signals    │     │    Overnight findings                    │  │
+  │  │           Competitor moves  │     │    Positioning audits                    │  │
+  │  │           Trend scanning    │     │    Market signal alerts                  │  │
+  │  │                             │     │                                          │  │
+  │  │  Hourly   Vault Backup      │     │  Content Channel                         │  │
+  │  │           Git sync all      │     │    Draft review requests                 │  │
+  │  │           client vaults     │     │    "Approve" / "Reject" / feedback       │  │
+  │  │                             │     │    Posting confirmations                 │  │
+  │  │  Weekly   Competitor Monitor│     │                                          │  │
+  │  │           Track moves       │     │  General Channel                         │  │
+  │  │           Alert on changes  │     │    Quick questions from phone            │  │
+  │  │                             │     │    Idea capture (voice/text)             │  │
+  │  │  Daily    Staleness Check   │     │    Routes to correct vault folder        │  │
+  │  │           Flag old files    │     │                                          │  │
+  │  └─────────────────────────────┘     └──────────────────────────────────────────┘  │
+  │                                                                                    │
+  │  HOW IT COMPOUNDS OVERNIGHT:                                                       │
+  │                                                                                    │
+  │  1. Engine reads today's new Research/ and Decisions/ files                        │
+  │  2. Cross-references against Context/ files (soul, audience, offer, voice)         │
+  │  3. Identifies patterns: "3 of 5 recent prospects are in HVAC at $20M"            │
+  │  4. Writes summary to 02-Research/ with [[links]] back to Context/                │
+  │  5. Morning brief includes the insight + recommended Context/ update               │
+  │  6. Client wakes up. Opens Obsidian. The vault is smarter than yesterday.         │
+  │                                                                                    │
+  └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║  THE COMPOUND EFFECT                                                                    ║
+║                                                                                         ║
+║  Week 1:   4 thin Context files. Generic outputs.                                      ║
+║  Month 1:  Enriched Context + 10 Research files + 5 Decisions.                         ║
+║            Outputs reference your frameworks by name.                                   ║
+║  Month 3:  40+ files. Cross-referenced knowledge graph.                                ║
+║            Ads use your buyer's exact language. Proposals cite your proof points.       ║
+║  Month 6:  100+ files. Overnight research compounds automatically.                    ║
+║            The vault knows your market better than your competitors know theirs.        ║
+║  Year 1:   A digital twin of your professional judgment.                               ║
+║            Every output sounds like you wrote it on your best day.                     ║
+║                                                                                         ║
+║  The system gets smarter because:                                                       ║
+║    - Every /extract adds depth to Context/                                              ║
+║    - Every /enrich adds [[cross-references]] between files                             ║
+║    - Every /research adds market data that informs future outputs                      ║
+║    - Every Decision logged becomes a reference point for future strategy               ║
+║    - OpenClaw processes it all overnight — you wake up to a smarter vault              ║
+║                                                                                         ║
+║  Context > Prompts. Always.                                                             ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
 ```
 
-The client creates context. The architect distributes it. OpenClaw runs it overnight. The client never touches a third-party tool.
+The client creates context. The architect distributes it. OpenClaw compounds it overnight. The client never touches a third-party tool.
 
 ---
 
@@ -107,7 +213,7 @@ Deep research, image generation, document analysis.
 
 ## OpenClaw — The Always-On Engine
 
-OpenClaw runs on the **architect's** M1 Mac Mini (or a VPS), executing scheduled jobs against all client vaults from one machine. The client never installs or configures OpenClaw — it's part of the architect's infrastructure, shared across all clients. It connects to Telegram for delivery and approvals.
+OpenClaw runs on a **private server** (VPS — Hetzner, DigitalOcean, or equivalent), executing scheduled jobs against all client vaults from one machine. The client never installs or configures OpenClaw — it's part of the architect's infrastructure, shared across all clients. It connects to Telegram for delivery and approvals.
 
 ### Telegram Bot: `@Codify_build_bot`
 
@@ -184,7 +290,7 @@ CODIFY_USER_ID=supabase-user-uuid
 | GoHighLevel | One GHL account, multiple sub-accounts (locations) per client | Each client gets their own GHL Location ID |
 | Gmail | Architect's Gmail for DFY sends | Client's Gmail if they want sends from their address |
 | Telegram | One bot, one supergroup | Per-client topic threads within the supergroup |
-| OpenClaw | One M1 Mac Mini (or VPS), all clients | Per-client workspace + cron jobs on architect's machine |
+| OpenClaw | One private server (VPS), all clients | Per-client workspace + cron jobs on architect's machine |
 | YouTube | Shared | Shared |
 | Gemini | Shared | Shared |
 
