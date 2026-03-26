@@ -1046,7 +1046,628 @@
         }
       ],
       "timestamp": "2026-03-26T05:33:38.654Z"
+    },
+    {
+      "id": "c0910b1f-a629-4d28-aabd-02302158dd1b",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "The moment I know it’s working is usually around week 3. I’ll be sitting in a meeting and the CEO will start to say something — they’ll lean forward, open their mouth — and then stop themselves. They’ll look at their director and say “what do you think?” instead. The first time that happens, the whole room shifts. The director sits up straighter. The other VPs start paying attention differently. It’s not a process change at that point — it’s a power transfer happening in real time. I’ve seen it in every successful engagement. The CEO catches themselves.\n\nThe guarantee scares most coaches. They say “you can’t guarantee leadership outcomes.” But I’m not guaranteeing that the CEO becomes a different person. I’m guaranteeing that the decision distribution shifts. That’s measurable. I track it with the same audit I ran in week one. If the numbers haven’t moved in 90 days — fewer decisions at the top, more decisions at the director level — I give the money back. The numbers always move because the system works. The two times it didn’t were about people who wouldn’t let the system work."
+        }
+      ],
+      "timestamp": "2026-03-26T05:34:10.506Z"
+    },
+    {
+      "id": "5d22182d-cb84-491d-bd37-e114e52e010c",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_011eyjibX2LZmj7Gvt6sCKkv",
+          "title": "Edit 00-Context/offer.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+              "newText": "---\ntype: context\nstatus: compounding\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:40\n---\n\n# Offer",
+              "oldText": "---\ntype: context\nstatus: draft\ndate: 2026-03-26\nlast-updated: 2026-03-26 14:00\n---\n\n# Offer"
+            }
+          ],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+            "old_string": "---\ntype: context\nstatus: draft\ndate: 2026-03-26\nlast-updated: 2026-03-26 14:00\n---",
+            "new_string": "---\ntype: context\nstatus: compounding\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:40\n---"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:34:13.842Z"
+    },
+    {
+      "id": "21de60af-46ca-49b2-8066-457ae67e0f1d",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01SvXf16n9ZmMuEJXHUAJoYQ",
+          "title": "Edit 00-Context/offer.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+              "newText": "- **Week 3-4:** I attend meetings again but this time I intervene in real-time. When the CEO reaches for a decision that isn't theirs, I flag it on the spot. When a director defers unnecessarily, I redirect.\n- **Month 2-3:** Spacing out to weekly check-ins. The new operating rhythm is taking hold. We track the decision distribution weekly.\n\n## The Moment It Works\nAround week 3. The CEO will be sitting in a meeting, start to say something — lean forward, open their mouth — and then stop themselves. They look at their director and say \"what do you think?\" instead. The first time that happens, the whole room shifts. The director sits up straighter. The other VPs start paying attention differently. It's not a process change at that point — it's a power transfer happening in real time. This is the moment the [[soul]] Decision Audit stops being a document and starts being an operating system. The CEO catches themselves. That's the signal. It happens in every successful engagement.\n\nThis is also when the [[audience]] hidden fear surfaces. The CEO who just held back a decision is confronting — in their body, not just their head — what it means to not be the one with the answer. The ones who push through that discomfort are the ones whose companies transform. The ones who can't are the [[soul]] refund pattern.\n\n## DIY Gap\nYou can read about delegation in a book. You cannot see your own blind spots in a meeting. You need someone who has sat in 200 leadership team meetings and can spot the pattern in the first 30 minutes. My clients are brilliant operators — that's how they built $20M companies. But you can't coach yourself out of habits you can't see. The book tells you what to do. I show you what you're actually doing.\n",
+              "oldText": "- **Week 3-4:** I attend meetings again but this time I intervene in real-time. When the CEO reaches for a decision that isn't theirs, I flag it on the spot. When a director defers unnecessarily, I redirect.\n- **Month 2-3:** Spacing out to weekly check-ins. The new operating rhythm is taking hold. We track the decision distribution weekly.\n\n## DIY Gap\nYou can read about delegation in a book. You cannot see your own blind spots in a meeting. You need someone who has sat in 200 leadership team meetings and can spot the pattern in the first 30 minutes. My clients are brilliant operators — that's how they built $20M companies. But you can't coach yourself out of habits you can't see. The book tells you what to do. I show you what you're actually doing.\n"
+            }
+          ],
+          "locations": [
+            {
+              "line": 19,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+            "old_string": "## DIY Gap",
+            "new_string": "## The Moment It Works\nAround week 3. The CEO will be sitting in a meeting, start to say something — lean forward, open their mouth — and then stop themselves. They look at their director and say \"what do you think?\" instead. The first time that happens, the whole room shifts. The director sits up straighter. The other VPs start paying attention differently. It's not a process change at that point — it's a power transfer happening in real time. This is the moment the [[soul]] Decision Audit stops being a document and starts being an operating system. The CEO catches themselves. That's the signal. It happens in every successful engagement.\n\nThis is also when the [[audience]] hidden fear surfaces. The CEO who just held back a decision is confronting — in their body, not just their head — what it means to not be the one with the answer. The ones who push through that discomfort are the ones whose companies transform. The ones who can't are the [[soul]] refund pattern.\n\n## DIY Gap"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:34:17.802Z"
+    },
+    {
+      "id": "505634d8-e5d4-40df-bbb6-a77e9686cd75",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_019zjLp675KG1c32yaKTCrKZ",
+          "title": "Edit 00-Context/offer.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+              "newText": "\n## Guarantee\nIf you don't see a measurable shift in your decision load within 90 days — fewer escalations, fewer hours in meetings, your team making decisions without you — I refund the full engagement fee. I've offered this for 6 years. I've given exactly two refunds.\n\n### Why the Guarantee Works\nMost coaches won't guarantee leadership outcomes. They say \"you can't guarantee that.\" But the guarantee isn't that the CEO becomes a different person — it's that the decision distribution shifts. That's measurable. The same [[soul]] Decision Audit that runs in week 1 runs again at 90 days. Fewer decisions at the top, more decisions at the director level. The numbers always move because the system works. The two times it didn't were about people who wouldn't let the system work — see [[audience]] disqualifiers for the pattern.",
+              "oldText": "\n## Guarantee\nIf you don't see a measurable shift in your decision load within 90 days — fewer escalations, fewer hours in meetings, your team making decisions without you — I refund the full engagement fee. I've offered this for 6 years. I've given exactly two refunds."
+            }
+          ],
+          "locations": [
+            {
+              "line": 29,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+            "old_string": "## Guarantee\nIf you don't see a measurable shift in your decision load within 90 days — fewer escalations, fewer hours in meetings, your team making decisions without you — I refund the full engagement fee. I've offered this for 6 years. I've given exactly two refunds.",
+            "new_string": "## Guarantee\nIf you don't see a measurable shift in your decision load within 90 days — fewer escalations, fewer hours in meetings, your team making decisions without you — I refund the full engagement fee. I've offered this for 6 years. I've given exactly two refunds.\n\n### Why the Guarantee Works\nMost coaches won't guarantee leadership outcomes. They say \"you can't guarantee that.\" But the guarantee isn't that the CEO becomes a different person — it's that the decision distribution shifts. That's measurable. The same [[soul]] Decision Audit that runs in week 1 runs again at 90 days. Fewer decisions at the top, more decisions at the director level. The numbers always move because the system works. The two times it didn't were about people who wouldn't let the system work — see [[audience]] disqualifiers for the pattern."
+          }
+        },
+        {
+          "type": "text",
+          "text": "Now add a cross-reference in the Transformation section and Delivery Mechanics to tie them into the graph."
+        }
+      ],
+      "timestamp": "2026-03-26T05:34:25.771Z"
+    },
+    {
+      "id": "166214b1-5cc4-4816-a160-5a15b022c857",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01Sg5FffEQXpri15foeyWpzC",
+          "title": "Edit 00-Context/offer.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+              "newText": "# Offer\n\n## Transformation\n90 days after working with me, the CEO takes a 2-week vacation and nothing breaks. Their leadership team is making 80% of operational decisions without escalation. Monday morning meetings go from 2 hours of status updates to 45 minutes of strategic decisions. The CEO's calendar has white space for the first time in years. Revenue doesn't dip — it usually grows 10-15% because the team is moving faster without waiting for one person to approve everything. This is what the [[audience]] buyer is looking for but can't articulate — they say \"I want my time back\" but the real outcome is a company that's worth more because it doesn't depend on them.\n\n## Quick Win\nWeek 2: I present the Decision Audit results. The CEO sees, in black and white, that they personally made 47 decisions last week that should have been made by their directors. The look on their face is always the same — they had no idea. That single document changes the conversation from \"I should delegate more\" to \"I have a structural problem and here's exactly where it is.\"",
+              "oldText": "# Offer\n\n## Transformation\n90 days after working with me, the CEO takes a 2-week vacation and nothing breaks. Their leadership team is making 80% of operational decisions without escalation. Monday morning meetings go from 2 hours of status updates to 45 minutes of strategic decisions. The CEO's calendar has white space for the first time in years. Revenue doesn't dip — it usually grows 10-15% because the team is moving faster without waiting for one person to approve everything.\n\n## Quick Win\nWeek 2: I present the Decision Audit results. The CEO sees, in black and white, that they personally made 47 decisions last week that should have been made by their directors. The look on their face is always the same — they had no idea. That single document changes the conversation from \"I should delegate more\" to \"I have a structural problem and here's exactly where it is.\""
+            }
+          ],
+          "locations": [
+            {
+              "line": 8,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+            "old_string": "Revenue doesn't dip — it usually grows 10-15% because the team is moving faster without waiting for one person to approve everything.",
+            "new_string": "Revenue doesn't dip — it usually grows 10-15% because the team is moving faster without waiting for one person to approve everything. This is what the [[audience]] buyer is looking for but can't articulate — they say \"I want my time back\" but the real outcome is a company that's worth more because it doesn't depend on them."
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:34:34.683Z"
+    },
+    {
+      "id": "3367495d-4502-46c0-99a3-1cd4553ca983",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_017fBgiUC53QpJVREFGSSqna",
+          "title": "wc -c /Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "wc -c /Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+            "description": "Check file size"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:34:39.508Z"
+    },
+    {
+      "id": "1c5779fa-2650-4c0b-a597-5a1740795549",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01M1wzexEguvkHLhx92sBFqa",
+          "title": "grep -c \"\\[\\[\"\" /Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+          "status": "completed",
+          "kind": "search",
+          "content": [],
+          "rawInput": {
+            "pattern": "\\[\\[\"",
+            "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+            "output_mode": "count"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:34:40.458Z"
+    },
+    {
+      "id": "ba8dc5cc-bd4a-44de-a579-35332d605b19",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01NDFhWPAbitaTiyxqQnM5kT",
+          "title": "grep \"\\[\\[\" /Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+          "status": "completed",
+          "kind": "search",
+          "content": [],
+          "rawInput": {
+            "pattern": "\\[\\[",
+            "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md",
+            "output_mode": "content"
+          }
+        },
+        {
+          "type": "text",
+          "text": "**`offer.md` moved from Draft → Compounding.**\n\n| Metric | Before | After |\n|--------|--------|-------|\n| Size | 2,050 bytes | 4,224 bytes |\n| Cross-references | 0 | 6 (`[[soul]]` x2, `[[audience]]` x3, `[[voice]]` — correction: no voice link yet) |\n| Sections | 5 | 7 (added \"The Moment It Works\" + \"Why the Guarantee Works\") |\n\n**What was added:**\n- **The Moment It Works** — the week 3 scene: CEO leans forward, opens their mouth, stops, says \"what do you think?\" The power transfer in real time. Cross-referenced to the hidden fear in [[audience]] and the Decision Audit in [[soul]].\n- **Why the Guarantee Works** — the guarantee isn't about personality change, it's about measurable decision distribution shift. Same audit, run twice. Cross-referenced to [[audience]] disqualifiers for the failure pattern.\n- **Transformation link** — connected the outcome to what the buyer actually wants but can't articulate: a company worth more because it doesn't depend on them.\n\n**Still unanswered (2 of 3 questions):**\n1. **The handoff artifact** — what does the CEO walk away with at day 90? A document, a cadence, a dashboard?\n2. **The pricing frame** — what's the number, and how do you justify it when they flinch?\n\nThese would complete `offer.md`. Run `/enrich offer` again when you're ready, or move to `/enrich voice` — that file still has zero cross-references and no enrichment."
+        }
+      ],
+      "timestamp": "2026-03-26T05:34:41.284Z"
+    },
+    {
+      "id": "a2f2a35a-3345-4dc6-a171-964b414965a7",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/enrich voice"
+        }
+      ],
+      "timestamp": "2026-03-26T05:35:14.960Z"
+    },
+    {
+      "id": "cdfc86db-e390-450d-a63b-f5e5169f1e30",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_016E8kLDKQxhrnAX1aGzEkwE",
+          "title": "Read 00-Context/voice.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md"
+          }
+        },
+        {
+          "type": "text",
+          "text": "**Current state:** 1,946 bytes, 5 sections all filled, 0 cross-references. Working depth — strong voice artifacts but no context behind when/why the voice shifts.\n\n**What's strong:** The tone calibration is precise. Signature phrases are quotable. The email to David is gold — it's a real artifact. Anti-language is specific. Emotional target is unusually clear.\n\n**What's missing:**\n\n---\n\n### 1. When does the voice shift register?\n\nYou're direct — that's clear. But you're not direct the same way in every situation. When you're in a room presenting the Decision Audit results and the CEO sees 47 decisions they shouldn't have made — is the tone different than when you're writing a cold email? What about when a director privately tells you their CEO is the problem? You're not blunt with that person the same way. Walk me through how you calibrate: when do you push, when do you hold back, and what tells you which one to do?\n\n### 2. What do you sound like when you're selling vs. when you're coaching?\n\nThe David email is a selling voice — confident, provocative, ends with \"you owe me nothing.\" But what does it sound like when you're in week 3, sitting in a meeting, and the CEO just reached for a decision that isn't theirs? Do you say it in front of the team? Pull them aside? What words do you actually use in that moment? I want the coaching voice, not just the marketing voice.\n\n### 3. What phrase has a client quoted back to you months later?\n\nYou listed signature phrases, but which one actually sticks? When a past client calls you for a referral two years later, what line from your work do they repeat? The phrase clients remember tells you what your real voice is — not what you think you sound like, but what lands.\n\n---\n\nAnswer any or all. I'll weave it in and cross-reference to `[[soul]]`, `[[audience]]`, and `[[offer]]`."
+        }
+      ],
+      "timestamp": "2026-03-26T05:35:17.858Z"
+    },
+    {
+      "id": "8a016ad8-4cf0-4f82-ac27-7a3ca145b6d2",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "I write like I talk in meetings. Short sentences. No buildup. If I’m emailing a CEO I don’t start with “I hope this finds you well.” I start with the point. “Your Monday meeting is 90 minutes too long. Here’s why.” People tell me my emails feel like a cold glass of water — not rude, just honest. I had a client’s wife tell me “you’re the only person who talks to my husband like he’s not made of glass.” That’s the tone I want. Respectful but unpadded.\n\nWhen someone says “let’s align on this,” I say “do we agree or not?” When someone says “let’s take this offline,” I say “why can’t we decide right now?” I spent 9 years in corporate meetings where language was used to delay decisions. Every soft phrase is a hiding spot. “Let’s circle back” means “I don’t want to decide.” “I’ll loop in the team” means “I want cover.” My clients learn to hear these phrases as warning signs. Once you hear it, you can’t unhear it. That’s half the coaching right there."
+        }
+      ],
+      "timestamp": "2026-03-26T05:35:47.639Z"
+    },
+    {
+      "id": "9562f111-9628-4adf-8d5c-d1020186c5c1",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01CYZuxeyh2UMaDb68RNjvYc",
+          "title": "Edit 00-Context/voice.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+              "newText": "---\ntype: context\nstatus: compounding\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:45\n---\n\n# Voice",
+              "oldText": "---\ntype: context\nstatus: draft\ndate: 2026-03-26\nlast-updated: 2026-03-26 14:00\n---\n\n# Voice"
+            }
+          ],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+            "old_string": "---\ntype: context\nstatus: draft\ndate: 2026-03-26\nlast-updated: 2026-03-26 14:00\n---",
+            "new_string": "---\ntype: context\nstatus: compounding\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:45\n---"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:35:50.400Z"
+    },
+    {
+      "id": "e4a50398-928b-4d02-9fa9-5e59905b4bf9",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01DfYJUYY52c4K34R9EiBf1d",
+          "title": "Edit 00-Context/voice.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+              "newText": "- \"Circle back,\" \"take this offline,\" \"deep dive\" — meeting filler words\n- Anything with \"transformational\" in it. I help people fix their companies, not find themselves.\n\n### The Decoder Ring\nEvery soft phrase is a hiding spot. Nine years in corporate meetings taught me that language is used to delay decisions. This is something I teach [[audience]] clients to hear — once you hear it, you can't unhear it. That's half the coaching right there.\n\n| They say | They mean | I say instead |\n|----------|-----------|---------------|\n| \"Let's align on this\" | \"I don't want to disagree openly\" | \"Do we agree or not?\" |\n| \"Let's take this offline\" | \"I don't want to decide right now\" | \"Why can't we decide right now?\" |\n| \"Let's circle back\" | \"I'm hoping this goes away\" | \"What's stopping us from closing this?\" |\n| \"I'll loop in the team\" | \"I want cover before committing\" | \"Is this your call or not?\" |\n\nThis table is the [[soul]] operating system in action — the [[offer]] Decision Audit reveals who makes decisions, but the language audit reveals who's hiding from them.\n\n## Voice Sample\nEmail I sent to a prospect last month:\n",
+              "oldText": "- \"Circle back,\" \"take this offline,\" \"deep dive\" — meeting filler words\n- Anything with \"transformational\" in it. I help people fix their companies, not find themselves.\n\n## Voice Sample\nEmail I sent to a prospect last month:\n"
+            }
+          ],
+          "locations": [
+            {
+              "line": 28,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+            "old_string": "## Anti-Language\n- \"Synergy,\" \"leverage,\" \"alignment\" — corporate speak that means nothing\n- \"Leadership journey\" — I'm not a spiritual guide\n- \"Empower\" — you don't empower people by giving them a pep talk, you empower them by getting out of their way\n- \"Let's unpack that\" — I'm a coach, not a therapist\n- \"Circle back,\" \"take this offline,\" \"deep dive\" — meeting filler words\n- Anything with \"transformational\" in it. I help people fix their companies, not find themselves.",
+            "new_string": "## Anti-Language\n- \"Synergy,\" \"leverage,\" \"alignment\" — corporate speak that means nothing\n- \"Leadership journey\" — I'm not a spiritual guide\n- \"Empower\" — you don't empower people by giving them a pep talk, you empower them by getting out of their way\n- \"Let's unpack that\" — I'm a coach, not a therapist\n- \"Circle back,\" \"take this offline,\" \"deep dive\" — meeting filler words\n- Anything with \"transformational\" in it. I help people fix their companies, not find themselves.\n\n### The Decoder Ring\nEvery soft phrase is a hiding spot. Nine years in corporate meetings taught me that language is used to delay decisions. This is something I teach [[audience]] clients to hear — once you hear it, you can't unhear it. That's half the coaching right there.\n\n| They say | They mean | I say instead |\n|----------|-----------|---------------|\n| \"Let's align on this\" | \"I don't want to disagree openly\" | \"Do we agree or not?\" |\n| \"Let's take this offline\" | \"I don't want to decide right now\" | \"Why can't we decide right now?\" |\n| \"Let's circle back\" | \"I'm hoping this goes away\" | \"What's stopping us from closing this?\" |\n| \"I'll loop in the team\" | \"I want cover before committing\" | \"Is this your call or not?\" |\n\nThis table is the [[soul]] operating system in action — the [[offer]] Decision Audit reveals who makes decisions, but the language audit reveals who's hiding from them."
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:35:54.377Z"
+    },
+    {
+      "id": "fde8fe29-fac9-40e2-8fe0-217d2e7830c1",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01732wzD9ECoHrzyJootehVH",
+          "title": "Edit 00-Context/voice.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+              "newText": "## Tone Calibration\nC) \"I've been in the trenches. Here's what actually matters.\"\n\nI write like I talk in meetings. Short sentences. No buildup. If I'm emailing a CEO I don't start with \"I hope this finds you well.\" I start with the point. \"Your Monday meeting is 90 minutes too long. Here's why.\" I'm not harsh, but I don't soften things with qualifiers. If I say \"your Monday meeting is broken,\" I mean it's broken — I'm not going to say \"there might be an opportunity to optimize your Monday cadence.\"\n\nPeople tell me my emails feel like a cold glass of water — not rude, just honest. A client's wife told me \"you're the only person who talks to my husband like he's not made of glass.\" That's the tone: respectful but unpadded.\n\nI earned the right to be direct because I've done the job. I was a COO for 9 years — see [[soul]]. I sat in those meetings. I made the same mistakes my clients make. That credibility is everything.\n\n## Signature Phrases\n- \"The bottleneck is never the people. It's the operating system.\"\n- \"You didn't hire adults to treat them like interns.\"",
+              "oldText": "## Tone Calibration\nC) \"I've been in the trenches. Here's what actually matters.\"\n\nI'm direct. I'm not harsh, but I don't soften things with qualifiers. If I say \"your Monday meeting is broken,\" I mean it's broken — I'm not going to say \"there might be an opportunity to optimize your Monday cadence.\" I earned the right to be direct because I've done the job. I was a COO. I sat in those meetings. I made the same mistakes my clients make. That credibility is everything.\n\n## Signature Phrases\n- \"The bottleneck is never the people. It's the operating system.\"\n- \"You didn't hire adults to treat them like interns.\""
+            }
+          ],
+          "locations": [
+            {
+              "line": 10,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+            "old_string": "I'm direct. I'm not harsh, but I don't soften things with qualifiers. If I say \"your Monday meeting is broken,\" I mean it's broken — I'm not going to say \"there might be an opportunity to optimize your Monday cadence.\" I earned the right to be direct because I've done the job. I was a COO. I sat in those meetings. I made the same mistakes my clients make. That credibility is everything.",
+            "new_string": "I write like I talk in meetings. Short sentences. No buildup. If I'm emailing a CEO I don't start with \"I hope this finds you well.\" I start with the point. \"Your Monday meeting is 90 minutes too long. Here's why.\" I'm not harsh, but I don't soften things with qualifiers. If I say \"your Monday meeting is broken,\" I mean it's broken — I'm not going to say \"there might be an opportunity to optimize your Monday cadence.\"\n\nPeople tell me my emails feel like a cold glass of water — not rude, just honest. A client's wife told me \"you're the only person who talks to my husband like he's not made of glass.\" That's the tone: respectful but unpadded.\n\nI earned the right to be direct because I've done the job. I was a COO for 9 years — see [[soul]]. I sat in those meetings. I made the same mistakes my clients make. That credibility is everything."
+          }
+        },
+        {
+          "type": "text",
+          "text": "Let me verify the final state."
+        }
+      ],
+      "timestamp": "2026-03-26T05:36:03.960Z"
+    },
+    {
+      "id": "e2415dd1-5bd2-455c-9247-98c7177cca73",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01QvMfcyaQS72vRXBSZp8Gnq",
+          "title": "wc -c /Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "wc -c /Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+            "description": "Check file size"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:36:09.910Z"
+    },
+    {
+      "id": "7f1be7c1-6c8f-42f1-8b6d-c178b8d38e0d",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_019yKxVDjKviPipHvG5E4U5V",
+          "title": "grep -c \"\\[\\[\"\" /Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+          "status": "completed",
+          "kind": "search",
+          "content": [],
+          "rawInput": {
+            "pattern": "\\[\\[\"",
+            "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+            "output_mode": "count"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:36:10.803Z"
+    },
+    {
+      "id": "cf698d80-2933-48c0-832d-6923e036f05a",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01KD4yq71hJFnMwMJxsbL1ZP",
+          "title": "grep \"\\[\\[\" /Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+          "status": "completed",
+          "kind": "search",
+          "content": [],
+          "rawInput": {
+            "pattern": "\\[\\[",
+            "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+            "output_mode": "content"
+          }
+        },
+        {
+          "type": "text",
+          "text": "**`voice.md` moved from Draft → Compounding.**\n\n| Metric | Before | After |\n|--------|--------|-------|\n| Size | 1,946 bytes | 3,843 bytes |\n| Cross-references | 0 | 4 (`[[soul]]` x2, `[[audience]]` x1, `[[offer]]` x1) |\n| Sections | 5 | 6 (added \"The Decoder Ring\" subsection) |\n\n**What was added:**\n- **Tone sharpened** — \"cold glass of water\" line, the client's wife quote (\"you're the only person who talks to my husband like he's not made of glass\"), and the writing rule: start with the point, never \"I hope this finds you well.\"\n- **The Decoder Ring** — a translation table showing what corporate phrases really mean and what Marcus says instead. This is a coaching tool as much as a voice artifact. Cross-referenced to [[audience]] (clients learn to hear these), [[soul]] (the operating system), and [[offer]] (Decision Audit catches the actions, language audit catches the avoidance).\n\n**All four Context files are now at Compounding depth with cross-references.** The knowledge graph is live — soul, audience, offer, and voice all link to each other.\n\n**Still unanswered from earlier enrichments:**\n- `offer.md`: the handoff artifact (what does the CEO walk away with at day 90?) and pricing\n- `voice.md`: the coaching voice in real-time (what you actually say when the CEO reaches for a decision in week 3)\n\nRun `/generate ad` when you're ready — the Context files are strong enough now to produce high-fidelity output."
+        }
+      ],
+      "timestamp": "2026-03-26T05:36:11.713Z"
+    },
+    {
+      "id": "e21c338f-a025-43d6-a49e-51c078dbb468",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/enrich soul"
+        }
+      ],
+      "timestamp": "2026-03-26T05:42:10.570Z"
+    },
+    {
+      "id": "13467637-ed8e-4a2f-8ac6-4a78abf181dc",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01KmNLAf3rvFiwW3uywoT3dj",
+          "title": "Read 00-Context/soul.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md"
+          }
+        },
+        {
+          "type": "agent_thought",
+          "text": "The file was reverted back to the original version without the enrichments I added earlier. The frontmatter shows `status: compounding` and `last-updated: 2026-03-26 17:30` but the enriched content (The Audit That Surprised Me, The Hidden Fear, When It Doesn't Work sections) and cross-references are gone.\n\nLet me re-add the enrichment content plus cross-references. The user already provided all the material in earlier messages, so I can weave it all back in."
+        },
+        {
+          "type": "text",
+          "text": "The file has been reverted to its original content — the enrichment from earlier (the SaaS audit story, hidden fear, failure pattern) is gone, though the frontmatter kept the compounding status. Let me re-apply all the enrichment material you gave me, plus the cross-references."
+        }
+      ],
+      "timestamp": "2026-03-26T05:42:13.452Z"
+    },
+    {
+      "id": "a32fe089-b1b8-4464-b0ce-86fdfbb0c97a",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01LNJPzB9bx83cuUijZVeVy9",
+          "title": "Edit 00-Context/soul.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+              "newText": "type: context\nstatus: compounding\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:50\n---\n\n# Soul",
+              "oldText": "type: context\nstatus: compounding\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:30\n---\n\n# Soul"
+            }
+          ],
+          "locations": [
+            {
+              "line": 2,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+            "old_string": "last-updated: 2026-03-26 17:30",
+            "new_string": "last-updated: 2026-03-26 17:50"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:42:21.488Z"
+    },
+    {
+      "id": "61814878-27e2-4190-8558-ff2949ee27e4",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01FX33SpPWyUn1iMpkSuF6yX",
+          "title": "Edit 00-Context/soul.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+              "newText": "# Soul\n\n## Core Description\nI help CEOs who've outgrown their leadership style. Most of my clients built something impressive — $10M to $50M companies — but they're running the business the same way they did at $2M. I don't teach leadership theory. I sit in their actual meetings, watch them operate, and show them exactly where their habits are costing them growth. See [[audience]] for who these people are and [[voice]] for how I talk to them.\n\n## Contrarian Belief\nMost executive coaches are therapists in disguise. They want to talk about your childhood and your \"leadership journey.\" I think that's a waste of time. The reason your VP of Sales isn't performing has nothing to do with your relationship with your father. It's because you're making decisions in their meetings that should be theirs to make. Fix the structure, fix the business.",
+              "oldText": "# Soul\n\n## Core Description\nI help CEOs who've outgrown their leadership style. Most of my clients built something impressive — $10M to $50M companies — but they're running the business the same way they did at $2M. I don't teach leadership theory. I sit in their actual meetings, watch them operate, and show them exactly where their habits are costing them growth.\n\n## Contrarian Belief\nMost executive coaches are therapists in disguise. They want to talk about your childhood and your \"leadership journey.\" I think that's a waste of time. The reason your VP of Sales isn't performing has nothing to do with your relationship with your father. It's because you're making decisions in their meetings that should be theirs to make. Fix the structure, fix the business."
+            }
+          ],
+          "locations": [
+            {
+              "line": 8,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+            "old_string": "## Core Description\nI help CEOs who've outgrown their leadership style. Most of my clients built something impressive — $10M to $50M companies — but they're running the business the same way they did at $2M. I don't teach leadership theory. I sit in their actual meetings, watch them operate, and show them exactly where their habits are costing them growth.",
+            "new_string": "## Core Description\nI help CEOs who've outgrown their leadership style. Most of my clients built something impressive — $10M to $50M companies — but they're running the business the same way they did at $2M. I don't teach leadership theory. I sit in their actual meetings, watch them operate, and show them exactly where their habits are costing them growth. See [[audience]] for who these people are and [[voice]] for how I talk to them."
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:42:25.231Z"
+    },
+    {
+      "id": "204873e2-7c2b-4b9d-b098-6fc631e71655",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01FdXzro6btzcaCrAdofMuBf",
+          "title": "Edit 00-Context/soul.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+              "newText": "How to read a leadership team's real dynamics in the first 30 minutes of a meeting. Who defers to whom. Who checks their phone when someone else is talking. Who asks permission before stating an opinion. Most consultants need months of interviews. I can map the actual power structure of a company by sitting quietly in one Monday morning standup.\n\n## Proprietary Framework\n**The Decision Audit.** I track every decision made in a company over 14 days — who made it, at what level, and whether it was the right person making it. In every company I've worked with, at least 40% of decisions are being made by the wrong person. Usually the CEO is making decisions that should belong to their directors, and their directors are escalating because they've been trained to. The audit makes the problem visible. Once they see it, they can't unsee it. See [[offer]] for the full week-by-week delivery.\n\n### The Audit That Surprised Me\nSaaS company doing $18M. The CEO was convinced his VP of Product was the bottleneck. When I ran the 14-day audit, the data told the opposite story. His VP of Product was making 90% of decisions independently — one of the healthiest decision profiles I'd seen. The real problem was his VP of Sales, who was touching 60+ decisions a week that his account executives should have handled. The CEO had been so focused on the product org — because that's where his expertise was — that he completely missed the bottleneck one office over. When I showed him the data he went quiet for 30 seconds and said \"I've been coaching the wrong person for two years.\"\n\nThis is why I don't work from self-reported data. CEOs are smart people with strong opinions about where their problems are. The audit doesn't care about opinions. It just counts decisions.\n\n## The Hidden Fear\nThe real fear underneath the [[audience]] pain points isn't burnout or missing family events. It's this: what if I step back and the company runs better without me? Every CEO I work with has a version of this terror. They say \"things fall apart when I'm gone\" but what they're really saying is \"I need things to fall apart when I'm gone, because if they don't, what was all this for?\" Their identity is fused with being essential. This is what makes the [[offer]] transformation so threatening before it becomes liberating — the Decision Audit doesn't just fix the business, it forces the CEO to confront who they are without the constant proving.\n\n## When It Doesn't Work\nTwo refunds in six years. Both had the same pattern.\n\nThe first was a founder who agreed to the Decision Audit but overruled every recommendation. Not because the data was wrong — he agreed with the findings — but because \"my industry is different.\" By week 4 his team told me he'd already reversed everything we'd redesigned.\n\nThe second was a CEO whose board was actually the bottleneck, not her. I can fix a CEO's operating system but I can't fix a governance problem from outside the boardroom.\n\n**Early warning sign I watch for now:** if a CEO says \"I already know what the problem is\" in our first conversation, there's a 50% chance they're not coachable. The ones who are ready say some version of \"I know something's wrong but I can't see it.\" That humility is the prerequisite. See [[audience]] disqualifiers for the full pattern.\n\n## External Perception\n\"Marcus told me something in month one that I didn't believe until month three. He said my best people were underperforming because I was accidentally teaching them not to think. He was right.\" — James Thornton, CEO, Meridian Supply Chain\n",
+              "oldText": "How to read a leadership team's real dynamics in the first 30 minutes of a meeting. Who defers to whom. Who checks their phone when someone else is talking. Who asks permission before stating an opinion. Most consultants need months of interviews. I can map the actual power structure of a company by sitting quietly in one Monday morning standup.\n\n## Proprietary Framework\n**The Decision Audit.** I track every decision made in a company over 14 days — who made it, at what level, and whether it was the right person making it. In every company I've worked with, at least 40% of decisions are being made by the wrong person. Usually the CEO is making decisions that should belong to their directors, and their directors are escalating because they've been trained to. The audit makes the problem visible. Once they see it, they can't unsee it.\n\n## External Perception\n\"Marcus told me something in month one that I didn't believe until month three. He said my best people were underperforming because I was accidentally teaching them not to think. He was right.\" — James Thornton, CEO, Meridian Supply Chain\n"
+            }
+          ],
+          "locations": [
+            {
+              "line": 25,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+            "old_string": "## Proprietary Framework\n**The Decision Audit.** I track every decision made in a company over 14 days — who made it, at what level, and whether it was the right person making it. In every company I've worked with, at least 40% of decisions are being made by the wrong person. Usually the CEO is making decisions that should belong to their directors, and their directors are escalating because they've been trained to. The audit makes the problem visible. Once they see it, they can't unsee it.\n\n## External Perception",
+            "new_string": "## Proprietary Framework\n**The Decision Audit.** I track every decision made in a company over 14 days — who made it, at what level, and whether it was the right person making it. In every company I've worked with, at least 40% of decisions are being made by the wrong person. Usually the CEO is making decisions that should belong to their directors, and their directors are escalating because they've been trained to. The audit makes the problem visible. Once they see it, they can't unsee it. See [[offer]] for the full week-by-week delivery.\n\n### The Audit That Surprised Me\nSaaS company doing $18M. The CEO was convinced his VP of Product was the bottleneck. When I ran the 14-day audit, the data told the opposite story. His VP of Product was making 90% of decisions independently — one of the healthiest decision profiles I'd seen. The real problem was his VP of Sales, who was touching 60+ decisions a week that his account executives should have handled. The CEO had been so focused on the product org — because that's where his expertise was — that he completely missed the bottleneck one office over. When I showed him the data he went quiet for 30 seconds and said \"I've been coaching the wrong person for two years.\"\n\nThis is why I don't work from self-reported data. CEOs are smart people with strong opinions about where their problems are. The audit doesn't care about opinions. It just counts decisions.\n\n## The Hidden Fear\nThe real fear underneath the [[audience]] pain points isn't burnout or missing family events. It's this: what if I step back and the company runs better without me? Every CEO I work with has a version of this terror. They say \"things fall apart when I'm gone\" but what they're really saying is \"I need things to fall apart when I'm gone, because if they don't, what was all this for?\" Their identity is fused with being essential. This is what makes the [[offer]] transformation so threatening before it becomes liberating — the Decision Audit doesn't just fix the business, it forces the CEO to confront who they are without the constant proving.\n\n## When It Doesn't Work\nTwo refunds in six years. Both had the same pattern.\n\nThe first was a founder who agreed to the Decision Audit but overruled every recommendation. Not because the data was wrong — he agreed with the findings — but because \"my industry is different.\" By week 4 his team told me he'd already reversed everything we'd redesigned.\n\nThe second was a CEO whose board was actually the bottleneck, not her. I can fix a CEO's operating system but I can't fix a governance problem from outside the boardroom.\n\n**Early warning sign I watch for now:** if a CEO says \"I already know what the problem is\" in our first conversation, there's a 50% chance they're not coachable. The ones who are ready say some version of \"I know something's wrong but I can't see it.\" That humility is the prerequisite. See [[audience]] disqualifiers for the full pattern.\n\n## External Perception"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:42:30.089Z"
+    },
+    {
+      "id": "32007eff-4433-4034-85e6-2ce3cc2d39c0",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01GxsXVhzG1q9YhPtHirwNHm",
+          "title": "wc -c /Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "wc -c /Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+            "description": "Check file size"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:42:51.858Z"
+    },
+    {
+      "id": "b3d612bb-a727-4140-ab54-828c39d4c0f6",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01EcC139KZ8MAtjKExfKsQnQ",
+          "title": "grep \"\\[\\[\" /Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+          "status": "completed",
+          "kind": "search",
+          "content": [],
+          "rawInput": {
+            "pattern": "\\[\\[",
+            "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md",
+            "output_mode": "content"
+          }
+        },
+        {
+          "type": "text",
+          "text": "**`soul.md` re-enriched and restored to Compounding depth.**\n\n| Metric | Before (reverted) | After |\n|--------|-------------------|-------|\n| Size | 3,077 bytes | 5,663 bytes |\n| Cross-references | 0 | 6 (`[[audience]]` x3, `[[offer]]` x2, `[[voice]]` x1) |\n| Sections | 7 | 10 (restored \"The Audit That Surprised Me\", \"The Hidden Fear\", \"When It Doesn't Work\") |\n\nAll the material from your earlier answers is back in place:\n- The $18M SaaS audit war story\n- The hidden fear (\"what if the company runs better without me?\")\n- The two refund patterns and the early warning sign\n- Cross-references wired to [[audience]], [[offer]], and [[voice]]\n\n**Next enrichment opportunity:** The origin story bridge is still the deepest remaining gap — how you went from watching Karen Chen transform that logistics company to building your first engagement around the Decision Audit. That's the founding story your [[audience]] would connect with."
+        }
+      ],
+      "timestamp": "2026-03-26T05:42:52.773Z"
     }
   ],
-  "savedAt": "2026-03-26T05:33:51.963Z"
+  "savedAt": "2026-03-26T05:43:01.210Z"
 }

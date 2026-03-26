@@ -1,8 +1,8 @@
 ---
 type: context
-status: draft
+status: compounding
 date: 2026-03-26
-last-updated: 2026-03-26 14:00
+last-updated: 2026-03-26 17:45
 ---
 
 # Voice
@@ -10,7 +10,11 @@ last-updated: 2026-03-26 14:00
 ## Tone Calibration
 C) "I've been in the trenches. Here's what actually matters."
 
-I'm direct. I'm not harsh, but I don't soften things with qualifiers. If I say "your Monday meeting is broken," I mean it's broken — I'm not going to say "there might be an opportunity to optimize your Monday cadence." I earned the right to be direct because I've done the job. I was a COO. I sat in those meetings. I made the same mistakes my clients make. That credibility is everything.
+I write like I talk in meetings. Short sentences. No buildup. If I'm emailing a CEO I don't start with "I hope this finds you well." I start with the point. "Your Monday meeting is 90 minutes too long. Here's why." I'm not harsh, but I don't soften things with qualifiers. If I say "your Monday meeting is broken," I mean it's broken — I'm not going to say "there might be an opportunity to optimize your Monday cadence."
+
+People tell me my emails feel like a cold glass of water — not rude, just honest. A client's wife told me "you're the only person who talks to my husband like he's not made of glass." That's the tone: respectful but unpadded.
+
+I earned the right to be direct because I've done the job. I was a COO for 9 years — see [[soul]]. I sat in those meetings. I made the same mistakes my clients make. That credibility is everything.
 
 ## Signature Phrases
 - "The bottleneck is never the people. It's the operating system."
@@ -27,6 +31,18 @@ I'm direct. I'm not harsh, but I don't soften things with qualifiers. If I say "
 - "Let's unpack that" — I'm a coach, not a therapist
 - "Circle back," "take this offline," "deep dive" — meeting filler words
 - Anything with "transformational" in it. I help people fix their companies, not find themselves.
+
+### The Decoder Ring
+Every soft phrase is a hiding spot. Nine years in corporate meetings taught me that language is used to delay decisions. This is something I teach [[audience]] clients to hear — once you hear it, you can't unhear it. That's half the coaching right there.
+
+| They say | They mean | I say instead |
+|----------|-----------|---------------|
+| "Let's align on this" | "I don't want to disagree openly" | "Do we agree or not?" |
+| "Let's take this offline" | "I don't want to decide right now" | "Why can't we decide right now?" |
+| "Let's circle back" | "I'm hoping this goes away" | "What's stopping us from closing this?" |
+| "I'll loop in the team" | "I want cover before committing" | "Is this your call or not?" |
+
+This table is the [[soul]] operating system in action — the [[offer]] Decision Audit reveals who makes decisions, but the language audit reveals who's hiding from them.
 
 ## Voice Sample
 Email I sent to a prospect last month:

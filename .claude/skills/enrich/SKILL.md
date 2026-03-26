@@ -63,7 +63,20 @@ Examples:
 
 Weave new answers into the existing file. Don't overwrite — add depth to existing sections or create new subsections.
 
-Add cross-references (`[[links]]`) where new content connects to other Context files.
+### 4b. REQUIRED — Add Cross-References
+
+**Every Context file MUST link to at least 2 other Context files.** This is not optional — it drives the knowledge graph.
+
+After weaving in the new content, scan the file for natural connection points and add `[[links]]`:
+
+- Soul mentions how buyers struggle → add `[[audience]]` or `[[audience#Voice of Customer]]`
+- Soul mentions the transformation → add `[[offer]]` or `[[offer#Transformation]]`
+- Soul mentions tone or communication style → add `[[voice]]`
+- Audience mentions the offer or guarantee → add `[[offer]]`
+- Offer mentions who it's for → add `[[audience]]`
+- Voice mentions beliefs → add `[[soul#Contrarian Belief]]`
+
+If a file currently has **zero outgoing links**, this is your top priority. Add at least 2 before moving on.
 
 ### 5. REQUIRED — Update Frontmatter
 

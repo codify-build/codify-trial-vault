@@ -29,11 +29,11 @@ Read every file in:
 
 ### 2. Assess Each Dimension
 
-**Depth Score (per file):**
-- Skeleton (< 200 bytes)
-- Draft (200-500 bytes)
-- Working (500-1000 bytes)
-- Compounding (1000+ bytes with cross-references)
+**Depth Score (per file) — read from `status` in frontmatter:**
+- Empty — no status or template only
+- Getting there — `status: draft` (extracted, not yet enriched)
+- Solid — `status: active` (enriched at least once)
+- Deep — `status: compounding` (enriched + cross-referenced)
 
 **Freshness Score:**
 - Fresh: updated within 7 days
