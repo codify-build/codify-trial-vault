@@ -1,7 +1,7 @@
 {
   "baseFontSize": 15,
   "theme": "obsidian",
-  "cssTheme": "Blue Topaz",
+  "cssTheme": "",
   "enabledCssSnippets": [
     "codify-brand"
   ],
