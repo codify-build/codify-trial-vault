@@ -33,6 +33,7 @@ All work runs through skills in `.claude/skills/`:
 - `/pitch` — Elevator pitch, event intro, podcast bio, speaker page
 - `/enrich` — Deepen thin Context files with follow-up questions
 - `/audit` — Check vault health
+- `/security` — Vault security audit, red team simulation, hardening report
 - `/research` — Research a prospect, competitor, market trend, or scan for opportunities. Compounds over time.
 - `/update` — Pull latest Codify skills and system updates (never touches client data)
 
