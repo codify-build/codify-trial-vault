@@ -62,6 +62,12 @@ Format:
 [1-2 sentence recommendation based on vault state and recent activity]
 ```
 
-### 5. Save + Display
+### 5. Save + Deliver
 
-Save to `04-Daily/[date]-brief.md` and display in terminal.
+Save to `04-Daily/[date]-brief.md` and display in chat.
+
+**Automated delivery (via OpenClaw):**
+When run by OpenClaw at 5:30 AM, the brief is also sent to the Telegram Ops topic via `@Codify_build_bot`. The architect sees it on their phone before the day starts.
+
+**Manual delivery:**
+When the architect runs `/brief` during a session, it displays in the chat pane and saves to the vault. No Telegram send.

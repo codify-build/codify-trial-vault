@@ -9,13 +9,13 @@ Every skill checks the client's tier before executing. The tier is stored in the
 
 ## Tier Config
 
-The file `00-Context/.tier` stores the client's tier:
+The file `00-Context/.tier` (or `.tier` in the vault root) stores the client's tier:
 
 ```
 explore
 ```
 
-Valid values: `explore`, `architect`, `focus`
+Valid values: `explore`, `architect`, `focus`, `sovereign`
 
 The architect sets this during `/setup`. It's a plain text file — no YAML, no complexity.
 
@@ -23,7 +23,7 @@ The architect sets this during `/setup`. It's a plain text file — no YAML, no 
 
 Every skill SKILL.md includes a tier requirement in its frontmatter. Before executing, check:
 
-1. Read `00-Context/.tier`
+1. Read `00-Context/.tier` (fall back to `.tier` in vault root if not found)
 2. Compare against the skill's required tier
 3. If the client's tier is sufficient, run the skill
 4. If not, show the upgrade message
@@ -31,12 +31,13 @@ Every skill SKILL.md includes a tier requirement in its frontmatter. Before exec
 ## Tier Hierarchy
 
 ```
-explore < architect < focus
+explore < architect < focus < sovereign
 ```
 
 - `explore` can run explore-tier skills only
 - `architect` can run explore + architect skills
-- `focus` can run all skills
+- `focus` can run explore + architect + focus skills
+- `sovereign` can run all skills
 
 ## Skill Map
 
@@ -44,10 +45,10 @@ explore < architect < focus
 
 | Skill | Description |
 |-------|-------------|
-| `/extract` | 3 extractions (soul, audience, offer), then shows upgrade prompt |
-| `/score` | Context Power score |
-| `/help` | How the system works |
-| `/audit` | Basic vault health check (read-only) |
+| `/start` | Guided onboarding — first run experience |
+| `/extract` | 3 free extractions (soul, audience, offer), then shows upgrade prompt |
+| `/import` | Mine existing documents into Context files (counts as an extraction) |
+| `/audit` | Vault health check (read-only) |
 
 ### Architect ($497/mo)
 
@@ -55,15 +56,20 @@ Everything in Explore (unlimited extractions), plus:
 
 | Skill | Description |
 |-------|-------------|
-| `/extract` | Unlimited — all 4 files, re-enterable |
-| `/enrich` | Deepen existing Context files |
-| `/generate` | Create outputs (ad, email, post, proposal) |
-| `/scout` | Opportunity scouting |
-| `/think` | Research → decide → codify |
-| `/brainstorm` | Generate ideas from reference stack |
-| `/refine` | Improve existing output |
-| `/voice` | Check content against voice.md |
-| `/brief` | Morning brief |
+| `/extract` | Unlimited — all extractions, re-enterable |
+| `/import` | Unlimited — no extraction cap |
+| `/enrich` | Deepen existing Context files with follow-up questions |
+| `/ad` | Generate ad copy (Meta/Facebook/Instagram) |
+| `/email` | Generate email sequences (cold, warm, nurture) |
+| `/content` | Generate content for any platform (LinkedIn, blog, newsletter, X/Twitter) |
+| `/proposal` | Generate client proposal |
+| `/landing` | Generate landing page copy |
+| `/case-study` | Turn a client win into a formatted case study |
+| `/follow-up` | Write a follow-up message after a call or meeting |
+| `/objection` | Handle a sales objection using your context |
+| `/pitch` | Elevator pitch, event intro, podcast bio, speaker page |
+| `/research` | Research a prospect, competitor, market trend, or scan for opportunities |
+| `/brief` | Morning brief — decisions, priorities, open threads |
 
 ### Focus ($1,497 + $497/mo)
 
@@ -71,29 +77,42 @@ Everything in Architect, plus:
 
 | Skill | Description |
 |-------|-------------|
-| `/ads` | Full ad campaign pipeline |
-| `/email` | Email sequence generation |
-| `/newsletter` | Newsletter from research + decisions |
-| `/organic` | Social content batch |
-| `/blog` | Long-form blog post |
-| `/vsl` | Video sales letter script |
-| `/proposal` | Client proposal |
-| `/report` | Executive report |
-| `/seo` | SEO-optimized content |
-| `/site` | Landing page copy |
 | `/publish` | Distribute outputs to live channels |
-| `/campaign` | Full pipeline — generate + distribute |
-| `/repurpose` | One piece → every channel |
+| `/campaign` | Full pipeline — generate + distribute across channels |
+| `/repurpose` | One piece of content → every channel |
+
+### Managed Sovereign ($5,000 + $997/mo)
+
+Everything in Focus, plus:
+
+| Skill | Description |
+|-------|-------------|
+| `/security` | Vault security audit, red team simulation, hardening report |
+| Sovereign infrastructure | Dedicated hosting, private repos, custom integrations |
+
+### Architect-Only (Internal — Not Client-Facing)
+
+These skills are used by Codify architects to manage client vaults. They do not appear in client-facing menus.
+
+| Skill | Description |
+|-------|-------------|
+| `/update` | Pull latest Codify skills and system updates (never touches client data) |
+| `/openclaw` | Engine orchestration and automation internals |
+| `/gate` | This skill — tier enforcement logic |
+| `/setup` | Initial vault provisioning and personalization |
 
 ## Upgrade Prompts
 
 When a client tries a locked skill:
 
 **Explore → Architect:**
-"This skill is available on the Architect plan ($497/mo). You get unlimited extractions, AI-powered generation, and opportunity scouting. Want to upgrade? Talk to your Codify architect."
+"This skill is available on the Architect plan ($497/mo). You get unlimited extractions, AI-powered content generation, research, and proposal writing — all trained on your context. Want to upgrade? Talk to your Codify architect."
 
 **Explore/Architect → Focus:**
-"This skill is available on the Focus plan. You get done-for-you campaigns, distribution to email/social/blog, and full output automation. Want to upgrade? Talk to your Codify architect."
+"This skill is available on the Focus plan ($1,497 + $497/mo). You get done-for-you campaigns, multi-channel distribution, and content repurposing — all from a single input. Want to upgrade? Talk to your Codify architect."
+
+**Any → Managed Sovereign:**
+"This skill is available on the Managed Sovereign plan ($5,000 + $997/mo). You get dedicated infrastructure, security hardening, and white-glove management. Want to upgrade? Talk to your Codify architect."
 
 ## Extraction Limit (Explore Only)
 
@@ -103,8 +122,8 @@ For Explore tier, track extraction count in `00-Context/.extractions`:
 2
 ```
 
-Increment after each `/extract` run. At 3, show:
-"You've used your 3 free extractions. Your Context files are already improving your outputs — imagine what happens with all 4 files fully enriched. Upgrade to Architect to unlock unlimited extraction."
+Increment after each `/extract` or `/import` run. At 3, show:
+"You've used your 3 free extractions. Your Context files are already improving your outputs — imagine what happens with unlimited extractions and full content generation. Upgrade to Architect to unlock everything."
 
 ## Notes
 
@@ -112,3 +131,4 @@ Increment after each `/extract` run. At 3, show:
 - The architect sets the tier during `/setup` or manually
 - Upgrading is just changing one word in `.tier` — no API calls, no license servers
 - This is an honor system backed by the relationship, not DRM
+- `/import` counts against the Explore extraction limit because it writes to Context files

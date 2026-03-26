@@ -1,5 +1,11 @@
 {
+  "baseFontSize": 15,
+  "theme": "obsidian",
   "cssTheme": "Blue Topaz",
-  "accentColor": "#000000",
-  "theme": "moonstone"
+  "enabledCssSnippets": [
+    "codify-brand"
+  ],
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "Inter",
+  "monospaceFontFamily": "JetBrains Mono"
 }

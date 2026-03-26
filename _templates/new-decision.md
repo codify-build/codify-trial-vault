@@ -13,5 +13,5 @@ date: <% tp.date.now("YYYY-MM-DD") %>
 <% tp.system.prompt("Why this over the alternatives?") %>
 
 ## Impact
-<!-- What Soul files does this affect? Link them: [[soul]], [[audience]], [[offer]], [[voice]] -->
+<!-- What Context files does this affect? Link them: [[soul]], [[audience]], [[offer]], [[voice]] -->
 

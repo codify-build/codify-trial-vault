@@ -63,7 +63,12 @@ if ! command -v claude &> /dev/null; then
         brew install node 2>/dev/null
     fi
     npm install -g @anthropic-ai/claude-code 2>/dev/null
+    npm install -g @zed-industries/claude-agent-acp 2>/dev/null
 else
+    # Ensure ACP adapter is installed even if Claude Code already exists
+    if ! command -v claude-agent-acp &> /dev/null; then
+        npm install -g @zed-industries/claude-agent-acp 2>/dev/null
+    fi
     echo "  [4/5] AI engine ready."
 fi
 
@@ -98,8 +103,8 @@ echo "  ║                                      ║"
 echo "  ║   When Obsidian asks to trust        ║"
 echo "  ║   plugins, click 'Enable.'           ║"
 echo "  ║                                      ║"
-echo "  ║   Then open the terminal pane:       ║"
-echo "  ║   Cmd+P → type 'Terminal'            ║"
+echo "  ║   Then open the chat pane:           ║"
+echo "  ║   Cmd+P → type 'Agent Client'       ║"
 echo "  ║                                      ║"
 echo "  ║   Your architect will take it        ║"
 echo "  ║   from here.                         ║"

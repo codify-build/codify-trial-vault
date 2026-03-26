@@ -4,7 +4,7 @@ How to onboard a new client with zero friction.
 
 ---
 
-## Before the Call (5 min)
+## Before the Call (10 min)
 
 1. **Personalize the installer:**
    Open `_architect/install-codify.command` and set:
@@ -18,6 +18,11 @@ How to onboard a new client with zero friction.
 
    Attach: `install-codify.command`
 
+3. **Set up their GoHighLevel sub-account:**
+   - Create a new Location in GHL for this client
+   - Note the Location ID (needed for distribution later)
+   - See `_architect/CONNECTIONS.md` for details
+
 ---
 
 ## On the Call (45 min)
@@ -26,22 +31,42 @@ How to onboard a new client with zero friction.
 
 1. Ask them to open Obsidian — they should see the vault
 2. If plugins aren't trusted: "Click 'Enable' on that popup"
-3. Have them open the terminal pane: `Cmd+P` → "Terminal: Open Terminal"
-4. In the terminal, type `claude` to start Claude Code
+3. Have them open the chat pane: `Cmd+P` → "Agent Client: Open Chat"
+4. Claude Code connects automatically — wait for the "Connected" indicator
 5. Verify you can see the vault files in Obsidian's sidebar
+6. If "no upstream branch" popup appears — click the X. You'll fix remotes after the call.
 
-### Next 35 min — Extraction
+### Minutes 5-10 — Setup and Import
 
-Run the full extraction sequence:
+Run `/setup` to personalize their vault. Then offer both paths:
 
 ```
-/extract soul       → 7 questions (~10 min)
-/extract audience   → 5 questions (~7 min)
-/extract offer      → 5 questions (~7 min)
-/extract voice      → 5 questions (~7 min)
+/setup              → Personalizes vault, asks name + business name
 ```
 
-After each extraction, point out the file populating in Obsidian above. The visual feedback is the "wow" moment.
+Then either:
+```
+/import             → "Paste your website About page, a proposal, or any emails"
+```
+or:
+```
+/extract soul       → Guided questions if they have nothing to paste
+```
+
+**Pro tip:** `/import` is faster and more impressive. If they paste their website copy, Claude fills 3-4 Context files in seconds. The "wow" moment is bigger.
+
+### Minutes 10-40 — Fill Context Files
+
+Goal: get all 4 Context files to "Working" depth.
+
+| Command | What it fills | Time |
+|---------|--------------|------|
+| `/extract soul` | Core identity — beliefs, origin, framework | ~10 min |
+| `/extract audience` | Buyer profile — pain points, triggers, language | ~7 min |
+| `/extract offer` | Value prop — transformation, deliverables, guarantee | ~7 min |
+| `/extract voice` | Tone — phrases, anti-language, emotional target | ~7 min |
+
+After each extraction, point out the file populating in the sidebar. The visual feedback is the "wow" moment.
 
 ### Last 5 min — Tour + Next Steps
 
@@ -52,28 +77,98 @@ After each extraction, point out the file populating in Obsidian above. The visu
 
 ---
 
-## After the Call
+## After the Call (15 min)
 
-1. **Set up GitHub backup:**
-   From your own terminal (not the client's):
-   ```bash
-   cd [client-vault-path]
-   gh repo create [client]-sovereign-vault --private --source=. --push
-   ```
-   The Obsidian Git plugin will auto-sync from here.
+### 1. Create the client's sovereign vault on GitHub
 
-2. **Run first generation:**
-   ```
-   /generate ad       → Show them what their context produces
-   /generate post     → LinkedIn post from their Soul files
-   ```
-   Send them the outputs. This proves the system works.
+From your own terminal (not the client's):
 
-3. **Run first audit:**
-   ```
-   /audit
-   ```
-   Share the report. Identify enrichment opportunities for the next session.
+```bash
+cd [client-vault-path]
+
+# Remove the template origin
+git remote remove origin
+
+# Create their private repo and push
+gh repo create [client]-sovereign-vault --private --source=. --push --remote=origin
+```
+
+**Critical:** This must happen before the client reopens Obsidian, or the Git plugin will show a "no upstream branch" error.
+
+### 2. Set the tier
+
+```bash
+echo "architect" > [client-vault-path]/00-Context/.tier
+# or "explore" for free trial, "focus" for full engagement
+```
+
+### 3. Run first generation
+
+From your Claude Code (with MCP servers configured):
+
+```
+/ad                → Show them what their context produces
+/content linkedin  → LinkedIn post from their Context files
+```
+
+Send them the outputs. This proves the system works.
+
+### 4. Run first audit
+
+```
+/audit
+```
+
+Share the report. Identify enrichment opportunities for the next session.
+
+### 5. Set up distribution (Focus tier only)
+
+See `_architect/CONNECTIONS.md` for full details. Key steps:
+- Ensure GHL sub-account is created with client's branding
+- Test `/publish` with a draft email to verify connections
+- Configure social accounts in GHL for the client's channels
+
+---
+
+## Skill Reference (All Tiers)
+
+### Client-Facing Skills
+
+| Skill | Tier | What it does |
+|-------|------|-------------|
+| `/start` | All | Welcome screen, shows available skills |
+| `/extract` | All | Context Extraction — guided questions → Context files |
+| `/import` | All | Mine existing docs (proposals, emails, website) → Context files |
+| `/ad` | Architect+ | Generate ad copy (Meta/Facebook/Instagram) |
+| `/email` | Architect+ | Generate email sequences (cold, warm, nurture) |
+| `/content` | Architect+ | Generate content for any platform (LinkedIn, blog, newsletter, X/Twitter, Instagram) |
+| `/proposal` | Architect+ | Generate client proposal |
+| `/landing` | Architect+ | Generate landing page copy |
+| `/enrich` | Architect+ | Deepen thin Context files with follow-ups |
+| `/audit` | All | Vault health check |
+| `/research` | Architect+ | Research prospects, competitors, market trends, and scan for opportunities |
+| `/brief` | Focus | Morning brief — overnight activity, vault health |
+
+### Architect-Only Skills
+
+| Skill | What it does |
+|-------|-------------|
+| `/update` | Pull latest Codify skills from template repo |
+| `/gate` | Check/set tier gating |
+| `/publish` | Push outputs to live channels (email, social, blog) |
+| `/campaign` | Full pipeline — generate all assets + distribute |
+| `/repurpose` | Take one output, create versions for every channel |
+
+### Distribution Skills → MCP Connections
+
+| Skill action | MCP tool | Platform |
+|-------------|----------|----------|
+| Send email | `mcp__gmail__send_email` | Gmail |
+| Draft email | `mcp__gmail__draft_email` | Gmail |
+| Social post | `mcp__gohighlevel__create_social_post` | LinkedIn, FB, IG via GHL |
+| Blog post | `mcp__gohighlevel__create_blog_post` | GHL Blog |
+| SMS | `mcp__gohighlevel__send_sms` | GHL |
+| Email campaign | `mcp__gohighlevel__send_email` | GHL |
 
 ---
 
@@ -82,11 +177,13 @@ After each extraction, point out the file populating in Obsidian above. The visu
 | Action | How | When |
 |--------|-----|------|
 | Browse files | Open Obsidian | Anytime |
+| Chat with AI | Agent Client chat pane | Anytime |
 | Check dashboards | Open `_dashboards/context-power.md` | Weekly |
 | Add a daily note | Create file in `04-Daily/` | Daily (optional) |
 | Log a decision | Create file in `01-Decisions/` | As needed |
-| Get AI outputs | Book a session — architect runs `/generate` | As needed |
-| Deepen Soul files | Book a session — architect runs `/enrich` | Monthly |
+| Import new docs | `/import` in chat pane | As needed |
+| Get AI outputs | `/ad`, `/email`, `/content`, `/proposal`, `/landing` in chat or book architect session | As needed |
+| Deepen Context files | `/enrich` in chat or architect runs it | Monthly |
 | Vault health review | Brain Sync session — architect runs `/audit` | Monthly |
 
 ---
@@ -97,7 +194,12 @@ After each extraction, point out the file populating in Obsidian above. The visu
 |---------|-----|
 | Installer won't run | Right-click → Open → "Open anyway" (macOS Gatekeeper) |
 | Homebrew install hangs | Client may need to enter their Mac password |
-| Claude Code not found | Run `npm install -g @anthropic-ai/claude-code` in terminal |
-| Obsidian Git not syncing | Set up GitHub repo from architect's machine, then configure remote |
+| Claude Code not found | Run `npm install -g @anthropic-ai/claude-code @zed-industries/claude-agent-acp` in terminal |
+| Agent Client stuck on "Connecting..." | Check Settings → Agent Client → Command is `/opt/homebrew/bin/claude-agent-acp` |
+| "No upstream branch" popup on boot | Client's vault has no `origin` remote — architect must create GitHub repo first |
+| Obsidian Git not syncing | Verify `origin` remote is set: `git remote -v` in vault directory |
+| `/publish` fails | MCP servers not configured — check architect's `~/.claude.json`. See `CONNECTIONS.md` |
+| GHL post fails | Verify Location ID and API key in MCP config |
+| Client sees git commands | Skill is architect-only. Client skills should never run shell commands |
 | Client added files in wrong folder | Move them during Brain Sync — no harm done |
-| Client is overwhelmed | Simplify: "Just open Obsidian and browse. I handle the rest." |
+| Client is overwhelmed | "Just open Obsidian and browse. I handle the rest." |

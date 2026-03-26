@@ -19,9 +19,11 @@ A senior leader with deep domain expertise. Their institutional knowledge — fr
 ## Skills
 
 All work runs through skills in `.claude/skills/`:
+- `/start` — Welcome screen. Shows vault state and what to do next
 - `/setup` — Personalize a new vault
 - `/extract` — Context Extraction interviews (soul, audience, offer, voice)
 - `/import` — Mine existing documents (proposals, emails, website copy) into Context files
+- `/enrich` — Deepen thin Context files with follow-up questions
 - `/ad` — Generate ad copy (Meta/Facebook/Instagram)
 - `/email` — Generate email sequences (cold, warm, nurture)
 - `/content` — Generate content for any platform (LinkedIn, blog, newsletter, X/Twitter, Instagram)
@@ -31,10 +33,13 @@ All work runs through skills in `.claude/skills/`:
 - `/follow-up` — Write a follow-up message after a call or meeting
 - `/objection` — Handle a sales objection using your context
 - `/pitch` — Elevator pitch, event intro, podcast bio, speaker page
-- `/enrich` — Deepen thin Context files with follow-up questions
+- `/research` — Research a prospect, competitor, market trend, or scan for opportunities
+- `/brief` — Morning brief: vault health, open tasks, recommended focus
 - `/audit` — Check vault health
 - `/security` — Vault security audit, red team simulation, hardening report
-- `/research` — Research a prospect, competitor, market trend, or scan for opportunities. Compounds over time.
+- `/publish` — Push outputs to live channels (Focus tier)
+- `/campaign` — Full pipeline: ad + email + content + landing, then distribute (Focus tier)
+- `/repurpose` — Take one output, create versions for every channel (Focus tier)
 - `/update` — Pull latest Codify skills and system updates (never touches client data)
 
 ## File Conventions

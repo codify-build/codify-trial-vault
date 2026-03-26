@@ -1,0 +1,393 @@
+/*
+ * CODIFY — Executive Intelligence System
+ * Brand theme for Obsidian
+ * Dark, minimal, premium. Not a note app.
+ */
+
+/* ============================================
+   1. COLOR SYSTEM
+   ============================================ */
+
+.theme-dark {
+  /* Background layers */
+  --background-primary: #0d0f12;
+  --background-primary-alt: #13161b;
+  --background-secondary: #0a0c0f;
+  --background-secondary-alt: #0a0c0f;
+  --background-modifier-border: #1e2229;
+  --background-modifier-form-field: #13161b;
+  --background-modifier-hover: rgba(255, 255, 255, 0.04);
+  --background-modifier-active-hover: rgba(255, 255, 255, 0.06);
+  --background-modifier-success: rgba(45, 212, 146, 0.12);
+  --background-modifier-error: rgba(255, 85, 85, 0.12);
+
+  /* Text */
+  --text-normal: #c8cdd5;
+  --text-muted: #6b7280;
+  --text-faint: #404756;
+  --text-on-accent: #0d0f12;
+  --text-on-accent-inverted: #c8cdd5;
+
+  /* Accent — Codify green (trust, growth, intelligence) */
+  --interactive-accent: #2dd492;
+  --interactive-accent-hover: #25b87e;
+  --text-accent: #2dd492;
+  --text-accent-hover: #25b87e;
+
+  /* Tags */
+  --tag-color: #2dd492;
+  --tag-background: rgba(45, 212, 146, 0.1);
+  --tag-color-hover: #25b87e;
+  --tag-background-hover: rgba(45, 212, 146, 0.15);
+
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.08);
+  --scrollbar-active-thumb-bg: rgba(45, 212, 146, 0.3);
+
+  /* Graph */
+  --graph-line: rgba(45, 212, 146, 0.15);
+  --graph-node: #2dd492;
+  --graph-node-focused: #fff;
+  --graph-node-tag: #2dd492;
+  --graph-node-attachment: #6b7280;
+
+  /* Vault name color */
+  --vault-name-color: #2dd492;
+}
+
+.theme-light {
+  /* Light mode fallback — keep it minimal */
+  --interactive-accent: #1a9e6b;
+  --interactive-accent-hover: #158559;
+  --text-accent: #1a9e6b;
+  --text-accent-hover: #158559;
+}
+
+
+/* ============================================
+   2. TYPOGRAPHY
+   ============================================ */
+
+body {
+  --font-text: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-monospace: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  --font-interface: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Headings — tighter, bolder */
+.markdown-rendered h1,
+.cm-header-1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #f0f2f5;
+  border-bottom: 1px solid #1e2229;
+  padding-bottom: 0.4em;
+  margin-top: 1.5em;
+}
+
+.markdown-rendered h2,
+.cm-header-2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #e2e6eb;
+  margin-top: 1.3em;
+}
+
+.markdown-rendered h3,
+.cm-header-3 {
+  font-weight: 600;
+  color: #c8cdd5;
+  margin-top: 1.2em;
+}
+
+/* Body text — comfortable reading */
+.markdown-rendered {
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+
+/* ============================================
+   3. SIDEBAR — CLEAN, DARK
+   ============================================ */
+
+/* File explorer */
+.nav-file-title,
+.nav-folder-title {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background-color: rgba(45, 212, 146, 0.06);
+}
+
+.nav-file-title.is-active {
+  background-color: rgba(45, 212, 146, 0.1);
+  color: #2dd492;
+}
+
+/* Folder icons — subtle */
+.nav-folder-title .nav-folder-collapse-indicator {
+  color: #404756;
+}
+
+/* Vault name in sidebar */
+.workspace-tab-header-container {
+  border-bottom: 1px solid #1e2229;
+}
+
+
+/* ============================================
+   4. EDITOR — FOCUSED WRITING
+   ============================================ */
+
+/* Active line highlight */
+.cm-active.cm-line {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Links */
+.markdown-rendered a,
+.cm-hmd-internal-link {
+  color: #2dd492;
+  text-decoration: none;
+}
+
+.markdown-rendered a:hover {
+  color: #25b87e;
+  text-decoration: underline;
+}
+
+/* Blockquotes — executive memo style */
+.markdown-rendered blockquote {
+  border-left: 3px solid #2dd492;
+  background-color: rgba(45, 212, 146, 0.04);
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 0 6px 6px 0;
+  color: #9ca3af;
+}
+
+/* Code blocks */
+.markdown-rendered pre {
+  background-color: #0a0c0f;
+  border: 1px solid #1e2229;
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.markdown-rendered code {
+  background-color: rgba(45, 212, 146, 0.08);
+  color: #2dd492;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Tables — clean, grid-like */
+.markdown-rendered table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.markdown-rendered th {
+  background-color: #13161b;
+  color: #2dd492;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  padding: 10px 14px;
+  border: 1px solid #1e2229;
+}
+
+.markdown-rendered td {
+  padding: 10px 14px;
+  border: 1px solid #1e2229;
+}
+
+.markdown-rendered tr:hover td {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+
+/* ============================================
+   5. STATUS BAR — MINIMAL
+   ============================================ */
+
+.status-bar {
+  background-color: #0a0c0f;
+  border-top: 1px solid #1e2229;
+  font-size: 11px;
+  color: #404756;
+}
+
+
+/* ============================================
+   6. TABS — SLEEK
+   ============================================ */
+
+.workspace-tab-header {
+  border-radius: 6px 6px 0 0;
+  font-size: 12px;
+}
+
+.workspace-tab-header.is-active {
+  background-color: #0d0f12;
+  color: #c8cdd5;
+}
+
+.workspace-tab-header:not(.is-active) {
+  color: #6b7280;
+}
+
+
+/* ============================================
+   7. AGENT CLIENT — BRANDED CHAT PANE
+   ============================================ */
+
+/* Chat input area */
+.agent-client-input textarea {
+  background-color: #13161b;
+  border: 1px solid #1e2229;
+  border-radius: 8px;
+  color: #c8cdd5;
+  font-family: var(--font-text);
+}
+
+.agent-client-input textarea:focus {
+  border-color: #2dd492;
+  box-shadow: 0 0 0 2px rgba(45, 212, 146, 0.15);
+}
+
+/* Chat messages */
+.agent-client-message.user {
+  background-color: rgba(45, 212, 146, 0.08);
+  border-radius: 8px;
+}
+
+.agent-client-message.assistant {
+  background-color: #13161b;
+  border-radius: 8px;
+}
+
+
+/* ============================================
+   8. DATAVIEW TABLES (DASHBOARDS)
+   ============================================ */
+
+.dataview.table-view-table th {
+  background-color: #13161b;
+  color: #2dd492;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+
+.dataview.table-view-table td {
+  border-color: #1e2229;
+}
+
+
+/* ============================================
+   9. HIDE OBSIDIAN BRANDING
+   ============================================ */
+
+/* Hide "Obsidian" from title bar where possible */
+.titlebar-text {
+  font-size: 0;
+}
+
+.titlebar-text::after {
+  content: "Codify";
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 0.05em;
+}
+
+/* Hide help/about links that reference Obsidian */
+.side-dock-settings .setting-item:has(.setting-item-name:empty) {
+  display: none;
+}
+
+
+/* ============================================
+   10. FRONTMATTER — CLEAN DISPLAY
+   ============================================ */
+
+.frontmatter-container {
+  background-color: #0a0c0f;
+  border: 1px solid #1e2229;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.frontmatter-container .frontmatter-section-label {
+  color: #2dd492;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+
+/* ============================================
+   11. GRAPH VIEW — BRANDED
+   ============================================ */
+
+.graph-view.color-fill {
+  color: #2dd492;
+}
+
+.graph-view.color-line {
+  color: rgba(45, 212, 146, 0.2);
+}
+
+.graph-view.color-text {
+  color: #c8cdd5;
+}
+
+
+/* ============================================
+   12. CALLOUTS — EXECUTIVE STYLE
+   ============================================ */
+
+.callout[data-callout="tip"] {
+  --callout-color: 45, 212, 146;
+}
+
+.callout[data-callout="warning"] {
+  --callout-color: 245, 158, 11;
+}
+
+.callout[data-callout="danger"] {
+  --callout-color: 239, 68, 68;
+}
+
+.callout {
+  border-radius: 6px;
+  border-width: 1px;
+  border-left-width: 3px;
+}
+
+
+/* ============================================
+   13. SEARCH — SUBTLE
+   ============================================ */
+
+.search-result-file-title {
+  color: #2dd492;
+  font-weight: 600;
+}
+
+.search-result-file-matched-text {
+  color: #f0f2f5;
+  background-color: rgba(45, 212, 146, 0.15);
+}

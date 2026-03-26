@@ -80,22 +80,75 @@ The architect configures these connections. The client never sees the plumbing.
 
 ---
 
-## Sovereign Vault (Premium Add-On)
+## Managed Sovereign ($5,000 + $997/mo — The Digital Fortress)
+Everything in Focus PLUS a fully managed, sovereign infrastructure. You own the data. We manage the defense.
 
-For clients whose intellectual property demands the highest level of protection. Everything in Focus PLUS:
+**The principle: Security is the product. AI is the feature.**
+
+### The Black Box
+
+We provide the Secure VPS, the Forgejo vault, and the n8n automation engine. The client never touches a terminal, a Docker command, or a Git config. They get two access points:
+
+| Access Layer | Device | What they do |
+|-------------|--------|-------------|
+| **Obsidian** | Desktop | Their Command Center. Vault syncs automatically. Run skills, review outputs, enrich context. |
+| **Telegram** | Mobile | Their 24/7 Research & Command bot. Morning briefs, approve/reject content, request research on the go. |
+
+No server access. No terminal. No ability to accidentally break security settings.
+
+### The Three Pillars
+
+| Pillar | What it means |
+|--------|--------------|
+| **Physical Sovereignty** | Vault lives on a Private VPS in neutral jurisdiction (Switzerland or Finland). No Microsoft, no Google, no US Cloud Act. |
+| **Zero-Knowledge Network** | Tailscale/Wireguard mesh. No public IP. Invisible to the public internet. |
+| **Human-in-the-Loop** | AI thinks and organizes 24/7. Any outbound action triggers a Telegram permission relay to their phone. |
+
+### The Sovereign Stack
+
+| Component | What it does | Why it matters |
+|-----------|-------------|---------------|
+| **Forgejo** | Self-hosted git (replaces GitHub) | No Microsoft, no third-party access, client owns the server |
+| **n8n** | Automation engine (replaces OpenClaw) | Morning briefs, research, content scheduling — all on sovereign infrastructure |
+| **Tailscale** | Mesh network | No public IP, invisible to internet |
+| **Encrypted backups** | Off-site, automated | Vault survives hardware failure |
+
+### Security Features
 
 | Feature | What it means |
 |---------|--------------|
-| **Private GitHub repo** | Their own version-controlled vault — every edit, every decision, every output tracked with full history |
-| **Encrypted at rest** | GitHub's enterprise-grade encryption on all vault data |
-| **Portable** | Client owns the repo. If they leave Codify, their vault walks with them — no lock-in |
-| **Audit trail** | Full git history = timestamped proof of when every idea was captured, every decision made |
-| **IP protection** | For consultants, advisors, and executives whose frameworks ARE their business — documented proof of original thinking |
-| **Multi-device sync** | Obsidian Git syncs across desktop machines silently |
+| **Swiss/Finnish jurisdiction** | Outside US Cloud Act |
+| **No public IP** | Mesh-only — invisible to scans, bots, attackers |
+| **Encrypted at rest + in transit** | End-to-end on all vault data |
+| **Full audit trail** | Forgejo git history = timestamped proof of every idea and decision |
+| **Encrypted off-site backups** | Vault survives anything |
+| **Instant access revocation** | Remove from mesh = gone. No shared passwords. |
+| **Red team tested** | Breach scenarios simulated before launch |
+| **IP provenance** | Git timestamps prove when frameworks were created — defensible in disputes |
+| **Zero lock-in** | Plain Markdown + git. Leave anytime, take everything. |
 
-**Why it commands premium pricing:** A consultant's proprietary framework, a CEO's institutional knowledge, an advisor's 30 years of judgment calls — this is irreplaceable IP. The sovereign vault is the difference between "I have ideas" and "I have a documented, version-controlled, portable asset." For clients facing acquisition, succession, or partnership negotiations, the vault IS the valuation proof.
+### What the $5,000 Covers
 
-**Pricing:** Built into Focus tier as standard. Can be positioned as standalone for clients who want vault sovereignty without the full engagement — $297/mo vault-only tier for self-serve archiving.
+1. Private VPS provisioning in neutral jurisdiction
+2. Forgejo instance setup and vault migration
+3. n8n automation engine configuration
+4. Tailscale mesh network setup and hardening
+5. Encrypted backup configuration
+6. HITL Telegram permission relay
+7. Security hardening and red team testing
+8. Onboarding and security walkthrough
+
+### Who This Is For
+
+- Consultants whose proprietary frameworks are worth millions
+- CEOs preparing for acquisition (vault = documented IP valuation)
+- Advisors with client strategies that cannot leak
+- Executives in regulated industries (legal, finance, healthcare)
+- Anyone who answers "yes" to: "If your competitor read your strategy files tomorrow, would it cost you revenue?"
+
+### The Pitch
+
+"We build you a private, encrypted Digital Fortress in a neutral jurisdiction. You own the data, we manage the defense. You access it through Obsidian and Telegram; we handle the rest."
 
 ---
 
@@ -106,10 +159,18 @@ Explore (free) → "My context file changed the quality of my output completely"
      ↓
 Architect ($497/mo) → "I run /brief and /research myself — my outputs sound like me"
      ↓
-Focus ($1,497 + $497/mo) → "Content goes live while I sleep and my vault is a sovereign asset"
+Focus ($1,497 + $497/mo) → "Content goes live while I sleep"
+     ↓
+Sovereign ($5,000 + $997/mo) → "My IP is in a fortress I own. No one can touch it."
 ```
 
 The compound loop drives upgrades:
 - Explore proves context > prompts
 - Architect proves the system compounds (client runs skills on-demand)
-- Focus proves the system runs autonomously (OpenClaw + distribution + sovereign vault)
+- Focus proves the system runs autonomously (OpenClaw + distribution)
+- Sovereign proves the system is untouchable (jurisdiction, encryption, mesh network)
+
+**The shift at each tier:**
+- Explore → Architect: "I want to do this myself"
+- Architect → Focus: "Do it for me"
+- Focus → Sovereign: "Protect it like it's worth millions — because it is"
