@@ -24,7 +24,7 @@ All work runs through skills in `.claude/skills/`:
 - `/import` — Mine existing documents (proposals, emails, website copy) into Context files
 - `/ad` — Generate ad copy (Meta/Facebook/Instagram)
 - `/email` — Generate email sequences (cold, warm, nurture)
-- `/post` — Generate LinkedIn post
+- `/content` — Generate content for any platform (LinkedIn, blog, newsletter, X/Twitter, Instagram)
 - `/proposal` — Generate client proposal
 - `/landing` — Generate landing page copy
 - `/enrich` — Deepen thin Context files with follow-up questions
