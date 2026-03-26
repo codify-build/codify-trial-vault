@@ -205,7 +205,315 @@
         }
       ],
       "timestamp": "2026-03-26T04:52:11.524Z"
+    },
+    {
+      "id": "aa9658af-f0da-40bd-b1c3-9c243e9e3b89",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/audit"
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:13.822Z"
+    },
+    {
+      "id": "71215884-03ef-46fb-8317-77ccb4900665",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "agent_thought",
+          "text": "Let me scan all vault files and assess them."
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:16.258Z"
+    },
+    {
+      "id": "b2171984-abec-4c8f-938d-0f34bb9b2253",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01EeCuGnRMdGtJu1ZotrHUx8",
+          "title": "find /Users/michaelscott/Desktop/codify-trial-vault/00-Context/ -type f -name \"*.md\" 2>/dev/null",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "find /Users/michaelscott/Desktop/codify-trial-vault/00-Context/ -type f -name \"*.md\" 2>/dev/null",
+            "description": "List all Context files"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:17.024Z"
+    },
+    {
+      "id": "04ad7994-6221-4431-8752-b3ad26d10935",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_014fwSCjxg9n5MYKZFXXqzCx",
+          "title": "find /Users/michaelscott/Desktop/codify-trial-vault/01-Decisions/ -type f -name \"*.md\" 2>/dev/null",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "find /Users/michaelscott/Desktop/codify-trial-vault/01-Decisions/ -type f -name \"*.md\" 2>/dev/null",
+            "description": "List all Decision files"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:17.957Z"
+    },
+    {
+      "id": "f0f0b9bf-fcc3-454d-a097-131859b13dcb",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01TLcNuLFCy2VxFS4TkjjD6G",
+          "title": "find /Users/michaelscott/Desktop/codify-trial-vault/02-Research/ -type f -name \"*.md\" 2>/dev/null",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "find /Users/michaelscott/Desktop/codify-trial-vault/02-Research/ -type f -name \"*.md\" 2>/dev/null",
+            "description": "List all Research files"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:18.426Z"
+    },
+    {
+      "id": "e4497a91-704a-4070-b86f-a099fbe78206",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01VePUxKPHgotJt9p7i4uiSn",
+          "title": "find /Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/ -type f -name \"*.md\" 2>/dev/null",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "find /Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/ -type f -name \"*.md\" 2>/dev/null",
+            "description": "List all Output files"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:19.347Z"
+    },
+    {
+      "id": "8bc8ee00-f2dc-4dd4-a807-73a53bb0cdc2",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01QSH2YbS7zvb5fPHeF8dv6q",
+          "title": "find /Users/michaelscott/Desktop/codify-trial-vault/04-Daily/ -type f -name \"*.md\" 2>/dev/null",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "find /Users/michaelscott/Desktop/codify-trial-vault/04-Daily/ -type f -name \"*.md\" 2>/dev/null",
+            "description": "List all Daily files"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:19.950Z"
+    },
+    {
+      "id": "aa0546dc-4562-4dc3-9dcf-2c63430f02e4",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01DW5awrzPzSpbv7WEBax5aX",
+          "title": "wc -c /Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md /Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md /Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md /Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "wc -c /Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md /Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md /Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md /Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md",
+            "description": "Get byte sizes of Context files"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:23.016Z"
+    },
+    {
+      "id": "9a79c11d-e728-4ba3-886c-78ac6b8f9468",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_018QRvLvddjauDzSTAwfKTVz",
+          "title": "Read 03-Outputs/2026-03-25-post-decision-bottlenecks.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-25-post-decision-bottlenecks.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-25-post-decision-bottlenecks.md"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Now let me count cross-references and check completeness."
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:24.334Z"
+    },
+    {
+      "id": "9e3afa20-7071-4c89-b06d-cfd864e39924",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01R1i3R7VkiLMX7orYxDRpUB",
+          "title": "for f in /Users/michaelscott/Desktop/codify-trial-vault/00-Context/*.md; do name=$(basename \"$f\"); echo \"=== $name ===\"; grep -oP '\\[\\[[^\\]]+\\]\\]' \"$f\" 2>/dev/null || echo \"(none)\"; done",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "for f in /Users/michaelscott/Desktop/codify-trial-vault/00-Context/*.md; do name=$(basename \"$f\"); echo \"=== $name ===\"; grep -oP '\\[\\[[^\\]]+\\]\\]' \"$f\" 2>/dev/null || echo \"(none)\"; done",
+            "description": "Count wiki links in Context files"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:28.156Z"
+    },
+    {
+      "id": "86717994-a0a9-44e5-8ede-e841e5c7e5e1",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01RpyfVKGL2fWTrVWXTryeVw",
+          "title": "for f in /Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/*.md; do name=$(basename \"$f\"); echo \"=== $name ===\"; grep -oP '\\[\\[[^\\]]+\\]\\]' \"$f\" 2>/dev/null || echo \"(none)\"; done",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "for f in /Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/*.md; do name=$(basename \"$f\"); echo \"=== $name ===\"; grep -oP '\\[\\[[^\\]]+\\]\\]' \"$f\" 2>/dev/null || echo \"(none)\"; done",
+            "description": "Count wiki links in Output files"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:29.501Z"
+    },
+    {
+      "id": "43911d2d-0332-44a1-9683-41ab34bf6721",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01SnUbwmDHyFj45GomPsPhTL",
+          "title": "for f in /Users/michaelscott/Desktop/codify-trial-vault/00-Context/*.md; do name=$(basename \"$f\"); echo \"=== $name ===\"; grep -cP '<!-- ?-->' \"$f\" 2>/dev/null; done",
+          "status": "failed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "for f in /Users/michaelscott/Desktop/codify-trial-vault/00-Context/*.md; do name=$(basename \"$f\"); echo \"=== $name ===\"; grep -cP '<!-- ?-->' \"$f\" 2>/dev/null; done",
+            "description": "Check for empty sections in Context files"
+          }
+        },
+        {
+          "type": "agent_thought",
+          "text": "Now I have all the data. Let me compile the audit report.\n\nSummary:\n- 4 Context files, all Compounding (1000+ bytes), all Fresh (created today/yesterday), zero cross-references, no empty sections\n- 0 Decision files\n- 0 Research files\n- 2 Output files\n- 0 Daily files\n- Zero [[wiki links]] anywhere\n\nLet me calculate scores and write the report."
+        },
+        {
+          "type": "text",
+          "text": "Got all the data. Let me compile and save the audit report."
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:30.584Z"
+    },
+    {
+      "id": "1201a09e-7e30-4e67-b48d-0f42d567e5be",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01HL8fsMhbhawxrbPiBMp5bG",
+          "title": "Write 03-Outputs/2026-03-26-vault-audit.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-vault-audit.md",
+              "newText": "---\ntype: output\nformat: audit\ndate: 2026-03-26\n---\n\n# Vault Audit — 2026-03-26\n\n## Overall Context Power: 52/100\n\nStrong foundation. Context files are unusually rich for a new vault — most clients start with skeletons. But the vault is all foundation and no structure above it. Zero decisions logged, zero research captured, zero cross-references connecting the knowledge graph. The compound loop hasn't started yet.\n\n---\n\n## Context Files\n\n| File | Depth | Freshness | Connections | Completeness |\n|------|-------|-----------|-------------|--------------|\n| soul.md | Compounding (3,077b) | Fresh | 0 in / 0 out | 100% |\n| audience.md | Compounding (2,354b) | Fresh | 0 in / 0 out | 100% |\n| offer.md | Compounding (2,437b) | Fresh | 0 in / 0 out | 100% |\n| voice.md | Compounding (2,434b) | Fresh | 0 in / 0 out | 100% |\n\n**Context Assessment:** All four files are at Compounding depth with no empty sections. This is a strong extraction. Marcus's voice, frameworks, and buyer psychology are all captured with specificity. The raw material is excellent.\n\n---\n\n## Vault Inventory\n\n| Folder | Files | Status |\n|--------|-------|--------|\n| 00-Context/ | 4 | Healthy |\n| 01-Decisions/ | 0 | Empty |\n| 02-Research/ | 0 | Empty |\n| 03-Outputs/ | 2 | Active |\n| 04-Daily/ | 0 | Empty |\n\n---\n\n## Connection Map\n\n**Cross-references found: 0**\n\nNo `[[wiki links]]` exist anywhere in the vault. This means:\n- Context files don't reference each other (soul → audience, offer → voice, etc.)\n- Outputs don't link back to the Context files that generated them\n- The knowledge graph is flat — four isolated documents instead of a connected system\n\nThis is the single biggest gap. Without connections, the compound loop can't form.\n\n---\n\n## Action Items (Priority Order)\n\n### 1. Add Cross-References to Context Files\n**Impact: High | Effort: 10 minutes**\n\nEach Context file should link to the others where natural connections exist. Examples:\n- `soul.md` should reference `[[audience]]` (David Park story echoes in both), `[[offer]]` (Decision Audit framework)\n- `audience.md` should reference `[[soul]]` (origin moment explains why Marcus gets this buyer), `[[offer]]` (transformation maps to pain points)\n- `offer.md` should reference `[[voice]]` (the email sample IS the offer in action), `[[audience]]` (DIY gap matches failed alternatives)\n- `voice.md` should reference `[[soul]]` (directness earned through COO experience)\n\nRun `/enrich` to add these systematically.\n\n### 2. Log Your First Decision\n**Impact: High | Effort: 5 minutes**\n\nThe `01-Decisions/` folder is empty. Any strategic choice — pricing, targeting, channel focus, positioning — should be captured here with reasoning. Even \"I'm going to run Facebook ads targeting Vistage/EO members\" is a decision worth logging. Decisions with dates and reasoning are what separate a vault from a folder of notes.\n\n### 3. Start a Research File\n**Impact: Medium | Effort: 15 minutes**\n\n`02-Research/` is empty. Marcus operates in a defined market (executive coaching for mid-market CEOs). Capturing competitor positioning, market signals, or pricing benchmarks here would sharpen future outputs. Run `/scout` to seed this.\n\n### 4. Start Daily Logs\n**Impact: Medium | Effort: 2 minutes/day**\n\n`04-Daily/` is empty. Even 3 bullets per session (\"ran ads, noticed X, thinking about Y\") creates a timeline the AI can reference for pattern recognition.\n\n---\n\n## Compound Score Trend\n\n- **Total vault files:** 6 (4 context + 2 outputs)\n- **Total cross-references:** 0\n- **Files at Working+ depth:** 4/4 context files (100%)\n- **Files at Compounding depth:** 4/4 context files (100%)\n- **Decisions logged this month:** 0\n- **Research files this month:** 0\n- **Outputs generated:** 2 (1 post, 1 ad set)\n\n---\n\n## Bottom Line\n\nThe extraction quality is a 9/10 — Marcus's voice, frameworks, and buyer psychology are captured with the kind of specificity that makes AI outputs sound like him instead of a consultant-flavored chatbot.\n\nThe vault architecture is a 3/10 — no connections, no decisions, no research, no daily log. The context exists but it's not compounding yet.\n\n**Next step:** Run `/enrich` on any Context file to add cross-references, then log one decision. That moves the score from 52 to ~70 overnight.\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-vault-audit.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-vault-audit.md",
+            "content": "---\ntype: output\nformat: audit\ndate: 2026-03-26\n---\n\n# Vault Audit — 2026-03-26\n\n## Overall Context Power: 52/100\n\nStrong foundation. Context files are unusually rich for a new vault — most clients start with skeletons. But the vault is all foundation and no structure above it. Zero decisions logged, zero research captured, zero cross-references connecting the knowledge graph. The compound loop hasn't started yet.\n\n---\n\n## Context Files\n\n| File | Depth | Freshness | Connections | Completeness |\n|------|-------|-----------|-------------|--------------|\n| soul.md | Compounding (3,077b) | Fresh | 0 in / 0 out | 100% |\n| audience.md | Compounding (2,354b) | Fresh | 0 in / 0 out | 100% |\n| offer.md | Compounding (2,437b) | Fresh | 0 in / 0 out | 100% |\n| voice.md | Compounding (2,434b) | Fresh | 0 in / 0 out | 100% |\n\n**Context Assessment:** All four files are at Compounding depth with no empty sections. This is a strong extraction. Marcus's voice, frameworks, and buyer psychology are all captured with specificity. The raw material is excellent.\n\n---\n\n## Vault Inventory\n\n| Folder | Files | Status |\n|--------|-------|--------|\n| 00-Context/ | 4 | Healthy |\n| 01-Decisions/ | 0 | Empty |\n| 02-Research/ | 0 | Empty |\n| 03-Outputs/ | 2 | Active |\n| 04-Daily/ | 0 | Empty |\n\n---\n\n## Connection Map\n\n**Cross-references found: 0**\n\nNo `[[wiki links]]` exist anywhere in the vault. This means:\n- Context files don't reference each other (soul → audience, offer → voice, etc.)\n- Outputs don't link back to the Context files that generated them\n- The knowledge graph is flat — four isolated documents instead of a connected system\n\nThis is the single biggest gap. Without connections, the compound loop can't form.\n\n---\n\n## Action Items (Priority Order)\n\n### 1. Add Cross-References to Context Files\n**Impact: High | Effort: 10 minutes**\n\nEach Context file should link to the others where natural connections exist. Examples:\n- `soul.md` should reference `[[audience]]` (David Park story echoes in both), `[[offer]]` (Decision Audit framework)\n- `audience.md` should reference `[[soul]]` (origin moment explains why Marcus gets this buyer), `[[offer]]` (transformation maps to pain points)\n- `offer.md` should reference `[[voice]]` (the email sample IS the offer in action), `[[audience]]` (DIY gap matches failed alternatives)\n- `voice.md` should reference `[[soul]]` (directness earned through COO experience)\n\nRun `/enrich` to add these systematically.\n\n### 2. Log Your First Decision\n**Impact: High | Effort: 5 minutes**\n\nThe `01-Decisions/` folder is empty. Any strategic choice — pricing, targeting, channel focus, positioning — should be captured here with reasoning. Even \"I'm going to run Facebook ads targeting Vistage/EO members\" is a decision worth logging. Decisions with dates and reasoning are what separate a vault from a folder of notes.\n\n### 3. Start a Research File\n**Impact: Medium | Effort: 15 minutes**\n\n`02-Research/` is empty. Marcus operates in a defined market (executive coaching for mid-market CEOs). Capturing competitor positioning, market signals, or pricing benchmarks here would sharpen future outputs. Run `/scout` to seed this.\n\n### 4. Start Daily Logs\n**Impact: Medium | Effort: 2 minutes/day**\n\n`04-Daily/` is empty. Even 3 bullets per session (\"ran ads, noticed X, thinking about Y\") creates a timeline the AI can reference for pattern recognition.\n\n---\n\n## Compound Score Trend\n\n- **Total vault files:** 6 (4 context + 2 outputs)\n- **Total cross-references:** 0\n- **Files at Working+ depth:** 4/4 context files (100%)\n- **Files at Compounding depth:** 4/4 context files (100%)\n- **Decisions logged this month:** 0\n- **Research files this month:** 0\n- **Outputs generated:** 2 (1 post, 1 ad set)\n\n---\n\n## Bottom Line\n\nThe extraction quality is a 9/10 — Marcus's voice, frameworks, and buyer psychology are captured with the kind of specificity that makes AI outputs sound like him instead of a consultant-flavored chatbot.\n\nThe vault architecture is a 3/10 — no connections, no decisions, no research, no daily log. The context exists but it's not compounding yet.\n\n**Next step:** Run `/enrich` on any Context file to add cross-references, then log one decision. That moves the score from 52 to ~70 overnight.\n"
+          }
+        },
+        {
+          "type": "text",
+          "text": "## Vault Audit — 2026-03-26\n\n### Overall Context Power: 52/100\n\n**What's strong:**\n- All 4 Context files are at Compounding depth (1,000+ bytes each, no empty sections). The extraction quality is excellent — Marcus's voice, Decision Audit framework, and buyer psychology are captured with real specificity.\n\n**What's missing:**\n\n| Gap | Impact |\n|-----|--------|\n| **Zero cross-references** | No `[[wiki links]]` anywhere. The knowledge graph is flat — 4 isolated files instead of a connected system. The compound loop can't form without these. |\n| **No decisions logged** | `01-Decisions/` is empty. Strategic choices (pricing, targeting, channel) need to be captured with reasoning. |\n| **No research** | `02-Research/` is empty. Competitor positioning, market signals — nothing for the AI to cross-reference against. |\n| **No daily logs** | `04-Daily/` is empty. No timeline for pattern recognition. |\n\n### Priority Actions\n\n1. **Add cross-references** — Run `/enrich` to wire the Context files together (`[[soul]]` ↔ `[[audience]]` ↔ `[[offer]]` ↔ `[[voice]]`). 10 minutes, biggest single improvement.\n2. **Log one decision** — Even \"targeting Vistage/EO members with Facebook ads\" counts. Gets the decisions folder started.\n3. **Run `/scout`** — Seeds the Research folder with competitive intel.\n\n**Bottom line:** The raw material is a 9/10. The architecture is a 3/10. Wire the connections and start logging decisions — that moves the score from 52 to ~70 overnight.\n\nFull report saved to `03-Outputs/2026-03-26-vault-audit.md`."
+        }
+      ],
+      "timestamp": "2026-03-26T04:56:36.941Z"
+    },
+    {
+      "id": "36531bd0-2212-452b-9fe6-6787ce6d9fef",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/enrich"
+        }
+      ],
+      "timestamp": "2026-03-26T04:58:13.923Z"
+    },
+    {
+      "id": "8d8ff507-2795-429c-9862-cb0ab01cd45e",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "\n\nLooking at the audit, your Context files are all at Compounding depth with strong content — the main gap isn't thin sections, it's **zero cross-references**. None of the four files link to each other, which means the knowledge graph is flat.\n\nBut before I just wire those in mechanically, there are genuine depth gaps I can see. Let me ask you a few targeted questions that would make the biggest difference:\n\n---\n\n### 1. For `soul.md` — The Decision Audit in action\n\nYou named the framework and explained how it works. But walk me through a specific client engagement where the Decision Audit revealed something surprising — not the predictable \"CEO was making too many decisions\" finding, but a moment where the data showed something even you didn't expect. What was the company, what did you find, and what did the CEO say when they saw it?\n\n### 2. For `audience.md` — The fear they won't say out loud\n\nDavid Park is a great buyer portrait. But here's what's missing: what's the thing CEOs like David are most afraid of that they'd never admit in a peer group or on a call? The fear underneath the \"I know I'm the bottleneck\" line — what's really driving the 3 AM anxiety?\n\n### 3. For `offer.md` — What happens when it doesn't work\n\nYou mentioned two refunds in six years. Without naming names — what went wrong in those engagements? What's the pattern that tells you early on that this CEO might not be coachable, or that the structure won't hold?\n\n---\n\nAnswer any or all of these. I'll weave the new material into the existing files and add the cross-references at the same time. Or if you'd rather I just add the `[[links]]` now without new content, say the word."
+        }
+      ],
+      "timestamp": "2026-03-26T04:58:16.786Z"
+    },
+    {
+      "id": "6d206273-2a3f-4657-9083-4a7c0684bfca",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/enrich soul"
+        }
+      ],
+      "timestamp": "2026-03-26T05:03:52.850Z"
+    },
+    {
+      "id": "854176b0-c983-4943-81a5-b7473e5a25df",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "\n\nI already have `soul.md` loaded from earlier. Let me assess the gaps.\n\n**Current state:** 3,077 bytes, 7 sections all filled, zero `[[links]]`, Compounding depth on size but no cross-references.\n\n**What's there and strong:**\n- Core description — specific and concrete\n- Contrarian belief — sharp, with a real example\n- Origin moment — Karen Chen story is gold\n- Anti-positions — three clear lines in the sand\n- Institutional knowledge — the \"reading a room in 30 minutes\" claim\n- Proprietary framework — Decision Audit explained\n- External perception — two client quotes\n\n**What's missing:**\n\n1. **The anti-positions are stated but untested.** You said you'll never sell a 12-month retainer, never use personality assessments, never coach without direct observation. But has anyone pushed back on these? A prospect who wanted Myers-Briggs? A client who asked for a longer engagement? The stories behind the lines in the sand make them real.\n\n2. **The Decision Audit is named and summarized, but there's no war story.** You said \"at least 40% of decisions are being made by the wrong person.\" Walk me through a specific audit that surprised even you. Not the textbook case — the one where the data revealed something you didn't see coming.\n\n3. **The Karen Chen moment changed your career — but what did you do next?** You watched her transform the company by changing how decisions got made. How did you go from that realization to building a practice around it? Was there a first client? A period where you tested the idea? The bridge between the insight and the business is missing.\n\n---\n\nAnswer any or all three. I'll weave the answers into `soul.md` and add cross-references to `[[audience]]`, `[[offer]]`, and `[[voice]]` where they naturally connect."
+        }
+      ],
+      "timestamp": "2026-03-26T05:03:55.321Z"
     }
   ],
-  "savedAt": "2026-03-26T04:52:46.494Z"
+  "savedAt": "2026-03-26T05:04:07.041Z"
 }
