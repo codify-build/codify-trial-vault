@@ -71,7 +71,7 @@ After all questions are answered, write the structured output to the appropriate
 ```markdown
 ---
 type: context
-status: draft
+status: draft  # extract sets draft, enrich sets active, cross-referencing sets compounding
 date: [today's date]
 last-updated: [today's date and time, e.g. 2026-03-26 14:30]
 extracted_via: claude-code

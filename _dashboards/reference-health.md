@@ -12,18 +12,24 @@ How deep is your context? Deeper files = better outputs.
 
 ```dataview
 TABLE
-  choice(file.size > 1000, "🟢 Deep", choice(file.size > 500, "🟡 Solid", choice(file.size > 200, "🟠 Getting there", "🔴 Empty"))) as "Strength",
-  length(file.outlinks) as "Links to other files",
-  length(file.inlinks) as "Referenced by"
+  choice(status = "compounding", "Deep", choice(status = "active", "Solid", choice(status = "draft", "Getting there", "Empty"))) as "Depth",
+  length(file.outlinks) as "Links out",
+  length(file.inlinks) as "Links in",
+  last-updated as "Last Updated"
 FROM "00-Context"
-SORT file.size DESC
+SORT status ASC
 ```
 
 ### What the levels mean
 - **Empty** — Template only. Run `/extract` to fill it in.
-- **Getting there** — Some answers. Run `/enrich` to go deeper.
-- **Solid** — Good content. Connected to other files. AI can use this well.
+- **Getting there** — First extraction done. Run `/enrich` to go deeper.
+- **Solid** — Enriched with follow-up material. Add cross-references to reach Deep.
 - **Deep** — Rich, linked, actively maintained. This is your competitive edge.
+
+### How files level up
+1. `/extract` moves a file from Empty → Getting there (status: draft)
+2. `/enrich` moves it from Getting there → Solid (status: active)
+3. Cross-references + continued enrichment → Deep (status: compounding)
 
 ---
 
@@ -33,8 +39,10 @@ Your best-linked files — these make your outputs strongest:
 
 ```dataview
 TABLE
-  length(file.outlinks) + length(file.inlinks) as "Total Connections"
-FROM ""
+  length(file.outlinks) + length(file.inlinks) as "Total Connections",
+  last-updated as "Last Updated"
+FROM "00-Context" OR "01-Decisions" OR "02-Research"
+WHERE length(file.outlinks) + length(file.inlinks) > 0
 SORT (length(file.outlinks) + length(file.inlinks)) DESC
 LIMIT 10
 ```
@@ -43,4 +51,4 @@ LIMIT 10
 
 ## Ready to Generate?
 
-When your Context files reach "Solid" strength, your outputs will be sharp and specific. Until then, keep enriching with `/enrich` or import more material with `/import`.
+When your Context files reach "Solid" depth, your outputs will be sharp and specific. Until then, keep enriching with `/enrich` or import more material with `/import`.

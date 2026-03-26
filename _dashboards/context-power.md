@@ -12,13 +12,18 @@ Your business brain at a glance. The more complete your Context files, the bette
 
 ```dataview
 TABLE
-  choice(length(file.outlinks) > 2, "🔗 Connected", "⚠️ Needs links") as "Connections",
-  choice(file.size > 500, "✅ Strong", choice(file.size > 200, "📝 Getting there", "🔲 Empty")) as "Strength",
-  dateformat(file.mtime, "yyyy-MM-dd") as "Last Updated",
-  choice(date(now) - file.mtime > dur(14 days), "🔴 Needs refresh", "🟢 Current") as "Freshness"
+  choice(status = "compounding", "Deep", choice(status = "active", "Solid", choice(status = "draft", "Getting there", "Empty"))) as "Depth",
+  choice(length(file.outlinks) > 2, "Connected", choice(length(file.outlinks) > 0, "Some links", "No links yet")) as "Connections",
+  last-updated as "Last Updated"
 FROM "00-Context"
 SORT file.name ASC
 ```
+
+### What to do next
+- **Empty** — Run `/extract` to fill it in
+- **Getting there** — Run `/enrich` to go deeper
+- **Solid** — Enriched but needs cross-references to other files
+- **Deep** — Rich, linked, compounding. This is your competitive edge.
 
 ---
 
@@ -26,7 +31,7 @@ SORT file.name ASC
 
 ```dataview
 TABLE
-  dateformat(date, "yyyy-MM-dd") as "Date",
+  last-updated as "Last Updated",
   status as "Status"
 FROM "01-Decisions"
 SORT date DESC
@@ -35,12 +40,13 @@ LIMIT 5
 
 ---
 
-## Recent Research
+## Recent Outputs
 
 ```dataview
 TABLE
-  dateformat(date, "yyyy-MM-dd") as "Date"
-FROM "02-Research"
+  format as "Type",
+  last-updated as "Last Updated"
+FROM "03-Outputs"
 SORT date DESC
 LIMIT 5
 ```

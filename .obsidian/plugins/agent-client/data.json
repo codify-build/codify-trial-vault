@@ -32,10 +32,10 @@
   "debugMode": false,
   "nodePath": "/opt/homebrew/bin/node",
   "exportSettings": {
-    "defaultFolder": "Agent Client",
+    "defaultFolder": "04-Daily",
     "filenameTemplate": "agent_client_{date}_{time}",
     "autoExportOnNewChat": false,
-    "autoExportOnCloseChat": false,
+    "autoExportOnCloseChat": true,
     "openFileAfterExport": true,
     "includeImages": true,
     "imageLocation": "obsidian",

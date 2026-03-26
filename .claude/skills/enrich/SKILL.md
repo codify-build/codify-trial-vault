@@ -63,10 +63,31 @@ Examples:
 
 Weave new answers into the existing file. Don't overwrite — add depth to existing sections or create new subsections.
 
-Update the `last-updated` field in the frontmatter to the current date and time (e.g. `last-updated: 2026-03-26 14:30`).
+Add cross-references (`[[links]]`) where new content connects to other Context files.
 
-Add cross-references where new content connects to other files.
+### 5. REQUIRED — Update Frontmatter
 
-### 5. Report Progress
+**You MUST update the frontmatter every time you enrich a file. This drives the dashboards.**
+
+1. Change `last-updated` to the current date and time (e.g. `last-updated: 2026-03-26 14:30`)
+2. Change `status` based on what you added:
+   - After enrichment with new depth → set `status: active`
+   - After adding `[[cross-references]]` to other files → set `status: compounding`
+
+Example — before:
+```yaml
+status: draft
+last-updated: 2026-03-26 14:00
+```
+
+After enrichment:
+```yaml
+status: active
+last-updated: 2026-03-26 16:45
+```
+
+**If you skip this step, the dashboards won't reflect the enrichment.**
+
+### 6. Report Progress
 
 "Your [file] moved from [old depth] to [new depth]. Next enrichment opportunity: [specific suggestion]."

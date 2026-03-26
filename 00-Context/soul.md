@@ -1,8 +1,8 @@
 ---
 type: context
-status: active
+status: compounding
 date: 2026-03-26
-last-updated: 2026-03-26 14:00
+last-updated: 2026-03-26 17:30
 ---
 
 # Soul

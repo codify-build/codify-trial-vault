@@ -1,6 +1,6 @@
 ---
 type: context
-status: active
+status: draft
 date: 2026-03-26
 last-updated: 2026-03-26 14:00
 ---
