@@ -7,6 +7,8 @@
   "strictLineBreaks": false,
   "readableLineLength": true,
   "userIgnoreFilters": [
-    "_architect"
+    "_architect/",
+    "_templates/",
+    "_attachments/"
   ]
 }
