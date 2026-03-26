@@ -10,63 +10,63 @@ Try before you buy. Limited extraction, see the system work.
 
 | Skill | What it does |
 |-------|-------------|
+| `/start` | Welcome screen — shows vault state and what to do next |
 | `/extract` | Context Extraction — 3 free extractions, then locked |
 | `/import` | Paste existing docs — mine them into Context files (counts as extraction) |
-| `/score` | Show your Context Power score |
-| `/help` | How the system works |
+| `/audit` | See your vault health |
 
 **Purpose:** Let them feel the extraction. See the before/after. Build desire for full unlock.
 
 ---
 
 ## Architect ($497/mo — Brain Sync)
-All skills unlocked. DIY — you run the terminal yourself.
+All skills unlocked. DIY — you run it yourself from Obsidian.
 
 | Skill | What it does |
 |-------|-------------|
 | `/extract` | Unlimited extraction (soul, audience, offer, voice) |
 | `/import` | Mine existing documents into Context files — unlimited |
-| `/enrich` | Deepen existing Context files |
-| `/generate` | Create outputs (ad, email, post, proposal, landing, vsl) |
+| `/enrich` | Deepen existing Context files, add cross-references |
+| `/ad` | Create ad copy (Meta/Facebook/Instagram) |
+| `/email` | Create email sequences (cold, warm, nurture) |
+| `/content` | Create content for any platform (LinkedIn, blog, newsletter, X, Instagram) |
+| `/proposal` | Create a client proposal |
+| `/landing` | Create landing page copy |
+| `/case-study` | Turn a client win into a formatted case study |
+| `/follow-up` | Write a follow-up after a call or meeting |
+| `/objection` | Handle a sales objection using your context |
+| `/pitch` | Elevator pitch, event intro, speaker bio — multiple lengths |
+| `/research` | Research a prospect, competitor, market trend, or scan for opportunities |
 | `/audit` | Vault health check |
-| `/scout` | Opportunity scouting from context + market |
-| `/think` | Research → decide → codify workflow |
-| `/brainstorm` | Generate ideas from your reference stack |
-| `/refine` | Improve an existing output using Context files |
-| `/voice` | Check if content matches your voice.md |
-| `/score` | Context Power score with trend |
-| `/help` | Full documentation |
+| `/brief` | Morning brief — vault health, open tasks, recommended focus |
 
-**Purpose:** For clients who want to run the system themselves. Monthly Brain Sync call with architect for vault review.
+**How it works:** Client opens Obsidian, types any skill in the chat pane, gets results. Everything runs on their $20/mo Claude Pro subscription. Monthly Brain Sync call with architect for vault review.
 
 ---
 
 ## Focus ($1,497 + $497/mo — Full Engagement)
-Everything in Architect PLUS done-for-you extraction AND output distribution.
+Everything in Architect PLUS done-for-you distribution AND autonomous overnight operations.
 
-### Generation Skills (create the content)
+### All Architect Skills PLUS:
 
-| Skill | What it does |
-|-------|-------------|
-| `/ads` | Full ad campaign — hooks, body, CTA, variations |
-| `/email` | Email sequence — cold, warm, nurture, onboarding |
-| `/newsletter` | Newsletter issue from recent research + decisions |
-| `/organic` | Social content batch — LinkedIn, X, threads |
-| `/blog` | Long-form blog post from reference stack |
-| `/vsl` | Video sales letter script |
-| `/proposal` | Client proposal from offer.md + audience.md |
-| `/report` | Executive report from vault data |
-| `/seo` | SEO-optimized content from research files |
-| `/site` | Landing page copy from offer + audience |
-
-### Distribution Skills (send the content)
+### Distribution Skills (architect runs these — the last mile from context to revenue)
 
 | Skill | What it does |
 |-------|-------------|
-| `/publish` | Push outputs to channels — email, social, blog, newsletter |
-| `/campaign` | Full pipeline — generate ad + email + post + landing page, then distribute |
-| `/brief` | Morning brief — overnight research, open tasks, context health |
+| `/publish` | Push outputs to live channels — email, social, blog, newsletter |
+| `/campaign` | Full pipeline — generate ad + email + content + landing, then distribute everything |
 | `/repurpose` | Take one output, create versions for every channel |
+
+### Autonomous Operations (OpenClaw — runs while you sleep)
+
+| What | When | Delivered via |
+|------|------|--------------|
+| Morning brief | 5:30 AM daily | Telegram on your phone |
+| Overnight research | 2:00 AM daily | Saved to vault, summary on Telegram |
+| Content queue | Every 5 min | Telegram — approve/reject from phone |
+| Competitor monitoring | Weekly | Telegram alert |
+| Vault staleness check | Daily | Telegram alert |
+| Vault backup | Hourly | Automatic git sync |
 
 ### How Distribution Works
 
@@ -74,22 +74,42 @@ The `/publish` and `/campaign` skills connect to:
 - **GoHighLevel** — Email sequences, SMS, social posts, blog
 - **Gmail** — Direct email sends
 - **Social platforms** — LinkedIn, Facebook, Instagram via GHL
+- **Telegram** — Briefs, alerts, and approval flow via @Codify_build_bot
 
-The architect configures these connections during Phase 2. The client never sees the plumbing.
+The architect configures these connections. The client never sees the plumbing.
+
+---
+
+## Sovereign Vault (Premium Add-On)
+
+For clients whose intellectual property demands the highest level of protection. Everything in Focus PLUS:
+
+| Feature | What it means |
+|---------|--------------|
+| **Private GitHub repo** | Their own version-controlled vault — every edit, every decision, every output tracked with full history |
+| **Encrypted at rest** | GitHub's enterprise-grade encryption on all vault data |
+| **Portable** | Client owns the repo. If they leave Codify, their vault walks with them — no lock-in |
+| **Audit trail** | Full git history = timestamped proof of when every idea was captured, every decision made |
+| **IP protection** | For consultants, advisors, and executives whose frameworks ARE their business — documented proof of original thinking |
+| **Multi-device sync** | Obsidian Git syncs across desktop machines silently |
+
+**Why it commands premium pricing:** A consultant's proprietary framework, a CEO's institutional knowledge, an advisor's 30 years of judgment calls — this is irreplaceable IP. The sovereign vault is the difference between "I have ideas" and "I have a documented, version-controlled, portable asset." For clients facing acquisition, succession, or partnership negotiations, the vault IS the valuation proof.
+
+**Pricing:** Built into Focus tier as standard. Can be positioned as standalone for clients who want vault sovereignty without the full engagement — $297/mo vault-only tier for self-serve archiving.
 
 ---
 
 ## The Upgrade Path
 
 ```
-Explore (free) → "My Context file improved my output by 40%"
+Explore (free) → "My context file changed the quality of my output completely"
      ↓
-Architect ($497/mo) → "I want all the skills, I'll run it myself"
+Architect ($497/mo) → "I run /brief and /research myself — my outputs sound like me"
      ↓
-Focus ($1,497 + $497/mo) → "Just do it for me and distribute everything"
+Focus ($1,497 + $497/mo) → "Content goes live while I sleep and my vault is a sovereign asset"
 ```
 
 The compound loop drives upgrades:
 - Explore proves context > prompts
-- Architect proves the system compounds
-- Focus proves the system generates revenue (because outputs actually reach people)
+- Architect proves the system compounds (client runs skills on-demand)
+- Focus proves the system runs autonomously (OpenClaw + distribution + sovereign vault)

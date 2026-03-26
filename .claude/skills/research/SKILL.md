@@ -5,7 +5,7 @@ description: "Research a prospect, competitor, market trend, or topic. Saves to 
 
 # /research — Research That Compounds
 
-Gathers intelligence and saves it to your vault where it informs every future output. Research files are the fuel for `/scout`, `/ad`, `/email`, `/proposal`, and `/objection`.
+Gathers intelligence and saves it to your vault where it informs every future output. Research files are the fuel for `/ad`, `/email`, `/proposal`, and `/objection`.
 
 ## Usage
 
@@ -15,6 +15,7 @@ Gathers intelligence and saves it to your vault where it informs every future ou
 /research competitor [name]  → Competitive analysis
 /research market [topic]     → Market trend or industry signal
 /research topic [topic]      → Deep dive on any subject relevant to your business
+/research opportunities      → Scan all context + research files for revenue opportunities
 ```
 
 ## Before Researching
@@ -156,6 +157,38 @@ Cross-reference against all Context files and existing research to find connecti
 
 ---
 
+## Mode: Opportunities
+
+**Triggered by:** `/research opportunities`
+
+This is the strategic scan. Reads your full vault — all Context files, all research, all decisions — and surfaces revenue opportunities unique to your positioning.
+
+### Load Full Context
+
+Read in order:
+1. All `00-Context/` files
+2. Last 10 `01-Decisions/` files
+3. All `02-Research/` files
+4. Last 5 `03-Outputs/` files (to avoid repeating)
+
+### Cross-Reference
+
+- What does your `soul.md` say you believe that your market doesn't? Where's the content gap?
+- What does `audience.md` say they struggle with that no competitor is addressing?
+- What does `offer.md` deliver that competitors don't mention? Where's the positioning gap?
+- What patterns emerge across your prospect research? Who keeps showing up?
+- What recent decisions suggest a new angle?
+
+### Output Format
+
+For each opportunity:
+- **The signal** — What data point triggered this
+- **The gap** — Why nobody else is doing this
+- **The play** — What you'd actually do (content, outreach, offer adjustment)
+- **The source** — Which files informed this insight
+
+---
+
 ## Save to Vault
 
 Write ALL research to `02-Research/[YYYY-MM-DD]-[mode]-[slug].md` with frontmatter:
@@ -177,7 +210,7 @@ related:
 ## The Compound Loop
 
 Research files are not throwaway. They accumulate:
-- `/scout` reads all research files to find patterns across multiple prospects and competitors
+- `/research opportunities` scans all research files to find patterns across prospects and competitors
 - `/ad` and `/email` reference recent research for timely angles
 - `/objection` pulls competitor research for differentiation arguments
 - `/proposal` uses prospect research for personalized framing

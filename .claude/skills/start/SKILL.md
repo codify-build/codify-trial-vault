@@ -70,7 +70,6 @@ Then show a brief status report:
 | `/pitch` | Elevator pitch, event intro, speaker bio |
 | `/research` | Research a prospect, competitor, or market trend |
 | `/audit` | See your vault health |
-| `/scout` | Find market opportunities using your context |
 | `/brief` | Summary of vault health and recommended focus |
 
 ## Tone Rules
