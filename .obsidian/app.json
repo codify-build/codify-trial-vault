@@ -8,7 +8,6 @@
   "readableLineLength": true,
   "userIgnoreFilters": [
     "_architect/",
-    "_templates/",
     "_attachments/"
   ]
 }

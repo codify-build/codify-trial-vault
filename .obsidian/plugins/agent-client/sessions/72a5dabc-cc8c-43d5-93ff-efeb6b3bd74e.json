@@ -771,7 +771,75 @@
         }
       ],
       "timestamp": "2026-03-26T08:46:17.041Z"
+    },
+    {
+      "id": "5cc3426b-148b-4abb-a842-96a82b1b44a7",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "yes save"
+        }
+      ],
+      "timestamp": "2026-03-26T08:46:47.251Z"
+    },
+    {
+      "id": "4295c7cc-1bcd-41e9-8e8c-e3f9edadf7a0",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01NjcaVJFn9tge72DUVUyNjT",
+          "title": "Write 03-Outputs/2026-03-26-email-cold-outreach.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-email-cold-outreach.md",
+              "newText": "---\ntype: output\nformat: email\ndate: 2026-03-26\nlast-updated: 2026-03-26 19:45\nsource_files:\n  - 00-Context/soul.md\n  - 00-Context/audience.md\n  - 00-Context/offer.md\n  - 00-Context/voice.md\n---\n\n# Cold Outreach Sequence — 3 Emails\n\n## Email 1 — The Insight\n\n**Subject:** your Monday meeting\n\nMarcus here. I work with CEOs who built $10M-50M companies and then got stuck inside them.\n\nHere's what I see in every one of those companies: the CEO is making decisions that should belong to their directors. Not some of them — typically 40% or more. And the team isn't underperforming. They're waiting for permission.\n\nYou didn't hire adults to treat them like interns.\n\nI have a 14-day diagnostic called the Decision Audit. I sit in your meetings, talk to your team, and map exactly where your judgment is being used on problems that shouldn't reach you. No surveys. No personality tests.\n\nIf what I find doesn't surprise you, you owe me nothing.\n\n— Marcus\n\n---\n\n## Email 2 — The Proof\n\n**Subject:** 47 decisions\n\nA CEO came to me running a $22M company. Smart guy. 65-hour weeks. Leadership team of four who wouldn't make a move without his approval.\n\nHe'd read the books. Hired a big-firm consultant — $80K for a strategy deck with nice charts. Nothing changed. Tried to \"just delegate more.\" Lasted two weeks.\n\nIn week one I sat in his meetings and didn't say a word. In week two I showed him that he'd personally made 47 decisions the prior week that should have belonged to his directors.\n\nHe had no idea.\n\n90 days later his Monday meetings went from 2 hours of status updates to 45 minutes of strategic decisions. He took a two-week vacation. Nothing broke.\n\nDecision debt compounds faster than financial debt. If you're curious what yours looks like, I'll show you in 14 days.\n\n— Marcus\n\n---\n\n## Email 3 — The Ask\n\n**Subject:** one question\n\nIf you stepped away from your business for two weeks tomorrow, would it run without you?\n\nIf the honest answer is no — or \"probably, but I'd be checking my phone the whole time\" — that's a structural problem, not a people problem.\n\nI fix that. 90 days. If you don't see a measurable shift in your decision load, I refund the full engagement.\n\n15 minutes on the phone and I'll tell you whether I can help. If I can't, I'll tell you that too.\n\n— Marcus\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-email-cold-outreach.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-email-cold-outreach.md",
+            "content": "---\ntype: output\nformat: email\ndate: 2026-03-26\nlast-updated: 2026-03-26 19:45\nsource_files:\n  - 00-Context/soul.md\n  - 00-Context/audience.md\n  - 00-Context/offer.md\n  - 00-Context/voice.md\n---\n\n# Cold Outreach Sequence — 3 Emails\n\n## Email 1 — The Insight\n\n**Subject:** your Monday meeting\n\nMarcus here. I work with CEOs who built $10M-50M companies and then got stuck inside them.\n\nHere's what I see in every one of those companies: the CEO is making decisions that should belong to their directors. Not some of them — typically 40% or more. And the team isn't underperforming. They're waiting for permission.\n\nYou didn't hire adults to treat them like interns.\n\nI have a 14-day diagnostic called the Decision Audit. I sit in your meetings, talk to your team, and map exactly where your judgment is being used on problems that shouldn't reach you. No surveys. No personality tests.\n\nIf what I find doesn't surprise you, you owe me nothing.\n\n— Marcus\n\n---\n\n## Email 2 — The Proof\n\n**Subject:** 47 decisions\n\nA CEO came to me running a $22M company. Smart guy. 65-hour weeks. Leadership team of four who wouldn't make a move without his approval.\n\nHe'd read the books. Hired a big-firm consultant — $80K for a strategy deck with nice charts. Nothing changed. Tried to \"just delegate more.\" Lasted two weeks.\n\nIn week one I sat in his meetings and didn't say a word. In week two I showed him that he'd personally made 47 decisions the prior week that should have belonged to his directors.\n\nHe had no idea.\n\n90 days later his Monday meetings went from 2 hours of status updates to 45 minutes of strategic decisions. He took a two-week vacation. Nothing broke.\n\nDecision debt compounds faster than financial debt. If you're curious what yours looks like, I'll show you in 14 days.\n\n— Marcus\n\n---\n\n## Email 3 — The Ask\n\n**Subject:** one question\n\nIf you stepped away from your business for two weeks tomorrow, would it run without you?\n\nIf the honest answer is no — or \"probably, but I'd be checking my phone the whole time\" — that's a structural problem, not a people problem.\n\nI fix that. 90 days. If you don't see a measurable shift in your decision load, I refund the full engagement.\n\n15 minutes on the phone and I'll tell you whether I can help. If I can't, I'll tell you that too.\n\n— Marcus\n"
+          },
+          "permissionRequest": {
+            "requestId": "2272a5d2-e91e-4de5-8670-bb28bf7f9052",
+            "options": [
+              {
+                "optionId": "allow_always",
+                "name": "Always Allow",
+                "kind": "allow_always"
+              },
+              {
+                "optionId": "allow",
+                "name": "Allow",
+                "kind": "allow_once"
+              },
+              {
+                "optionId": "reject",
+                "name": "Reject",
+                "kind": "reject_once"
+              }
+            ],
+            "selectedOptionId": "allow",
+            "isActive": false
+          }
+        },
+        {
+          "type": "text",
+          "text": "Saved to `03-Outputs/2026-03-26-email-cold-outreach.md`.\n\nWhenever you're ready, we still have that soul extraction question on the table — the specific signals you read in that first standup."
+        }
+      ],
+      "timestamp": "2026-03-26T08:46:50.954Z"
     }
   ],
-  "savedAt": "2026-03-26T08:46:32.642Z"
+  "savedAt": "2026-03-26T08:47:08.632Z"
 }
