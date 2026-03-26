@@ -1667,7 +1667,372 @@
         }
       ],
       "timestamp": "2026-03-26T05:42:52.773Z"
+    },
+    {
+      "id": "804a74b0-f28c-4b38-94d3-82f8e2c510db",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "generate ad"
+        }
+      ],
+      "timestamp": "2026-03-26T05:44:44.411Z"
+    },
+    {
+      "id": "2baeb215-eb34-469f-8040-afc40307d66e",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01D1bS2ky4saQwqZPY3Lx4NH",
+          "title": "Skill",
+          "status": "completed",
+          "kind": "other",
+          "content": [],
+          "rawInput": {
+            "skill": "generate",
+            "args": "ad"
+          }
+        },
+        {
+          "type": "agent_thought",
+          "text": "Let me read all four context files and scan for recent decisions and research."
+        },
+        {
+          "type": "text",
+          "text": "Let me read the full reference stack."
+        }
+      ],
+      "timestamp": "2026-03-26T05:44:47.446Z"
+    },
+    {
+      "id": "80d54ace-13b4-49e3-96de-cff379c3e19e",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01FNN6KPwKNyx4ZXoLAatSAE",
+          "title": "Read 00-Context/soul.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:44:51.299Z"
+    },
+    {
+      "id": "5a32b3b2-32b1-417c-b66a-40917b0d070a",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_015WgTJWWyf92XERK7KEVm5q",
+          "title": "Read 00-Context/audience.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:44:51.778Z"
+    },
+    {
+      "id": "a74152e2-9a46-49d7-a5a6-3f19f17dc59f",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01Bz72fytFkmP3piXFc3JLc1",
+          "title": "Read 00-Context/offer.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:44:51.784Z"
+    },
+    {
+      "id": "7b9cad9b-8ea6-4eb9-908a-31179a9f4cd3",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01DKMjgMLw4Lq5LMVYv4PB14",
+          "title": "Read 00-Context/voice.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:44:52.155Z"
+    },
+    {
+      "id": "55382a96-d23b-49b5-9bf4-d772b97c4403",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01MRuXahCCo6nb6CTJCkBsaa",
+          "title": "Find `01-Decisions/*.md`",
+          "status": "completed",
+          "kind": "search",
+          "content": [],
+          "locations": [],
+          "rawInput": {
+            "pattern": "01-Decisions/*.md"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:44:53.172Z"
+    },
+    {
+      "id": "ec34f4cd-667d-4ecd-9e02-5d956caf8cd3",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01RnrEWxjdGcF8wZbhDrG5fJ",
+          "title": "Find `02-Research/*.md`",
+          "status": "completed",
+          "kind": "search",
+          "content": [],
+          "locations": [],
+          "rawInput": {
+            "pattern": "02-Research/*.md"
+          }
+        },
+        {
+          "type": "agent_thought",
+          "text": "All four Context files are at Compounding depth. No decisions or research files yet. Let me generate the ad copy.\n\nI need to write ads that:\n- Use Marcus's voice: short, direct, no corporate speak, no qualifiers\n- Address the audience's pain: CEO who's the bottleneck, can't step away, team won't make decisions\n- Reference the transformation: 90-day shift, Decision Audit, team making decisions independently\n- Reflect the core beliefs: structure > therapy, operating system > personality\n- Hit the emotional target: seen + impatient\n\nLet me create multiple ad variations for Facebook/Instagram."
+        },
+        {
+          "type": "text",
+          "text": "All four Context files at Compounding depth. No Decisions or Research files yet. Generating ad copy."
+        }
+      ],
+      "timestamp": "2026-03-26T05:44:53.253Z"
+    },
+    {
+      "id": "3af171fc-ca97-4513-8a80-061787a60376",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01HHVPUWdS13X6JTv5vf9QAd",
+          "title": "Write 03-Outputs/2026-03-26-ad-decision-audit.md",
+          "status": "failed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-ad-decision-audit.md",
+              "newText": "---\ntype: output\nformat: ad\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:55\nsource_files:\n  - 00-Context/soul.md\n  - 00-Context/audience.md\n  - 00-Context/offer.md\n  - 00-Context/voice.md\n---\n\n# Facebook/Instagram Ad Copy — Decision Audit\n\n## Ad 1: \"The Wrong Person\" (Problem Awareness)\n\n**Hook:** I tracked every decision a CEO made for 14 days. 47 of them shouldn't have been his.\n\n**Body:**\nHe had no idea. He thought his VP of Product was the bottleneck. The data said otherwise.\n\nHis VP of Product was making 90% of decisions independently. The real problem was his VP of Sales — touching 60+ decisions a week that his account executives should have handled.\n\nWhen I showed him the audit, he went quiet for 30 seconds and said: \"I've been coaching the wrong person for two years.\"\n\nThis is what happens when you run a company on opinions instead of data. You coach the wrong person. You fix the wrong problem. You work 65-hour weeks solving things your team should own.\n\nI don't ask CEOs where they think the problem is. I sit in their meetings, track every decision for 14 days, and show them where it actually is.\n\nIf what I find doesn't surprise you, you owe me nothing.\n\n**CTA:** DM \"AUDIT\" to find out if your company has a decision problem.\n\n---\n\n## Ad 2: \"The Acquirer Walked\" (Cost of Inaction)\n\n**Hook:** A potential acquirer told my client: \"We like the business but we can't value it with this much key-man risk.\"\n\n**Body:**\nThen they walked.\n\nDavid built a $22M company from nothing over 15 years. Smart guy. Good team. But his business had a problem no leadership book could fix:\n\nIt couldn't run without him in the room.\n\nHis team wouldn't make a move without his approval. He was working 65-hour weeks. He missed his daughter's college graduation for a \"crisis\" his sales director could have handled.\n\nHe'd tried everything. Read the books. Hired a big-firm consultant ($80K for a strategy deck that changed nothing). Joined a peer group. His wife told him to \"just delegate more.\" That lasted 2 weeks.\n\nThe acquirer walking was the wake-up call. He called me the next morning.\n\n90 days later, his leadership team was making 80% of operational decisions without him. His Monday meetings went from 2 hours to 45 minutes. Revenue grew 12%.\n\nThe bottleneck was never his people. It was the operating system he'd built around himself.\n\n**CTA:** If your company can't run a Tuesday without you, DM me.\n\n---\n\n## Ad 3: \"You Don't Have a Team\" (Identity Challenge)\n\n**Hook:** If your team can't run a Tuesday without you, you don't have a team — you have an audience.\n\n**Body:**\nYou hired adults. Then you trained them to act like interns.\n\nNot on purpose. You didn't wake up one morning and decide to make every decision yourself. It happened slowly. Someone escalated a pricing call. You handled it because it was faster. Then it happened again. And again. Now your directors check with you before ordering lunch.\n\nYou say \"my people won't step up.\" Here's what's actually happening: they stopped trying because you taught them it doesn't matter. Every time you jump in, you're sending the same message — your judgment doesn't count.\n\nI don't do personality tests. I don't talk about your \"leadership journey.\" I sit in your meetings for 14 days, track every decision, and show you exactly where you're making calls that aren't yours to make.\n\nThe look on every CEO's face is the same when they see the data. They had no idea.\n\n90-day guarantee. If the decision load hasn't shifted, full refund. Two refunds in six years.\n\n**CTA:** DM \"BOTTLENECK\" and I'll tell you if this is your problem.\n\n---\n\n## Ad 4: \"Cold Glass of Water\" (Short-Form / Reels)\n\n**Hook:** Your Monday meeting is 90 minutes too long. Here's why.\n\n**Body:**\nYou're hearing status updates. That's not a meeting — that's a performance.\n\nYour team is reporting TO you instead of deciding WITH each other. They've learned that nothing moves until you nod.\n\nI've sat in 200+ leadership meetings. I can tell you who actually runs your company within 30 minutes. It's usually one person. And they're exhausted.\n\n**CTA:** If this sounds familiar, DM \"MEETING\" for a free meeting audit framework.\n\n---\n\n## Ad 5: \"Decision Debt\" (Concept Introduction)\n\n**Hook:** Decision debt compounds faster than financial debt.\n\n**Body:**\nEvery decision your team pushes up to you is a tax on your company's speed.\n\nOne escalation takes 5 minutes. But your directors made 60 of them this week. That's 5 hours of your week spent on decisions someone else should own.\n\nMultiply that across a year. That's not a leadership problem — it's a structural one.\n\nYour people aren't underperforming. They're waiting for permission.\n\nI track every decision in a company over 14 days. In every engagement, at least 40% are being made by the wrong person. The CEO thinks the bottleneck is their team. The data usually says the bottleneck is them.\n\nI can show you exactly where this is happening. No surveys. No personality tests. Just 14 days of observation and a document that changes how you run your company.\n\nIf what I find doesn't surprise you, you owe me nothing.\n\n**CTA:** DM \"DECISIONS\" to learn how the audit works.\n\n---\n\n## Creative Notes\n\n**Image direction for each ad:**\n1. \"The Wrong Person\" — Clean whiteboard or spreadsheet visual showing decision flow. Data-driven feel.\n2. \"The Acquirer Walked\" — Empty conference room. One chair pulled back from the table.\n3. \"You Don't Have a Team\" — A meeting room where everyone is looking at one person. Or: one person's calendar, completely blocked.\n4. \"Cold Glass of Water\" — Talking head / Reels format. Marcus direct to camera.\n5. \"Decision Debt\" — Simple text overlay on dark background. The \"40%\" stat as the visual anchor.\n\n**Targeting notes:**\n- CEOs / Founders / Business Owners\n- Company size: 20-200 employees ($5M-$50M revenue)\n- Interests: YPO, Vistage, EO, Harvard Business Review, executive coaching\n- Exclude: solopreneurs, startup founders pre-revenue\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-ad-decision-audit.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-ad-decision-audit.md",
+            "content": "---\ntype: output\nformat: ad\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:55\nsource_files:\n  - 00-Context/soul.md\n  - 00-Context/audience.md\n  - 00-Context/offer.md\n  - 00-Context/voice.md\n---\n\n# Facebook/Instagram Ad Copy — Decision Audit\n\n## Ad 1: \"The Wrong Person\" (Problem Awareness)\n\n**Hook:** I tracked every decision a CEO made for 14 days. 47 of them shouldn't have been his.\n\n**Body:**\nHe had no idea. He thought his VP of Product was the bottleneck. The data said otherwise.\n\nHis VP of Product was making 90% of decisions independently. The real problem was his VP of Sales — touching 60+ decisions a week that his account executives should have handled.\n\nWhen I showed him the audit, he went quiet for 30 seconds and said: \"I've been coaching the wrong person for two years.\"\n\nThis is what happens when you run a company on opinions instead of data. You coach the wrong person. You fix the wrong problem. You work 65-hour weeks solving things your team should own.\n\nI don't ask CEOs where they think the problem is. I sit in their meetings, track every decision for 14 days, and show them where it actually is.\n\nIf what I find doesn't surprise you, you owe me nothing.\n\n**CTA:** DM \"AUDIT\" to find out if your company has a decision problem.\n\n---\n\n## Ad 2: \"The Acquirer Walked\" (Cost of Inaction)\n\n**Hook:** A potential acquirer told my client: \"We like the business but we can't value it with this much key-man risk.\"\n\n**Body:**\nThen they walked.\n\nDavid built a $22M company from nothing over 15 years. Smart guy. Good team. But his business had a problem no leadership book could fix:\n\nIt couldn't run without him in the room.\n\nHis team wouldn't make a move without his approval. He was working 65-hour weeks. He missed his daughter's college graduation for a \"crisis\" his sales director could have handled.\n\nHe'd tried everything. Read the books. Hired a big-firm consultant ($80K for a strategy deck that changed nothing). Joined a peer group. His wife told him to \"just delegate more.\" That lasted 2 weeks.\n\nThe acquirer walking was the wake-up call. He called me the next morning.\n\n90 days later, his leadership team was making 80% of operational decisions without him. His Monday meetings went from 2 hours to 45 minutes. Revenue grew 12%.\n\nThe bottleneck was never his people. It was the operating system he'd built around himself.\n\n**CTA:** If your company can't run a Tuesday without you, DM me.\n\n---\n\n## Ad 3: \"You Don't Have a Team\" (Identity Challenge)\n\n**Hook:** If your team can't run a Tuesday without you, you don't have a team — you have an audience.\n\n**Body:**\nYou hired adults. Then you trained them to act like interns.\n\nNot on purpose. You didn't wake up one morning and decide to make every decision yourself. It happened slowly. Someone escalated a pricing call. You handled it because it was faster. Then it happened again. And again. Now your directors check with you before ordering lunch.\n\nYou say \"my people won't step up.\" Here's what's actually happening: they stopped trying because you taught them it doesn't matter. Every time you jump in, you're sending the same message — your judgment doesn't count.\n\nI don't do personality tests. I don't talk about your \"leadership journey.\" I sit in your meetings for 14 days, track every decision, and show you exactly where you're making calls that aren't yours to make.\n\nThe look on every CEO's face is the same when they see the data. They had no idea.\n\n90-day guarantee. If the decision load hasn't shifted, full refund. Two refunds in six years.\n\n**CTA:** DM \"BOTTLENECK\" and I'll tell you if this is your problem.\n\n---\n\n## Ad 4: \"Cold Glass of Water\" (Short-Form / Reels)\n\n**Hook:** Your Monday meeting is 90 minutes too long. Here's why.\n\n**Body:**\nYou're hearing status updates. That's not a meeting — that's a performance.\n\nYour team is reporting TO you instead of deciding WITH each other. They've learned that nothing moves until you nod.\n\nI've sat in 200+ leadership meetings. I can tell you who actually runs your company within 30 minutes. It's usually one person. And they're exhausted.\n\n**CTA:** If this sounds familiar, DM \"MEETING\" for a free meeting audit framework.\n\n---\n\n## Ad 5: \"Decision Debt\" (Concept Introduction)\n\n**Hook:** Decision debt compounds faster than financial debt.\n\n**Body:**\nEvery decision your team pushes up to you is a tax on your company's speed.\n\nOne escalation takes 5 minutes. But your directors made 60 of them this week. That's 5 hours of your week spent on decisions someone else should own.\n\nMultiply that across a year. That's not a leadership problem — it's a structural one.\n\nYour people aren't underperforming. They're waiting for permission.\n\nI track every decision in a company over 14 days. In every engagement, at least 40% are being made by the wrong person. The CEO thinks the bottleneck is their team. The data usually says the bottleneck is them.\n\nI can show you exactly where this is happening. No surveys. No personality tests. Just 14 days of observation and a document that changes how you run your company.\n\nIf what I find doesn't surprise you, you owe me nothing.\n\n**CTA:** DM \"DECISIONS\" to learn how the audit works.\n\n---\n\n## Creative Notes\n\n**Image direction for each ad:**\n1. \"The Wrong Person\" — Clean whiteboard or spreadsheet visual showing decision flow. Data-driven feel.\n2. \"The Acquirer Walked\" — Empty conference room. One chair pulled back from the table.\n3. \"You Don't Have a Team\" — A meeting room where everyone is looking at one person. Or: one person's calendar, completely blocked.\n4. \"Cold Glass of Water\" — Talking head / Reels format. Marcus direct to camera.\n5. \"Decision Debt\" — Simple text overlay on dark background. The \"40%\" stat as the visual anchor.\n\n**Targeting notes:**\n- CEOs / Founders / Business Owners\n- Company size: 20-200 employees ($5M-$50M revenue)\n- Interests: YPO, Vistage, EO, Harvard Business Review, executive coaching\n- Exclude: solopreneurs, startup founders pre-revenue\n"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:45:00.599Z"
+    },
+    {
+      "id": "df80587f-3f63-4dc4-bb27-38d5e341ef12",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_011iyCHNaRhtKjNiGR1u9R7G",
+          "title": "ls /Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "ls /Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/",
+            "description": "Check outputs directory"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:45:40.856Z"
+    },
+    {
+      "id": "d235b9ad-bb9e-4b74-bad2-29bdf78debf2",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_018DrHepwnMukKqXDBasyfa8",
+          "title": "Read 03-Outputs/2026-03-26-ad-decision-audit.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-ad-decision-audit.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-ad-decision-audit.md"
+          }
+        },
+        {
+          "type": "text",
+          "text": "There's already an earlier version of this ad file. Let me overwrite it with the new version — the Context files are significantly deeper now, so the output should be stronger."
+        }
+      ],
+      "timestamp": "2026-03-26T05:45:43.805Z"
+    },
+    {
+      "id": "3efc3495-d85f-4a5a-8808-9a8d30d5fd61",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01KdfhVkYgDVysNz2KEKz8rE",
+          "title": "Write 03-Outputs/2026-03-26-ad-decision-audit-v2.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-ad-decision-audit-v2.md",
+              "newText": "---\ntype: output\nformat: ad\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:55\nsource_files:\n  - 00-Context/soul.md\n  - 00-Context/audience.md\n  - 00-Context/offer.md\n  - 00-Context/voice.md\n---\n\n# Facebook/Instagram Ad Copy — Decision Audit v2\n\n*Generated from Compounding-depth Context files. All stories, quotes, and data points sourced from enriched reference stack.*\n\n---\n\n## Ad 1: \"The Wrong Person\" (Proof of Audit)\n\n**Primary Text:**\nI tracked every decision a CEO made for 14 days. 47 of them shouldn't have been his.\n\nHe was convinced his VP of Product was the bottleneck. The data told the opposite story.\n\nHis VP of Product was making 90% of decisions independently. The real problem? His VP of Sales was touching 60+ decisions a week that his account executives should have handled.\n\nWhen I showed him the audit he went quiet for 30 seconds and said: \"I've been coaching the wrong person for two years.\"\n\nThis is what happens when you run a company on opinions instead of data. You fix the wrong problem. You coach the wrong person. You work 65-hour weeks solving things your team should own.\n\nI don't ask CEOs where they think the problem is. I sit in their meetings, track every decision for 14 days, and show them where it actually is.\n\nIf what I find doesn't surprise you, you owe me nothing.\n\n**Headline:** The bottleneck is never the people. It's the operating system.\n**CTA:** Get the Decision Audit\n\n---\n\n## Ad 2: \"The Acquirer Walked\" (Valuation Pain)\n\n**Primary Text:**\nA potential acquirer looked at my client's $22M company and said: \"We like the business but we can't value it with this much key-man risk.\"\n\nThen they walked.\n\nDavid built that company from nothing over 15 years. Smart guy. Good team. But his business had a problem no leadership book could fix — it couldn't run without him in the room.\n\nHe'd tried everything. Read the books. Hired a big-firm consultant ($80K for a strategy deck that changed nothing). Joined a peer group. His wife told him to \"just delegate more.\" That lasted 2 weeks.\n\nHe picked up the phone three times over six months before he called me. The acquirer walking was what made the cost undeniable.\n\n90 days later, his leadership team was making 80% of operational decisions without him. Monday meetings went from 2 hours to 45 minutes. Revenue grew because the team moved faster without waiting for one person to approve everything.\n\nYour 65-hour weeks aren't just costing you family time. They're discounting your company's valuation.\n\n**Headline:** Your company is worth less because it depends on you.\n**CTA:** Learn More\n\n---\n\n## Ad 3: \"You Have an Audience\" (Identity Challenge)\n\n**Primary Text:**\nIf your team can't run a Tuesday without you, you don't have a team — you have an audience.\n\nYou hired adults. Then you trained them to act like interns.\n\nNot on purpose. Someone escalated a pricing call. You handled it because it was faster. Then it happened again. Now your directors check with you before making any move.\n\nYou say \"my people won't step up.\" Here's what's actually happening: they stopped trying because you taught them it doesn't matter.\n\nI've sat in 200+ leadership team meetings. The pattern is always the same. I can map the real power structure of your company in one Monday morning standup — who defers to whom, who checks their phone when someone else talks, who asks permission before stating an opinion.\n\n14 days. I track every decision. I show you exactly where you're making calls that aren't yours to make.\n\n90-day guarantee. If the decision load hasn't shifted — fewer escalations, fewer hours in meetings, your team deciding without you — full refund. Two refunds in six years.\n\n**Headline:** You didn't hire adults to treat them like interns.\n**CTA:** Get the Decision Audit\n\n---\n\n## Ad 4: \"The Moment It Shifts\" (Transformation Story)\n\n**Primary Text:**\nThe moment I know it's working is always the same.\n\nWeek 3. The CEO is sitting in a meeting. They start to say something — lean forward, open their mouth — and then stop themselves.\n\nThey look at their director and say \"what do you think?\" instead.\n\nThe whole room shifts. The director sits up straighter. The other VPs start paying attention differently. It's not a process change. It's a power transfer happening in real time.\n\nThat one moment changes more than any leadership book, any $80K consulting engagement, any peer group. Because the CEO catches themselves. That's the signal.\n\nBefore that moment: 2-hour Monday meetings. 65-hour weeks. A team that won't make a move without approval.\n\nAfter: 45-minute strategic meetings. White space on the calendar. Revenue up 10-15% because the team moves faster.\n\nI don't do personality tests. I don't talk about your \"leadership journey.\" I sit in your meetings, track your decisions, and show you where the bottleneck is.\n\nIt's you. And that's fixable in 90 days.\n\n**Headline:** Decision debt compounds faster than financial debt.\n**CTA:** Learn More\n\n---\n\n## Ad 5: \"Cold Glass of Water\" (Short-Form / Reel)\n\n**Frame 1:** Your Monday meeting is 90 minutes too long. Here's why.\n\n**Frame 2:** You're hearing status updates. That's not a meeting — that's a performance. Your team is reporting TO you instead of deciding WITH each other.\n\n**Frame 3:** \"Let's circle back\" means \"I don't want to decide.\" \"I'll loop in the team\" means \"I want cover.\" Every soft phrase in your meetings is a hiding spot.\n\n**Frame 4:** I sit in one Monday standup and I can map the real power structure of your company. Who defers to whom. Who checks their phone when someone else talks. Who asks permission before stating an opinion.\n\n**Frame 5:** The Decision Audit. 14 days. I show you the 40% of decisions being made by the wrong person.\n\n**Frame 6:** (It's usually you.)\n\n**CTA:** DM \"AUDIT\"\n\n---\n\n## Ad 6: \"The Book Didn't Work\" (Failed Alternatives)\n\n**Primary Text:**\nYou read \"Good to Great.\" You read \"Radical Candor.\" You know you're supposed to delegate.\n\nYou tried. It lasted two weeks.\n\nYou hired a big-firm consultant. $80K. Got a 60-page strategy deck with nice charts. Nothing changed.\n\nYou joined a peer group — Vistage, EO. Useful for networking. Not useful for fixing the actual operating rhythm of your company.\n\nYour wife told you to delegate more. You tried. Two weeks later you were back in every meeting.\n\nHere's the gap: books tell you what to do. Consultants tell you what to change. Nobody's showing you what you're actually doing — in real time, in your actual meetings, with your actual team.\n\nI can. I've sat in 200+ leadership team meetings and the pattern is always the same. I don't need months of interviews. I need 14 days and a chair in your Monday standup.\n\nIf what I find in the audit doesn't surprise you, you pay nothing.\n\n**Headline:** Stop coaching your team. Start trusting your team.\n**CTA:** Get the Decision Audit\n\n---\n\n## Creative Direction\n\n| Ad | Format | Image/Video Direction |\n|----|--------|----------------------|\n| 1: \"The Wrong Person\" | Feed (long copy) | Clean data visualization — decision flow chart or audit excerpt. Numbers-forward. |\n| 2: \"The Acquirer Walked\" | Feed (story) | Empty boardroom. One chair pushed back. Or: a valuation document with a red line through it. |\n| 3: \"You Have an Audience\" | Feed (challenge) | A meeting room where everyone looks at one person. Or: one blocked calendar vs. one with white space. |\n| 4: \"The Moment It Shifts\" | Feed (transformation) | Split screen: before (cramped calendar, packed meeting) / after (open calendar, small focused meeting). |\n| 5: \"Cold Glass of Water\" | Reels / Stories | Marcus direct to camera. Quick cuts. No b-roll fluff. Match the voice — short sentences, no buildup. |\n| 6: \"The Book Didn't Work\" | Feed (long copy) | Stack of business books with a sticky note: \"Still working 65 hours.\" |\n\n## Targeting\n\n- **Primary:** CEOs / Founders / Business Owners, 40-60\n- **Company size:** 20-200 employees ($10M-$50M revenue)\n- **Interest signals:** Vistage, EO, YPO, Harvard Business Review, CEO peer groups, executive coaching, business scaling\n- **Exclude:** Solopreneurs, pre-revenue startups, life coaches\n- **Lookalike:** Upload client list for 1% lookalike\n\n## Recommended Test Sequence\n\n**Round 1 (3 ads, different angles):**\n- Ad 1: \"The Wrong Person\" — leads with data/proof\n- Ad 2: \"The Acquirer Walked\" — leads with financial cost\n- Ad 6: \"The Book Didn't Work\" — leads with failed alternatives\n\n**Round 2 (winners + new):**\n- Best performer from Round 1\n- Ad 3: \"You Have an Audience\" — identity challenge\n- Ad 4: \"The Moment It Shifts\" — transformation story\n\n**Reel (always on):** Ad 5 runs continuously for top-of-funnel awareness.\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-ad-decision-audit-v2.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-ad-decision-audit-v2.md",
+            "content": "---\ntype: output\nformat: ad\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:55\nsource_files:\n  - 00-Context/soul.md\n  - 00-Context/audience.md\n  - 00-Context/offer.md\n  - 00-Context/voice.md\n---\n\n# Facebook/Instagram Ad Copy — Decision Audit v2\n\n*Generated from Compounding-depth Context files. All stories, quotes, and data points sourced from enriched reference stack.*\n\n---\n\n## Ad 1: \"The Wrong Person\" (Proof of Audit)\n\n**Primary Text:**\nI tracked every decision a CEO made for 14 days. 47 of them shouldn't have been his.\n\nHe was convinced his VP of Product was the bottleneck. The data told the opposite story.\n\nHis VP of Product was making 90% of decisions independently. The real problem? His VP of Sales was touching 60+ decisions a week that his account executives should have handled.\n\nWhen I showed him the audit he went quiet for 30 seconds and said: \"I've been coaching the wrong person for two years.\"\n\nThis is what happens when you run a company on opinions instead of data. You fix the wrong problem. You coach the wrong person. You work 65-hour weeks solving things your team should own.\n\nI don't ask CEOs where they think the problem is. I sit in their meetings, track every decision for 14 days, and show them where it actually is.\n\nIf what I find doesn't surprise you, you owe me nothing.\n\n**Headline:** The bottleneck is never the people. It's the operating system.\n**CTA:** Get the Decision Audit\n\n---\n\n## Ad 2: \"The Acquirer Walked\" (Valuation Pain)\n\n**Primary Text:**\nA potential acquirer looked at my client's $22M company and said: \"We like the business but we can't value it with this much key-man risk.\"\n\nThen they walked.\n\nDavid built that company from nothing over 15 years. Smart guy. Good team. But his business had a problem no leadership book could fix — it couldn't run without him in the room.\n\nHe'd tried everything. Read the books. Hired a big-firm consultant ($80K for a strategy deck that changed nothing). Joined a peer group. His wife told him to \"just delegate more.\" That lasted 2 weeks.\n\nHe picked up the phone three times over six months before he called me. The acquirer walking was what made the cost undeniable.\n\n90 days later, his leadership team was making 80% of operational decisions without him. Monday meetings went from 2 hours to 45 minutes. Revenue grew because the team moved faster without waiting for one person to approve everything.\n\nYour 65-hour weeks aren't just costing you family time. They're discounting your company's valuation.\n\n**Headline:** Your company is worth less because it depends on you.\n**CTA:** Learn More\n\n---\n\n## Ad 3: \"You Have an Audience\" (Identity Challenge)\n\n**Primary Text:**\nIf your team can't run a Tuesday without you, you don't have a team — you have an audience.\n\nYou hired adults. Then you trained them to act like interns.\n\nNot on purpose. Someone escalated a pricing call. You handled it because it was faster. Then it happened again. Now your directors check with you before making any move.\n\nYou say \"my people won't step up.\" Here's what's actually happening: they stopped trying because you taught them it doesn't matter.\n\nI've sat in 200+ leadership team meetings. The pattern is always the same. I can map the real power structure of your company in one Monday morning standup — who defers to whom, who checks their phone when someone else talks, who asks permission before stating an opinion.\n\n14 days. I track every decision. I show you exactly where you're making calls that aren't yours to make.\n\n90-day guarantee. If the decision load hasn't shifted — fewer escalations, fewer hours in meetings, your team deciding without you — full refund. Two refunds in six years.\n\n**Headline:** You didn't hire adults to treat them like interns.\n**CTA:** Get the Decision Audit\n\n---\n\n## Ad 4: \"The Moment It Shifts\" (Transformation Story)\n\n**Primary Text:**\nThe moment I know it's working is always the same.\n\nWeek 3. The CEO is sitting in a meeting. They start to say something — lean forward, open their mouth — and then stop themselves.\n\nThey look at their director and say \"what do you think?\" instead.\n\nThe whole room shifts. The director sits up straighter. The other VPs start paying attention differently. It's not a process change. It's a power transfer happening in real time.\n\nThat one moment changes more than any leadership book, any $80K consulting engagement, any peer group. Because the CEO catches themselves. That's the signal.\n\nBefore that moment: 2-hour Monday meetings. 65-hour weeks. A team that won't make a move without approval.\n\nAfter: 45-minute strategic meetings. White space on the calendar. Revenue up 10-15% because the team moves faster.\n\nI don't do personality tests. I don't talk about your \"leadership journey.\" I sit in your meetings, track your decisions, and show you where the bottleneck is.\n\nIt's you. And that's fixable in 90 days.\n\n**Headline:** Decision debt compounds faster than financial debt.\n**CTA:** Learn More\n\n---\n\n## Ad 5: \"Cold Glass of Water\" (Short-Form / Reel)\n\n**Frame 1:** Your Monday meeting is 90 minutes too long. Here's why.\n\n**Frame 2:** You're hearing status updates. That's not a meeting — that's a performance. Your team is reporting TO you instead of deciding WITH each other.\n\n**Frame 3:** \"Let's circle back\" means \"I don't want to decide.\" \"I'll loop in the team\" means \"I want cover.\" Every soft phrase in your meetings is a hiding spot.\n\n**Frame 4:** I sit in one Monday standup and I can map the real power structure of your company. Who defers to whom. Who checks their phone when someone else talks. Who asks permission before stating an opinion.\n\n**Frame 5:** The Decision Audit. 14 days. I show you the 40% of decisions being made by the wrong person.\n\n**Frame 6:** (It's usually you.)\n\n**CTA:** DM \"AUDIT\"\n\n---\n\n## Ad 6: \"The Book Didn't Work\" (Failed Alternatives)\n\n**Primary Text:**\nYou read \"Good to Great.\" You read \"Radical Candor.\" You know you're supposed to delegate.\n\nYou tried. It lasted two weeks.\n\nYou hired a big-firm consultant. $80K. Got a 60-page strategy deck with nice charts. Nothing changed.\n\nYou joined a peer group — Vistage, EO. Useful for networking. Not useful for fixing the actual operating rhythm of your company.\n\nYour wife told you to delegate more. You tried. Two weeks later you were back in every meeting.\n\nHere's the gap: books tell you what to do. Consultants tell you what to change. Nobody's showing you what you're actually doing — in real time, in your actual meetings, with your actual team.\n\nI can. I've sat in 200+ leadership team meetings and the pattern is always the same. I don't need months of interviews. I need 14 days and a chair in your Monday standup.\n\nIf what I find in the audit doesn't surprise you, you pay nothing.\n\n**Headline:** Stop coaching your team. Start trusting your team.\n**CTA:** Get the Decision Audit\n\n---\n\n## Creative Direction\n\n| Ad | Format | Image/Video Direction |\n|----|--------|----------------------|\n| 1: \"The Wrong Person\" | Feed (long copy) | Clean data visualization — decision flow chart or audit excerpt. Numbers-forward. |\n| 2: \"The Acquirer Walked\" | Feed (story) | Empty boardroom. One chair pushed back. Or: a valuation document with a red line through it. |\n| 3: \"You Have an Audience\" | Feed (challenge) | A meeting room where everyone looks at one person. Or: one blocked calendar vs. one with white space. |\n| 4: \"The Moment It Shifts\" | Feed (transformation) | Split screen: before (cramped calendar, packed meeting) / after (open calendar, small focused meeting). |\n| 5: \"Cold Glass of Water\" | Reels / Stories | Marcus direct to camera. Quick cuts. No b-roll fluff. Match the voice — short sentences, no buildup. |\n| 6: \"The Book Didn't Work\" | Feed (long copy) | Stack of business books with a sticky note: \"Still working 65 hours.\" |\n\n## Targeting\n\n- **Primary:** CEOs / Founders / Business Owners, 40-60\n- **Company size:** 20-200 employees ($10M-$50M revenue)\n- **Interest signals:** Vistage, EO, YPO, Harvard Business Review, CEO peer groups, executive coaching, business scaling\n- **Exclude:** Solopreneurs, pre-revenue startups, life coaches\n- **Lookalike:** Upload client list for 1% lookalike\n\n## Recommended Test Sequence\n\n**Round 1 (3 ads, different angles):**\n- Ad 1: \"The Wrong Person\" — leads with data/proof\n- Ad 2: \"The Acquirer Walked\" — leads with financial cost\n- Ad 6: \"The Book Didn't Work\" — leads with failed alternatives\n\n**Round 2 (winners + new):**\n- Best performer from Round 1\n- Ad 3: \"You Have an Audience\" — identity challenge\n- Ad 4: \"The Moment It Shifts\" — transformation story\n\n**Reel (always on):** Ad 5 runs continuously for top-of-funnel awareness.\n"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Generated **6 ads** saved to `03-Outputs/2026-03-26-ad-decision-audit-v2.md`.\n\n**What's different from the v1 ads** (generated before enrichment):\n\n| | v1 (Draft context) | v2 (Compounding context) |\n|---|---|---|\n| Stories | Generic \"a CEO\" examples | The $18M SaaS audit, David Park's acquirer walking, the week 3 power transfer moment |\n| Fear layer | Surface-level (\"too busy\") | Identity-level (\"your company is worth less because it depends on you\") |\n| Failed alternatives | Listed generically | Specific: $80K consultant, 60-page deck, Vistage, wife's advice that lasted 2 weeks |\n| Voice | Approximately Marcus | The Decoder Ring language, signature phrases woven naturally, cold-glass-of-water tone |\n| Proof | \"40% stat\" repeated | \"Coaching the wrong person for two years,\" two refunds in six years, 90% independent VP |\n\n**The 6 ads, by angle:**\n1. **\"The Wrong Person\"** — leads with the surprising SaaS audit story\n2. **\"The Acquirer Walked\"** — David Park's valuation wake-up call\n3. **\"You Have an Audience\"** — identity challenge using signature phrase\n4. **\"The Moment It Shifts\"** — the week 3 transformation scene\n5. **\"Cold Glass of Water\"** — Reel using the Decoder Ring anti-language\n6. **\"The Book Didn't Work\"** — stacks every failed alternative\n\nIncludes creative direction, targeting notes, and a recommended A/B test sequence at the bottom. Ready for `/ads` if you want image prompts or compliance review."
+        }
+      ],
+      "timestamp": "2026-03-26T05:45:47.885Z"
+    },
+    {
+      "id": "04f832d5-963e-4923-8713-e4217baf1a51",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/email"
+        }
+      ],
+      "timestamp": "2026-03-26T05:52:20.400Z"
+    },
+    {
+      "id": "e51dc92c-8e56-4eac-82fc-28860b761a78",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "agent_thought",
+          "text": "The user wants to generate an email sequence. I need to read the context files first, but I already have them loaded from the previous generate call. Let me check - all four files are at Compounding status, so no warnings needed.\n\nI should ask what kind of email they want: cold outreach, warm follow-up, or nurture sequence."
+        },
+        {
+          "type": "text",
+          "text": "All four Context files are at Compounding depth — no warnings needed.\n\nWhat kind of email? \n\n1. **Cold outreach** (3-email sequence) — pattern-interrupt opener, proof story, direct ask\n2. **Warm follow-up** (single email) — responding to a specific trigger (event, referral, download)\n3. **Nurture sequence** (5 emails over 2 weeks) — builds authority over time\n\nWhich one, or should I default to cold outreach?"
+        }
+      ],
+      "timestamp": "2026-03-26T05:52:23.811Z"
+    },
+    {
+      "id": "90a66012-73a3-449c-92d6-01285e9c8b1d",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "1"
+        }
+      ],
+      "timestamp": "2026-03-26T05:52:54.267Z"
+    },
+    {
+      "id": "b0c3975e-b9a9-4203-894a-390835d91cb7",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01QrQri3FHDpqUyixwHy9QQG",
+          "title": "Write 03-Outputs/2026-03-26-email-cold-outreach.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-email-cold-outreach.md",
+              "newText": "---\ntype: output\nformat: email\ndate: 2026-03-26\nlast-updated: 2026-03-26 18:00\nsource_files:\n  - 00-Context/soul.md\n  - 00-Context/audience.md\n  - 00-Context/offer.md\n  - 00-Context/voice.md\n---\n\n# Cold Outreach — 3-Email Sequence\n\nTarget: CEOs of $10M-$50M companies showing key-man dependency signals (heavy meeting schedules, team escalation patterns, or recent failed acquisition/valuation conversations).\n\n---\n\n## Email 1: Pattern Interrupt (Day 1)\n\n**Subject:** your monday meeting\n\n**Body:**\n\n{{First Name}} —\n\nI looked at how most $20M companies run their Monday meetings. Two hours. Status updates. Every decision funnels through one person.\n\nHere's what that actually costs: your directors stop thinking for themselves. They learn that nothing moves until you nod. So they wait. And you wonder why they \"won't step up.\"\n\nI tracked every decision in a CEO's company for 14 days. He was making 47 decisions a week that should have belonged to his directors. He had no idea.\n\nI do this for a living. I sit in meetings, map the decision flow, and show CEOs exactly where their operating system is broken. No surveys. No personality tests. Just 14 days of observation.\n\nIf what I find doesn't surprise you, you owe me nothing.\n\nWorth a conversation?\n\n— Marcus\n\n---\n\n## Email 2: Proof Story (Day 4)\n\n**Subject:** \"I've been coaching the wrong person for two years\"\n\n**Body:**\n\n{{First Name}} —\n\nSaaS company. $18M revenue. The CEO was convinced his VP of Product was the bottleneck.\n\nI ran a 14-day Decision Audit. Tracked every decision — who made it, who should have made it.\n\nHis VP of Product was making 90% of decisions independently. One of the healthiest profiles I'd seen.\n\nThe real problem was his VP of Sales. Touching 60+ decisions a week that his account executives should have handled. The CEO had been so focused on the product org — because that's where his expertise was — that he completely missed the bottleneck one office over.\n\nWhen I showed him the data he went quiet for 30 seconds and said: \"I've been coaching the wrong person for two years.\"\n\nCEOs are smart people with strong opinions about where their problems are. The audit doesn't care about opinions. It just counts decisions.\n\nIf you're curious where your decisions are actually landing, I can show you in 14 days.\n\n— Marcus\n\n---\n\n## Email 3: Direct Ask (Day 7)\n\n**Subject:** quick question\n\n**Body:**\n\n{{First Name}} —\n\nOne question: if you took two weeks off tomorrow and didn't check your phone, what would break?\n\nIf you can name specific things — that's not a people problem. That's a structural one. And it's fixable in 90 days.\n\nMy clients come out the other side with their leadership team making 80% of operational decisions without escalation. Monday meetings go from 2 hours to 45 minutes. Revenue doesn't dip — it usually grows because the team moves faster without waiting for one person to approve everything.\n\nI guarantee it. If the decision load hasn't shifted in 90 days, full refund. I've offered that for 6 years. Two refunds.\n\n15 minutes on the phone and I can tell you if this is your problem. If it's not, I'll tell you that too.\n\n— Marcus\n\n---\n\n## Sequence Notes\n\n**Timing:** Day 1 → Day 4 → Day 7. Three touches in one week. No follow-up after Email 3 — if they don't respond, they're not in a buying moment. The trigger hasn't hit yet.\n\n**Subject lines:** All lowercase, conversational. These should look like they came from a person, not a platform. No emojis. No \"[First Name],\" in the subject.\n\n**Voice check:** Short sentences. No \"I hope this finds you well.\" No \"I'd love to connect.\" Lead with the point. End with a clear next step. Every email should feel like a cold glass of water — not rude, just honest.\n\n**Personalization layer:** Before sending, check LinkedIn for:\n- How long they've been CEO (longer = more entrenched habits)\n- Company size / headcount (signals decision complexity)\n- Any recent posts about being busy, team challenges, or growth pain\n- Whether they've mentioned Vistage/EO/YPO (means they're already investing in development but haven't fixed the structural problem)\n\nSwap in one specific detail per email when possible. The more it reads like you researched their company, the higher the reply rate.\n",
+              "oldText": null
+            }
+          ],
+          "locations": [
+            {
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-email-cold-outreach.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/03-Outputs/2026-03-26-email-cold-outreach.md",
+            "content": "---\ntype: output\nformat: email\ndate: 2026-03-26\nlast-updated: 2026-03-26 18:00\nsource_files:\n  - 00-Context/soul.md\n  - 00-Context/audience.md\n  - 00-Context/offer.md\n  - 00-Context/voice.md\n---\n\n# Cold Outreach — 3-Email Sequence\n\nTarget: CEOs of $10M-$50M companies showing key-man dependency signals (heavy meeting schedules, team escalation patterns, or recent failed acquisition/valuation conversations).\n\n---\n\n## Email 1: Pattern Interrupt (Day 1)\n\n**Subject:** your monday meeting\n\n**Body:**\n\n{{First Name}} —\n\nI looked at how most $20M companies run their Monday meetings. Two hours. Status updates. Every decision funnels through one person.\n\nHere's what that actually costs: your directors stop thinking for themselves. They learn that nothing moves until you nod. So they wait. And you wonder why they \"won't step up.\"\n\nI tracked every decision in a CEO's company for 14 days. He was making 47 decisions a week that should have belonged to his directors. He had no idea.\n\nI do this for a living. I sit in meetings, map the decision flow, and show CEOs exactly where their operating system is broken. No surveys. No personality tests. Just 14 days of observation.\n\nIf what I find doesn't surprise you, you owe me nothing.\n\nWorth a conversation?\n\n— Marcus\n\n---\n\n## Email 2: Proof Story (Day 4)\n\n**Subject:** \"I've been coaching the wrong person for two years\"\n\n**Body:**\n\n{{First Name}} —\n\nSaaS company. $18M revenue. The CEO was convinced his VP of Product was the bottleneck.\n\nI ran a 14-day Decision Audit. Tracked every decision — who made it, who should have made it.\n\nHis VP of Product was making 90% of decisions independently. One of the healthiest profiles I'd seen.\n\nThe real problem was his VP of Sales. Touching 60+ decisions a week that his account executives should have handled. The CEO had been so focused on the product org — because that's where his expertise was — that he completely missed the bottleneck one office over.\n\nWhen I showed him the data he went quiet for 30 seconds and said: \"I've been coaching the wrong person for two years.\"\n\nCEOs are smart people with strong opinions about where their problems are. The audit doesn't care about opinions. It just counts decisions.\n\nIf you're curious where your decisions are actually landing, I can show you in 14 days.\n\n— Marcus\n\n---\n\n## Email 3: Direct Ask (Day 7)\n\n**Subject:** quick question\n\n**Body:**\n\n{{First Name}} —\n\nOne question: if you took two weeks off tomorrow and didn't check your phone, what would break?\n\nIf you can name specific things — that's not a people problem. That's a structural one. And it's fixable in 90 days.\n\nMy clients come out the other side with their leadership team making 80% of operational decisions without escalation. Monday meetings go from 2 hours to 45 minutes. Revenue doesn't dip — it usually grows because the team moves faster without waiting for one person to approve everything.\n\nI guarantee it. If the decision load hasn't shifted in 90 days, full refund. I've offered that for 6 years. Two refunds.\n\n15 minutes on the phone and I can tell you if this is your problem. If it's not, I'll tell you that too.\n\n— Marcus\n\n---\n\n## Sequence Notes\n\n**Timing:** Day 1 → Day 4 → Day 7. Three touches in one week. No follow-up after Email 3 — if they don't respond, they're not in a buying moment. The trigger hasn't hit yet.\n\n**Subject lines:** All lowercase, conversational. These should look like they came from a person, not a platform. No emojis. No \"[First Name],\" in the subject.\n\n**Voice check:** Short sentences. No \"I hope this finds you well.\" No \"I'd love to connect.\" Lead with the point. End with a clear next step. Every email should feel like a cold glass of water — not rude, just honest.\n\n**Personalization layer:** Before sending, check LinkedIn for:\n- How long they've been CEO (longer = more entrenched habits)\n- Company size / headcount (signals decision complexity)\n- Any recent posts about being busy, team challenges, or growth pain\n- Whether they've mentioned Vistage/EO/YPO (means they're already investing in development but haven't fixed the structural problem)\n\nSwap in one specific detail per email when possible. The more it reads like you researched their company, the higher the reply rate.\n"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Saved to `03-Outputs/2026-03-26-email-cold-outreach.md`.\n\n**3-email cold outreach sequence:**\n\n| Email | Day | Subject | Angle |\n|-------|-----|---------|-------|\n| 1 | Day 1 | \"your monday meeting\" | Pattern interrupt — the 47 decisions stat, leads with insight |\n| 2 | Day 4 | \"I've been coaching the wrong person for two years\" | Proof — the $18M SaaS audit story |\n| 3 | Day 7 | \"quick question\" | Direct ask — \"if you took two weeks off, what would break?\" |\n\nEach email opens with the point (never \"I hope this finds you well\"), uses Marcus's voice (short sentences, no qualifiers), and ends with a clear next step. Includes personalization notes and timing guidance at the bottom."
+        }
+      ],
+      "timestamp": "2026-03-26T05:52:57.272Z"
     }
   ],
-  "savedAt": "2026-03-26T05:43:01.210Z"
+  "savedAt": "2026-03-26T05:53:31.886Z"
 }

@@ -22,7 +22,11 @@ All work runs through skills in `.claude/skills/`:
 - `/setup` — Personalize a new vault
 - `/extract` — Context Extraction interviews (soul, audience, offer, voice)
 - `/import` — Mine existing documents (proposals, emails, website copy) into Context files
-- `/generate` — Create outputs from Context files (ads, emails, posts, proposals)
+- `/ad` — Generate ad copy (Meta/Facebook/Instagram)
+- `/email` — Generate email sequences (cold, warm, nurture)
+- `/post` — Generate LinkedIn post
+- `/proposal` — Generate client proposal
+- `/landing` — Generate landing page copy
 - `/enrich` — Deepen thin Context files with follow-up questions
 - `/audit` — Check vault health
 - `/scout` — Cross-reference context against market signals
