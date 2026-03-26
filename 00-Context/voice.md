@@ -1,49 +1,46 @@
 ---
 type: context
-status: draft
-date: 2026-03-25
-imported_from: voice extraction answers pasted in session
-extracted_via: claude-code
+status: active
+date: 2026-03-26
 ---
 
 # Voice
 
-How Marcus Webb sounds. The tone, the language, the words he'd never use. This ensures every output sounds like him — not a chatbot.
-
----
-
 ## Tone Calibration
-Mix of B and C — walks people through what works, but from experience, not theory. "I've got the scars. When I say something works, it's because I've done it 50 times, not because I read a Harvard Business Review article about it."
+C) "I've been in the trenches. Here's what actually matters."
 
-Direct. Specific. No academic framing. Leads with what he's seen on the floor, not what a framework says.
+I'm direct. I'm not harsh, but I don't soften things with qualifiers. If I say "your Monday meeting is broken," I mean it's broken — I'm not going to say "there might be an opportunity to optimize your Monday cadence." I earned the right to be direct because I've done the job. I was a COO. I sat in those meetings. I made the same mistakes my clients make. That credibility is everything.
 
 ## Signature Phrases
-- "Where's the decision bottleneck?"
-- "Who actually owns this?"
-- "Show me the floor, not the dashboard."
-- "The spreadsheet is lying to you."
-- "What does the shift supervisor say?"
-- "That's a $200K problem hiding in plain sight."
+- "The bottleneck is never the people. It's the operating system."
+- "You didn't hire adults to treat them like interns."
+- "If your team can't run a Tuesday without you, you don't have a team — you have an audience."
+- "Show me your calendar and I'll show you your priorities. Show me your meeting cadence and I'll show you your culture."
+- "Decision debt compounds faster than financial debt."
+- "Stop coaching your team. Start trusting your team."
 
 ## Anti-Language
-Never use any of these:
-- "Unlock your potential"
-- "Synergy"
-- "Digital transformation journey"
-- "Thought leader"
-- "Leverage" used as a verb
-- "Scalable solutions"
-- "We're like McKinsey but for mid-market" — McKinsey is why they're calling him.
+- "Synergy," "leverage," "alignment" — corporate speak that means nothing
+- "Leadership journey" — I'm not a spiritual guide
+- "Empower" — you don't empower people by giving them a pep talk, you empower them by getting out of their way
+- "Let's unpack that" — I'm a coach, not a therapist
+- "Circle back," "take this offline," "deep dive" — meeting filler words
+- Anything with "transformational" in it. I help people fix their companies, not find themselves.
 
 ## Voice Sample
-Email to a prospect:
+Email I sent to a prospect last month:
 
-"Tom — I looked at your P&L and your org chart. You've got 4 people between a customer order and the person who schedules production. That's not a staffing problem, that's an architecture problem. Happy to spend a day at your plant and show you where the drag is. If I can't find $500K in 3 weeks, I'll refund the diagnostic. Let me know."
+"David — I looked at what you sent me. You have a $22M company running on one person's judgment. That's not a leadership problem, it's a structural one. Your people aren't underperforming. They're waiting for permission.
 
-Short. Specific. No fluff.
+I can show you exactly where this is happening in 14 days. No surveys. No personality tests. I just need to sit in your meetings and talk to your team.
+
+If what I find doesn't surprise you, you owe me nothing.
+
+— Marcus"
 
 ## Emotional Target
-Three beats, in order:
-1. **Recognition** — "Someone finally said the thing I've been thinking but couldn't articulate."
-2. **Productive discomfort** — Pointing at something they've been avoiding. Not mean — honest. "You know this is true and now someone's said it out loud."
-3. **Clear path forward** — Discomfort without direction is just anxiety. "I'm not in the anxiety business."
+After reading something from me, I want people to feel two things:
+1. **Seen.** Like someone finally described the problem they've been living with but couldn't articulate.
+2. **Impatient.** Like the cost of doing nothing just became obvious and they want to fix it now.
+
+I don't want them to feel inspired. Inspiration fades by Tuesday. I want them to feel the weight of what they're leaving on the table.

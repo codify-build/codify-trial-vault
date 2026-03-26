@@ -1,41 +1,32 @@
 ---
 type: context
-status: draft
-date: 2026-03-25
-imported_from: soul extraction answers pasted in session
-extracted_via: claude-code
+status: active
+date: 2026-03-26
 ---
 
 # Soul
 
-Who Marcus Webb is. What he believes. Why Webb Strategic Advisory exists. What makes his approach different from everyone else in the industry.
-
----
-
 ## Core Description
-"I help mid-market manufacturing CEOs stop bleeding money on operational inefficiency. Most of them are running $15-40M businesses on systems they built when they were a $3M shop. I rebuild their operational architecture so they can actually scale without hiring three more VPs they can't afford."
-
-See also: [[audience]], [[offer]]
+I help CEOs who've outgrown their leadership style. Most of my clients built something impressive — $10M to $50M companies — but they're running the business the same way they did at $2M. I don't teach leadership theory. I sit in their actual meetings, watch them operate, and show them exactly where their habits are costing them growth.
 
 ## Contrarian Belief
-"Everyone thinks digital transformation is a technology problem. It's not. It's a leadership sequencing problem. I've watched companies spend $2M on ERP implementations that failed because the CEO didn't restructure decision-making authority first. You can't automate a broken chain of command."
+Most executive coaches are therapists in disguise. They want to talk about your childhood and your "leadership journey." I think that's a waste of time. The reason your VP of Sales isn't performing has nothing to do with your relationship with your father. It's because you're making decisions in their meetings that should be theirs to make. Fix the structure, fix the business.
 
 ## Origin Moment
-Consulting for a plastics manufacturer in Ohio. They'd hired McKinsey before him — got a 200-page deck, beautiful charts. Nothing changed. Marcus spent two weeks on their shop floor, talked to every shift supervisor, and found the real bottleneck was a handoff between second and third shift that nobody in the C-suite even knew existed. Fixed it in 10 days. Saved them $1.2M annually.
-
-"The answers are always on the floor, never in the boardroom."
+I was COO of a $40M logistics company for 9 years. When the founder retired, the board brought in an outside CEO instead of promoting me. I was furious. Then I watched this new CEO — a woman named Karen Chen — completely transform the company in 18 months without changing a single person on the team. She just changed how decisions got made. That's when I realized: the bottleneck is never the people. It's the operating system the leader creates. I've built my entire practice around that insight.
 
 ## Anti-Positions
-Never sells a retainer without a diagnostic first. "Half the consultants in my space sell 12-month engagements on a 90-minute discovery call. That's malpractice. I need 2-3 weeks inside the operation before I'll even quote a scope. Some prospects hate that. Good — those aren't my clients."
+- I will never sell a 12-month retainer. If I can't show measurable change in 90 days, I don't deserve your money.
+- I will never coach someone who isn't willing to let me observe their team directly. I don't work from self-reported data.
+- I will never use personality assessments (Myers-Briggs, DISC, StrengthsFinder) as the foundation of a coaching engagement. They're horoscopes for executives.
 
 ## Institutional Knowledge
-How to read a manufacturing floor in 48 hours. Walk into any mid-market plant and identify the real problems within two days — not the ones management thinks they have, but the ones actually killing their margins. Pattern recognition from 30 years of seeing the same failure modes across different industries. "You can't Google that."
+How to read a leadership team's real dynamics in the first 30 minutes of a meeting. Who defers to whom. Who checks their phone when someone else is talking. Who asks permission before stating an opinion. Most consultants need months of interviews. I can map the actual power structure of a company by sitting quietly in one Monday morning standup.
 
 ## Proprietary Framework
-**The Operational Gravity Map.** Before touching anything, map every decision point in the operation and measure how long each decision takes to reach the person who actually executes it. Most companies have 6-8 decision layers. Best-in-class have 3. The gap between those numbers is where the money is hiding.
+**The Decision Audit.** I track every decision made in a company over 14 days — who made it, at what level, and whether it was the right person making it. In every company I've worked with, at least 40% of decisions are being made by the wrong person. Usually the CEO is making decisions that should belong to their directors, and their directors are escalating because they've been trained to. The audit makes the problem visible. Once they see it, they can't unsee it.
 
 ## External Perception
-- CEO of a $38M metal fabrication company told his board Marcus was "the most expensive consultant they'd ever hired and the only one who'd paid for himself in the first quarter."
-- Another client called him "allergic to bullshit."
+"Marcus told me something in month one that I didn't believe until month three. He said my best people were underperforming because I was accidentally teaching them not to think. He was right." — James Thornton, CEO, Meridian Supply Chain
 
-See also: [[voice]]
+"He's the only coach I've worked with who doesn't try to change who you are. He just changes where you point your energy." — Rachel Kim, Founder, Basecamp Recruiting

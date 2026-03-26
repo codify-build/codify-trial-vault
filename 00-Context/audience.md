@@ -1,52 +1,32 @@
 ---
 type: context
-status: draft
-date: 2026-03-25
-imported_from: audience extraction answers pasted in session
-extracted_via: claude-code
+status: active
+date: 2026-03-26
 ---
 
 # Audience
 
-Who buys from Webb Strategic Advisory. What they struggle with. How they describe their problems in their own words.
-
----
-
 ## Buyer Profile
-Mid-market manufacturing CEOs. $15-40M revenue, 100-500 employees. Typically founder-led or second-generation. Stuck at a revenue plateau for 2-3+ years.
-
-**Example: Dave Chen** — CEO of Pacific Ridge Manufacturing. $22M revenue, 180 employees, precision components for aerospace. Stuck at $22M for three years. Tried hiring a COO — didn't work. Tried implementing Lean — half-adopted, created more confusion. Margins eroding because his quoting process was still based on spreadsheets his founder built in 2009. Personally approving every quote over $50K — he was the bottleneck for 60% of their revenue.
-
-See also: [[soul]], [[offer]]
+Last client: David Park, CEO of a commercial HVAC company doing $22M. Built the company from nothing over 15 years. Smart guy. Works 65-hour weeks. Has a leadership team of 4 people who are loyal but won't make a move without his approval. David called me because he missed his daughter's college graduation for a "crisis" that turned out to be a pricing dispute his sales director could have handled. He didn't need a coach — he needed someone to show him that he'd accidentally built a company that couldn't function without him in the room.
 
 ## Failed Alternatives
-The usual gauntlet before they find Marcus:
-- **Big consulting** — McKinsey did a "digital readiness assessment" for Dave. $180K for a PDF.
-- **Fractional COO platforms** — Good people, but they'd never run a manufacturing floor. Tried to apply SaaS scaling playbooks to a shop floor. Lasted 8 months.
-- **Half-adopted methodologies** — Lean, Six Sigma, etc. implemented without restructuring decision authority first. Creates more confusion.
-- **Word of mouth** — They finally hear about Marcus through a peer (YPO chapter, industry group, board member referral).
+- Read every leadership book on the shelf. "Good to Great," "Radical Candor," the whole collection. Knows the theory. Can't apply it because nobody's watching him in real-time.
+- Hired a big-firm consultant ($80K engagement). Got a 60-page strategy deck with nice charts. Nothing changed.
+- Tried a peer group (Vistage/EO). Useful for networking, not useful for fixing the actual operating rhythm of his company.
+- His wife told him to "just delegate more." He tried. It lasted 2 weeks before he was back in every meeting.
 
 ## Voice of Customer
-Their exact words:
-- "I feel like I'm running on a treadmill."
-- "We should be at $35M by now but I can't get out of my own way."
-- "I'm the smartest person in every meeting and that's the problem."
-- "My team is great at executing but nobody owns anything."
-- "I built this thing and now it can't run without me."
+- "I know I'm the bottleneck but I don't know how to stop."
+- "Every time I step back, things fall apart."
+- "I've got good people but they won't step up."
+- "I didn't build this company to be chained to it."
+- "My business runs fine — as long as I'm there."
 
 ## Buying Trigger
-Always a specific, painful loss — never a strategic epiphany.
-- Lost a $3M contract because their quote took 11 days and the competitor did it in 3.
-- A failed senior hire that was supposed to fix things.
-- A margin report that finally made the bleeding undeniable.
-
-"That's when the pain becomes undeniable. It's always a specific, painful loss that makes them pick up the phone."
+A personal cost moment. Missed anniversary. Kid's event. Health scare. Doctor says blood pressure is too high. Or: they get an acquisition offer and realize the company is worthless without them in it. The trigger is almost never a business metric — it's the moment the personal cost of their operating style becomes undeniable.
 
 ## Disqualifiers
-Do NOT work with:
-- **Under $10M revenue** — can't afford it, not enough operational complexity to justify it.
-- **Founders who want a yes-man** — Marcus is going to tell them things they don't want to hear.
-- **CEOs who blame their people** — "It's almost never the people, it's the system. If you're looking for someone to blame your team, hire someone else."
-- **Deck-seekers** — "I don't write reports, I fix operations."
-
-See also: [[voice]]
+- CEOs under $5M revenue. They can't afford me, and frankly their problem is usually sales, not leadership structure.
+- Anyone who says "I just need someone to hold me accountable." That's not coaching, that's babysitting. I'm not interested.
+- Founders who have already decided to sell within 6 months. I need 90 days minimum for the work to take root.
+- People who want to be told they're doing a great job. I'm going to show you what's actually happening in your company. If that makes you uncomfortable, I'm not your guy.
