@@ -4,130 +4,73 @@ How the distribution skills (`/publish`, `/campaign`, `/repurpose`) connect to l
 
 ---
 
-## Architecture — The Codify Compound Loop
-
-The system has three layers. The client sees one (Obsidian). The architect operates two (Claude Code + MCP tools). The server runs one autonomously (OpenClaw). Context flows through all three and compounds at every step.
+## Architecture
 
 ```
-╔══════════════════════════════════════════════════════════════════════════════════════════╗
-║                              THE CODIFY COMPOUND LOOP                                   ║
-╚══════════════════════════════════════════════════════════════════════════════════════════╝
+                         THE CODIFY COMPOUND LOOP
+
+     EXTRACT                COMPOUND                 GENERATE
+    ─────────              ──────────               ──────────
+    Client talks    ──>    Context files    ──>     Ads, emails,
+    /extract               grow + link              proposals, content
+    /import                /enrich adds              that sound like
+    /research              cross-references          the client wrote them
 
 
-  LAYER 1: CLIENT (Obsidian — Desktop)          LAYER 2: ARCHITECT (Claude Code + MCP)
-  ─────────────────────────────────────          ─────────────────────────────────────────
+    ┌───────────┐       ┌──────────────┐       ┌──────────────┐
+    │  OBSIDIAN │       │  SOVEREIGN   │       │  DISTRIBUTE  │
+    │  (Client) │──────>│  VAULT       │──────>│  (Architect)  │
+    │           │       │  (GitHub /   │       │              │
+    │  View     │       │   Forgejo)   │       │  Gmail       │
+    │  files    │       │              │       │  GoHighLevel │
+    │  Answer   │       │  Context/    │       │  Social      │
+    │  questions│       │  Decisions/  │       │  Blog        │
+    │           │<──────│  Research/   │       │  SMS         │
+    │  See      │  sync │  Outputs/    │       │              │
+    │  results  │       │              │       └──────────────┘
+    └───────────┘       └──────┬───────┘
+                               │ ▲
+                               │ │  new research + cross-references
+                               │ │  written back to vault
+                               │ │
+                               ▼ │
+                        ┌──────────────┐       ┌──────────────┐
+                        │  OPENCLAW    │──────>│  TELEGRAM    │
+                        │  (Private    │       │  (Mobile)    │
+                        │   Server)    │       │              │
+                        │              │       │  5:30 AM     │
+                        │  2 AM deep   │       │  Morning     │
+                        │  research    │       │  brief on    │
+                        │              │       │  your phone  │
+                        │  Competitor  │       │              │
+                        │  monitoring  │       │  Approve /   │
+                        │              │       │  reject      │
+                        │  Cross-ref   │       │  content     │
+                        │  new research│       │              │
+                        │  against     │       │  Voice note  │
+                        │  Context/    │───────│──> captured  │
+                        │              │  ◄────│  as research │
+                        │  Update      │       │              │
+                        │  [[links]]   │       └──────────────┘
+                        └──────────────┘
 
-  ┌──────────────────────────────────┐           ┌─────────────────────────────────────┐
-  │  SOVEREIGN VAULT (GitHub/Forgejo)│           │  CLAUDE CODE (Terminal / Agent)      │
-  │                                  │           │                                     │
-  │  00-Context/                     │──────────>│  Reads ALL context before generating │
-  │    soul.md      ◄──┐             │           │                                     │
-  │    audience.md  ◄──┤ Cross-refs  │           │  Skills:                            │
-  │    offer.md     ◄──┤ compound    │           │    /extract  ──> writes Context/    │
-  │    voice.md     ◄──┘ over time   │           │    /enrich   ──> deepens Context/   │
-  │                                  │           │    /import   ──> mines docs into    │
-  │  01-Decisions/                   │           │                  Context/            │
-  │    2026-03-26-pricing.md ────────│───┐       │    /ad       ──> writes Outputs/    │
-  │    2026-03-25-positioning.md ────│───┤       │    /email    ──> writes Outputs/    │
-  │                                  │   │       │    /content  ──> writes Outputs/    │
-  │  02-Research/                    │   │       │    /proposal ──> writes Outputs/    │
-  │    2026-03-26-competitor-x.md ───│───┤       │    /landing  ──> writes Outputs/    │
-  │    2026-03-25-market-trends.md ──│───┤       │    /research ──> writes Research/   │
-  │                                  │   │       │    /audit    ──> vault health check │
-  │  03-Outputs/                     │<──┘       │    /brief    ──> morning summary    │
-  │    ad-spring-2026.md             │           │                                     │
-  │    email-cold-outreach.md        │           │  THE KEY: Every output is informed  │
-  │    proposal-acme.md              │           │  by every context file. More context │
-  │                                  │           │  = better outputs. That's the       │
-  │  04-Daily/                       │           │  compound effect.                   │
-  │    session notes                 │           │                                     │
-  │                                  │           └──────────────┬──────────────────────┘
-  │  _dashboards/                    │                          │
-  │    Context Power (depth score)   │                          │ MCP CONNECTIONS
-  │    What Needs Attention          │                          │ (Architect-side only)
-  │    Reference Health              │                          │
-  └──────────────────────────────────┘                          │
-           │                                     ┌──────────────┴──────────────────────┐
-           │  Obsidian Git                       │  DISTRIBUTION ENGINE                │
-           │  auto-syncs                         │                                     │
-           │  every 10 min                       │  Gmail MCP ────────> Email sends    │
-           ▼                                     │  GoHighLevel MCP ──> Social posts   │
-  ┌──────────────────────────────────┐           │                  ──> SMS campaigns  │
-  │  GITHUB / FORGEJO (Backup)       │           │                  ──> Blog posts     │
-  │                                  │           │  YouTube MCP ────> Transcript pull  │
-  │  Version-controlled. Sovereign.  │           │  Gemini MCP ─────> Deep research   │
-  │  Every change tracked. Portable. │           │                  ──> Image gen      │
-  │  Client owns it. We manage it.   │           │  (Future) ───────> Substack         │
-  │                                  │           │                  ──> Beehiiv         │
-  └──────────────────────────────────┘           │                  ──> LinkedIn API   │
-                                                 └─────────────────────────────────────┘
+    ──────────────────────────────────────────────────────
 
+    THE CLOSED LOOP:
 
-  LAYER 3: ALWAYS-ON ENGINE (Private Server — VPS)
-  ─────────────────────────────────────────────────
+    You talk  ──>  Context files grow  ──>  Better outputs
+       ▲                                        │
+       │           Overnight engine             │
+       └───────  enriches + links  ◄────────────┘
 
-  ┌────────────────────────────────────────────────────────────────────────────────────┐
-  │  OPENCLAW — Runs while the client sleeps                                          │
-  │                                                                                    │
-  │  ┌─────────────────────────────┐     ┌──────────────────────────────────────────┐  │
-  │  │  SCHEDULED JOBS             │     │  TELEGRAM BOT (@Codify_build_bot)        │  │
-  │  │                             │     │                                          │  │
-  │  │  5:30 AM  Morning Brief     │────>│  Ops Channel                             │  │
-  │  │           Vault health      │     │    Morning brief lands on phone          │  │
-  │  │           Open tasks        │     │    Staleness alerts                      │  │
-  │  │           Competitor signals │     │    Vault health warnings                │  │
-  │  │                             │     │                                          │  │
-  │  │  2:00 AM  Deep Research     │────>│  Research Channel                        │  │
-  │  │           Market signals    │     │    Overnight findings                    │  │
-  │  │           Competitor moves  │     │    Positioning audits                    │  │
-  │  │           Trend scanning    │     │    Market signal alerts                  │  │
-  │  │                             │     │                                          │  │
-  │  │  Hourly   Vault Backup      │     │  Content Channel                         │  │
-  │  │           Git sync all      │     │    Draft review requests                 │  │
-  │  │           client vaults     │     │    "Approve" / "Reject" / feedback       │  │
-  │  │                             │     │    Posting confirmations                 │  │
-  │  │  Weekly   Competitor Monitor│     │                                          │  │
-  │  │           Track moves       │     │  General Channel                         │  │
-  │  │           Alert on changes  │     │    Quick questions from phone            │  │
-  │  │                             │     │    Idea capture (voice/text)             │  │
-  │  │  Daily    Staleness Check   │     │    Routes to correct vault folder        │  │
-  │  │           Flag old files    │     │                                          │  │
-  │  └─────────────────────────────┘     └──────────────────────────────────────────┘  │
-  │                                                                                    │
-  │  HOW IT COMPOUNDS OVERNIGHT:                                                       │
-  │                                                                                    │
-  │  1. Engine reads today's new Research/ and Decisions/ files                        │
-  │  2. Cross-references against Context/ files (soul, audience, offer, voice)         │
-  │  3. Identifies patterns: "3 of 5 recent prospects are in HVAC at $20M"            │
-  │  4. Writes summary to 02-Research/ with [[links]] back to Context/                │
-  │  5. Morning brief includes the insight + recommended Context/ update               │
-  │  6. Client wakes up. Opens Obsidian. The vault is smarter than yesterday.         │
-  │                                                                                    │
-  └────────────────────────────────────────────────────────────────────────────────────┘
+    Every output, every research file, every decision
+    feeds back into the vault. The vault gets smarter.
+    Tomorrow's outputs are better than today's.
 
-
-╔══════════════════════════════════════════════════════════════════════════════════════════╗
-║  THE COMPOUND EFFECT                                                                    ║
-║                                                                                         ║
-║  Week 1:   4 thin Context files. Generic outputs.                                      ║
-║  Month 1:  Enriched Context + 10 Research files + 5 Decisions.                         ║
-║            Outputs reference your frameworks by name.                                   ║
-║  Month 3:  40+ files. Cross-referenced knowledge graph.                                ║
-║            Ads use your buyer's exact language. Proposals cite your proof points.       ║
-║  Month 6:  100+ files. Overnight research compounds automatically.                    ║
-║            The vault knows your market better than your competitors know theirs.        ║
-║  Year 1:   A digital twin of your professional judgment.                               ║
-║            Every output sounds like you wrote it on your best day.                     ║
-║                                                                                         ║
-║  The system gets smarter because:                                                       ║
-║    - Every /extract adds depth to Context/                                              ║
-║    - Every /enrich adds [[cross-references]] between files                             ║
-║    - Every /research adds market data that informs future outputs                      ║
-║    - Every Decision logged becomes a reference point for future strategy               ║
-║    - OpenClaw processes it all overnight — you wake up to a smarter vault              ║
-║                                                                                         ║
-║  Context > Prompts. Always.                                                             ║
-╚══════════════════════════════════════════════════════════════════════════════════════════╝
+    Week 1    4 context files. Basic outputs.
+    Month 3   40+ files. Outputs use your exact language.
+    Year 1    Digital twin. The vault knows your business
+              better than any consultant ever could.
 ```
 
 The client creates context. The architect distributes it. OpenClaw compounds it overnight. The client never touches a third-party tool.
