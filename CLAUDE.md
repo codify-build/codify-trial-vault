@@ -27,8 +27,13 @@ All work runs through skills in `.claude/skills/`:
 - `/content` — Generate content for any platform (LinkedIn, blog, newsletter, X/Twitter, Instagram)
 - `/proposal` — Generate client proposal
 - `/landing` — Generate landing page copy
+- `/case-study` — Turn a client win into a formatted case study
+- `/follow-up` — Write a follow-up message after a call or meeting
+- `/objection` — Handle a sales objection using your context
+- `/pitch` — Elevator pitch, event intro, podcast bio, speaker page
 - `/enrich` — Deepen thin Context files with follow-up questions
 - `/audit` — Check vault health
+- `/research` — Research a prospect, competitor, market trend, or topic. Saves to 02-Research/ and compounds.
 - `/scout` — Cross-reference context against market signals
 - `/update` — Pull latest Codify skills and system updates (never touches client data)
 

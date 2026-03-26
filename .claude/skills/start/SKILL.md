@@ -64,6 +64,11 @@ Then show a brief status report:
 | `/content` | Create content for any platform |
 | `/proposal` | Create a client proposal |
 | `/landing` | Create landing page copy |
+| `/case-study` | Turn a client win into a case study |
+| `/follow-up` | Write a follow-up after a call or meeting |
+| `/objection` | Handle a sales objection |
+| `/pitch` | Elevator pitch, event intro, speaker bio |
+| `/research` | Research a prospect, competitor, or market trend |
 | `/audit` | See your vault health |
 | `/scout` | Find market opportunities using your context |
 | `/brief` | Summary of vault health and recommended focus |
