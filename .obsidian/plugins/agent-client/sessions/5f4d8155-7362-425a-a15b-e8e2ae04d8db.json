@@ -731,7 +731,322 @@
         }
       ],
       "timestamp": "2026-03-26T05:07:25.546Z"
+    },
+    {
+      "id": "20f755dd-f0d9-4213-bde8-0844c1f8a699",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/enrich audience"
+        }
+      ],
+      "timestamp": "2026-03-26T05:30:01.180Z"
+    },
+    {
+      "id": "64295809-96af-4d89-9aa2-c5c7e372f434",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "agent_thought",
+          "text": "The user wants to enrich audience.md. Let me read the current file first."
+        }
+      ],
+      "timestamp": "2026-03-26T05:30:03.893Z"
+    },
+    {
+      "id": "8ce36aa9-ba5e-4863-b405-a4125685021a",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01MQVfydZaqpXaYtzm16U9WE",
+          "title": "Read 00-Context/audience.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+          }
+        },
+        {
+          "type": "agent_thought",
+          "text": "Good file — already at Working depth. Let me assess gaps and ask targeted questions. The soul.md enrichment gave me the hidden fear material and the coachability signals, which should be woven in here. But I should ask questions first per the procedure.\n\nKey gaps I see:\n1. The hidden fear from soul.md (\"what if the company runs better without me\") should be referenced here but was already captured — I should ask for more depth on how this shows up specifically in the audience\n2. Missing: what does David Park's world look like AFTER the transformation? The \"after\" picture for the buyer\n\n\n3. I also need to understand how prospects actually discover Marcus in the first place — is it through referrals, LinkedIn, speaking engagements? And I should pull in that \"I already know what the problem is\" disqualifier signal from soul.md to sharpen the objection handling.\n\nLet me ask the targeted questions."
+        },
+        {
+          "type": "text",
+          "text": "**Current state:** 1,773 bytes, 5 sections all filled, 0 cross-references. Working depth on size, but no links and some important layers missing.\n\n**What's strong:** David Park is a vivid buyer portrait. Failed alternatives are specific. Voice of customer lines are quotable. Buying trigger is precise.\n\n**What's missing:**\n\nHere are 3 questions that would add the most depth:\n\n---\n\n### 1. How do they actually find you?\n\nDavid Park didn't Google \"executive coach.\" What was the actual path? Did someone refer him? Did he see you speak? Did he read something you wrote? Walk me through the last 2-3 clients — how did they go from \"I have a problem\" to \"I'm calling Marcus\"? I'm looking for the referral chain and what they said when they first reached out.\n\n### 2. What does David Park's world look like 6 months after working with you?\n\nYou've described the \"before\" in detail — 65-hour weeks, team that won't move without him, missed graduation. Paint the \"after.\" What does a Tuesday look like for a CEO who's been through your process? What decisions are they no longer making? What did David specifically say or do differently that told you the transformation had taken hold?\n\n### 3. Who's the buyer you *almost* work with but shouldn't?\n\nNot the obvious disqualifiers — the CEO who looks perfect on paper, passes every filter, but something's off. The near-miss. You mentioned in your soul file that \"I already know what the problem is\" is a 50% red flag. Are there other subtle signals you've learned to watch for that tell you this person will waste both your time?\n\n---\n\nAnswer any or all. I'll weave it into `audience.md` and cross-reference back to `[[soul]]`, `[[offer]]`, and `[[voice]]`."
+        }
+      ],
+      "timestamp": "2026-03-26T05:30:04.820Z"
+    },
+    {
+      "id": "495c912b-30b4-4550-a6b2-cda27f89860f",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "David Park almost didn’t call me. He told me later that he’d picked up the phone three times over six months. What finally pushed him was a board meeting where a potential acquirer said “we like the business but we can’t value it with this much key-man risk.” That’s when he realized his 65-hour weeks weren’t just costing him family time — they were literally discounting his company’s valuation. The acquirer walked. David called me the next morning.\n\nI had a CEO last year who wanted me to coach his team FOR him. He said “just tell my VPs what to do differently, I don’t need to be in the room.” That’s a red flag. If the CEO won’t participate in the observation, they’re not hiring a coach — they’re hiring someone to blame. I turned him down. He was offended. Six months later his VP of Ops quit and cited “lack of leadership visibility” in her exit interview."
+        }
+      ],
+      "timestamp": "2026-03-26T05:30:53.975Z"
+    },
+    {
+      "id": "0bd41f8c-5a88-434e-ba99-aac975235239",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01HjKWVUUZEu93z693rN51XW",
+          "title": "Read 00-Context/audience.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:30:56.891Z"
+    },
+    {
+      "id": "c816a396-6adc-467c-8d5e-b6c3e9bfe2a8",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01UBVCdrjz8MfdQ9h8Miir3y",
+          "title": "Edit 00-Context/audience.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+              "newText": "---\ntype: context\nstatus: compounding\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:35\n---\n\n# Audience",
+              "oldText": "---\ntype: context\nstatus: draft\ndate: 2026-03-26\nlast-updated: 2026-03-26 14:00\n---\n\n# Audience"
+            }
+          ],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+            "old_string": "---\ntype: context\nstatus: draft\ndate: 2026-03-26\nlast-updated: 2026-03-26 14:00\n---",
+            "new_string": "---\ntype: context\nstatus: compounding\ndate: 2026-03-26\nlast-updated: 2026-03-26 17:35\n---"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:30:59.809Z"
+    },
+    {
+      "id": "2b6b303e-2297-4b3f-afc0-e6e009ba85c6",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01KiVeupisJdA27eQDWpoumx",
+          "title": "Edit 00-Context/audience.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+              "newText": "- \"I didn't build this company to be chained to it.\"\n- \"My business runs fine — as long as I'm there.\"\n\n## The Path to Calling\nDavid Park almost didn't call. He picked up the phone three times over six months. What finally pushed him was a board meeting where a potential acquirer said \"we like the business but we can't value it with this much key-man risk.\" That's when he realized his 65-hour weeks weren't just costing him family time — they were literally discounting his company's valuation. The acquirer walked. David called the next morning.\n\nThis is the pattern: the buyer knows they have a problem for months before they act. They need a moment that makes the cost concrete and undeniable — not abstract (\"I should delegate more\") but specific (\"my company just lost a deal because of me\").\n\n## Buying Trigger\nA personal cost moment. Missed anniversary. Kid's event. Health scare. Doctor says blood pressure is too high. Or: they get an acquisition offer and realize the company is worthless without them in it — David Park's acquirer literally said \"we can't value it with this much key-man risk.\" The trigger is almost never a business metric — it's the moment the personal cost of their operating style becomes undeniable.\n\n## The Hidden Fear\nThe real fear underneath every [[voice]] of customer line isn't burnout or missing family events. It's this: what if I step back and the company runs better without me? Every CEO Marcus works with has a version of this terror. They say \"things fall apart when I'm gone\" but what they're really saying is \"I need things to fall apart when I'm gone, because if they don't, what was all this for?\" Their identity is fused with being essential. This is what makes the [[offer]] transformation so threatening before it becomes liberating — the [[soul]] Decision Audit doesn't just fix the business, it forces the CEO to confront who they are without the constant proving.\n\n## Disqualifiers\n- CEOs under $5M revenue. They can't afford me, and frankly their problem is usually sales, not leadership structure.\n- Anyone who says \"I just need someone to hold me accountable.\" That's not coaching, that's babysitting. I'm not interested.",
+              "oldText": "- \"I didn't build this company to be chained to it.\"\n- \"My business runs fine — as long as I'm there.\"\n\n## Buying Trigger\nA personal cost moment. Missed anniversary. Kid's event. Health scare. Doctor says blood pressure is too high. Or: they get an acquisition offer and realize the company is worthless without them in it. The trigger is almost never a business metric — it's the moment the personal cost of their operating style becomes undeniable.\n\n## Disqualifiers\n- CEOs under $5M revenue. They can't afford me, and frankly their problem is usually sales, not leadership structure.\n- Anyone who says \"I just need someone to hold me accountable.\" That's not coaching, that's babysitting. I'm not interested."
+            }
+          ],
+          "locations": [
+            {
+              "line": 23,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+            "old_string": "## Buying Trigger\nA personal cost moment. Missed anniversary. Kid's event. Health scare. Doctor says blood pressure is too high. Or: they get an acquisition offer and realize the company is worthless without them in it. The trigger is almost never a business metric — it's the moment the personal cost of their operating style becomes undeniable.",
+            "new_string": "## The Path to Calling\nDavid Park almost didn't call. He picked up the phone three times over six months. What finally pushed him was a board meeting where a potential acquirer said \"we like the business but we can't value it with this much key-man risk.\" That's when he realized his 65-hour weeks weren't just costing him family time — they were literally discounting his company's valuation. The acquirer walked. David called the next morning.\n\nThis is the pattern: the buyer knows they have a problem for months before they act. They need a moment that makes the cost concrete and undeniable — not abstract (\"I should delegate more\") but specific (\"my company just lost a deal because of me\").\n\n## Buying Trigger\nA personal cost moment. Missed anniversary. Kid's event. Health scare. Doctor says blood pressure is too high. Or: they get an acquisition offer and realize the company is worthless without them in it — David Park's acquirer literally said \"we can't value it with this much key-man risk.\" The trigger is almost never a business metric — it's the moment the personal cost of their operating style becomes undeniable.\n\n## The Hidden Fear\nThe real fear underneath every [[voice]] of customer line isn't burnout or missing family events. It's this: what if I step back and the company runs better without me? Every CEO Marcus works with has a version of this terror. They say \"things fall apart when I'm gone\" but what they're really saying is \"I need things to fall apart when I'm gone, because if they don't, what was all this for?\" Their identity is fused with being essential. This is what makes the [[offer]] transformation so threatening before it becomes liberating — the [[soul]] Decision Audit doesn't just fix the business, it forces the CEO to confront who they are without the constant proving."
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:31:04.759Z"
+    },
+    {
+      "id": "fc31d55b-022c-4031-8999-ccf9a92c11f3",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01FiaukqeiKJXAKNzXokX7DQ",
+          "title": "Edit 00-Context/audience.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+              "newText": "- CEOs under $5M revenue. They can't afford me, and frankly their problem is usually sales, not leadership structure.\n- Anyone who says \"I just need someone to hold me accountable.\" That's not coaching, that's babysitting. I'm not interested.\n- Founders who have already decided to sell within 6 months. I need 90 days minimum for the work to take root.\n- People who want to be told they're doing a great job. I'm going to show you what's actual happening in your company. If that makes you uncomfortable, I'm not your guy.\n- CEOs who say \"I already know what the problem is\" in the first conversation. 50% chance they're not coachable. The ones who are ready say some version of \"I know something's wrong but I can't see it.\" That humility is the prerequisite. See [[soul]] for the pattern behind the two refunds.\n- CEOs who want you to coach their team FOR them without being in the room. \"Just tell my VPs what to do differently, I don't need to be in the room.\" That's not hiring a coach — that's hiring someone to blame. One CEO who got turned down for this was offended. Six months later his VP of Ops quit and cited \"lack of leadership visibility\" in her exit interview. If the CEO won't participate in the observation, the [[offer]] can't work.",
+              "oldText": "- CEOs under $5M revenue. They can't afford me, and frankly their problem is usually sales, not leadership structure.\n- Anyone who says \"I just need someone to hold me accountable.\" That's not coaching, that's babysitting. I'm not interested.\n- Founders who have already decided to sell within 6 months. I need 90 days minimum for the work to take root.\n- People who want to be told they're doing a great job. I'm going to show you what's actually happening in your company. If that makes you uncomfortable, I'm not your guy."
+            }
+          ],
+          "locations": [
+            {
+              "line": 38,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+            "old_string": "## Disqualifiers\n- CEOs under $5M revenue. They can't afford me, and frankly their problem is usually sales, not leadership structure.\n- Anyone who says \"I just need someone to hold me accountable.\" That's not coaching, that's babysitting. I'm not interested.\n- Founders who have already decided to sell within 6 months. I need 90 days minimum for the work to take root.\n- People who want to be told they're doing a great job. I'm going to show you what's actually happening in your company. If that makes you uncomfortable, I'm not your guy.",
+            "new_string": "## Disqualifiers\n- CEOs under $5M revenue. They can't afford me, and frankly their problem is usually sales, not leadership structure.\n- Anyone who says \"I just need someone to hold me accountable.\" That's not coaching, that's babysitting. I'm not interested.\n- Founders who have already decided to sell within 6 months. I need 90 days minimum for the work to take root.\n- People who want to be told they're doing a great job. I'm going to show you what's actual happening in your company. If that makes you uncomfortable, I'm not your guy.\n- CEOs who say \"I already know what the problem is\" in the first conversation. 50% chance they're not coachable. The ones who are ready say some version of \"I know something's wrong but I can't see it.\" That humility is the prerequisite. See [[soul]] for the pattern behind the two refunds.\n- CEOs who want you to coach their team FOR them without being in the room. \"Just tell my VPs what to do differently, I don't need to be in the room.\" That's not hiring a coach — that's hiring someone to blame. One CEO who got turned down for this was offended. Six months later his VP of Ops quit and cited \"lack of leadership visibility\" in her exit interview. If the CEO won't participate in the observation, the [[offer]] can't work."
+          }
+        },
+        {
+          "type": "text",
+          "text": "Wait — I introduced a typo. Let me fix that."
+        }
+      ],
+      "timestamp": "2026-03-26T05:31:16.708Z"
+    },
+    {
+      "id": "12c60fcf-f7d9-4ce1-a016-53022db4049a",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01UanuXYVStXcaen9tyE99bg",
+          "title": "Edit 00-Context/audience.md",
+          "status": "completed",
+          "kind": "edit",
+          "content": [
+            {
+              "type": "diff",
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+              "newText": "- CEOs under $5M revenue. They can't afford me, and frankly their problem is usually sales, not leadership structure.\n- Anyone who says \"I just need someone to hold me accountable.\" That's not coaching, that's babysitting. I'm not interested.\n- Founders who have already decided to sell within 6 months. I need 90 days minimum for the work to take root.\n- People who want to be told they're doing a great job. I'm going to show you what's actually happening in your company. If that makes you uncomfortable, I'm not your guy.\n- CEOs who say \"I already know what the problem is\" in the first conversation. 50% chance they're not coachable. The ones who are ready say some version of \"I know something's wrong but I can't see it.\" That humility is the prerequisite. See [[soul]] for the pattern behind the two refunds.\n- CEOs who want you to coach their team FOR them without being in the room. \"Just tell my VPs what to do differently, I don't need to be in the room.\" That's not hiring a coach — that's hiring someone to blame. One CEO who got turned down for this was offended. Six months later his VP of Ops quit and cited \"lack of leadership visibility\" in her exit interview. If the CEO won't participate in the observation, the [[offer]] can't work.",
+              "oldText": "- CEOs under $5M revenue. They can't afford me, and frankly their problem is usually sales, not leadership structure.\n- Anyone who says \"I just need someone to hold me accountable.\" That's not coaching, that's babysitting. I'm not interested.\n- Founders who have already decided to sell within 6 months. I need 90 days minimum for the work to take root.\n- People who want to be told they're doing a great job. I'm going to show you what's actual happening in your company. If that makes you uncomfortable, I'm not your guy.\n- CEOs who say \"I already know what the problem is\" in the first conversation. 50% chance they're not coachable. The ones who are ready say some version of \"I know something's wrong but I can't see it.\" That humility is the prerequisite. See [[soul]] for the pattern behind the two refunds.\n- CEOs who want you to coach their team FOR them without being in the room. \"Just tell my VPs what to do differently, I don't need to be in the room.\" That's not hiring a coach — that's hiring someone to blame. One CEO who got turned down for this was offended. Six months later his VP of Ops quit and cited \"lack of leadership visibility\" in her exit interview. If the CEO won't participate in the observation, the [[offer]] can't work."
+            }
+          ],
+          "locations": [
+            {
+              "line": 38,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+            }
+          ],
+          "rawInput": {
+            "replace_all": false,
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+            "old_string": "I'm going to show you what's actual happening",
+            "new_string": "I'm going to show you what's actually happening"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Now let me verify the final state."
+        }
+      ],
+      "timestamp": "2026-03-26T05:31:25.099Z"
+    },
+    {
+      "id": "c008a646-54aa-40f4-9529-1b23a20097bf",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01PMjFzrcEdETqxZ81MmN7yS",
+          "title": "wc -c /Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+          "status": "completed",
+          "kind": "execute",
+          "content": [],
+          "rawInput": {
+            "command": "wc -c /Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+            "description": "Check file size"
+          }
+        }
+      ],
+      "timestamp": "2026-03-26T05:31:29.090Z"
+    },
+    {
+      "id": "fffeca31-733c-4f14-aeb6-dbadcea525e1",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01F9Y69d5fJbUQPY2aZbFrCr",
+          "title": "grep \"\\[\\[\" /Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+          "status": "completed",
+          "kind": "search",
+          "content": [],
+          "rawInput": {
+            "pattern": "\\[\\[",
+            "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md",
+            "output_mode": "content"
+          }
+        },
+        {
+          "type": "text",
+          "text": "**`audience.md` moved from Draft → Compounding.**\n\n| Metric | Before | After |\n|--------|--------|-------|\n| Size | 1,773 bytes | 4,601 bytes |\n| Cross-references | 0 | 5 (`[[soul]]` x2, `[[offer]]` x2, `[[voice]]` x1) |\n| Sections | 5 | 7 (added \"The Path to Calling\" + \"The Hidden Fear\") |\n\n**What was added:**\n- **The Path to Calling** — David Park's six-month hesitation and the acquirer who said \"we can't value it with this much key-man risk.\" Shows the buyer journey isn't impulsive — they need a concrete, undeniable cost moment.\n- **The Hidden Fear** — the identity-level terror underneath every Voice of Customer line, cross-referenced to [[soul]], [[offer]], and [[voice]].\n- **Two new disqualifiers** — the \"I already know the problem\" signal (linked to [[soul]]'s refund pattern) and the \"coach my team without me\" red flag with the VP of Ops exit interview story.\n\n**Next enrichment opportunity:** You answered 2 of my 3 questions — the \"after\" picture is still missing. What does David Park's Tuesday look like 6 months later? That transformation story would make `audience.md` and `offer.md` both significantly stronger. Run `/enrich audience` or `/enrich offer` when you're ready."
+        }
+      ],
+      "timestamp": "2026-03-26T05:31:30.201Z"
+    },
+    {
+      "id": "4ffc47b0-64aa-45c7-86b8-23c1bcf98019",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/enrich offer"
+        }
+      ],
+      "timestamp": "2026-03-26T05:33:35.994Z"
+    },
+    {
+      "id": "320108e5-4712-407d-bf0e-d7e3081e0aaf",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_014sg5TQKeG52N9iDQ4AxSqf",
+          "title": "Read 00-Context/offer.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md"
+          }
+        },
+        {
+          "type": "text",
+          "text": "**Current state:** 2,050 bytes, 5 sections all filled, 0 cross-references. Working depth — strong mechanics but missing key layers.\n\n**What's strong:** The week-by-week delivery is concrete. The transformation outcome is specific and measurable. The guarantee is confident with proof (two refunds in six years).\n\n**What's missing:**\n\n---\n\n### 1. What does the \"after\" actually feel like?\n\nYou said \"the CEO takes a 2-week vacation and nothing breaks.\" But what does David Park's Tuesday look like 6 months post-engagement? Not the metrics — the lived experience. Does he show up at 9 instead of 7? Does he skip the Monday standup entirely? What's the first thing a CEO does differently that tells you the transformation stuck? I want the scene, not the stat.\n\n### 2. What happens at the handoff?\n\nMonth 3 ends. You stop weekly check-ins. What does the CEO have in their hands at that point — a document? A new meeting cadence? A dashboard? What's the artifact that outlives the engagement and keeps the system from reverting? Or does it sometimes revert — and what do you do about that?\n\n### 3. The pricing conversation you're not having.\n\nYou mention a full engagement fee with a 90-day guarantee. But you haven't said what the engagement costs, or more importantly — how you frame the price when a CEO asks. What's the number, and what do you say when they flinch? The way you justify price reveals what you actually believe the value is.\n\n---\n\nAnswer any or all. I'll weave it into `offer.md` and cross-reference to `[[soul]]`, `[[audience]]`, and `[[voice]]`."
+        }
+      ],
+      "timestamp": "2026-03-26T05:33:38.654Z"
     }
   ],
-  "savedAt": "2026-03-26T05:07:36.113Z"
+  "savedAt": "2026-03-26T05:33:51.963Z"
 }
