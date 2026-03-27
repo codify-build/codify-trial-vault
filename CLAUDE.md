@@ -40,6 +40,7 @@ All work runs through skills in `.claude/skills/`:
 - `/publish` — Push outputs to live channels (Focus tier)
 - `/campaign` — Full pipeline: ad + email + content + landing, then distribute (Focus tier)
 - `/repurpose` — Take one output, create versions for every channel (Focus tier)
+- `/funnel` — Generate and deploy marketing funnels at scale (SEO pages, launch funnels, blog batches) directly to GoHighLevel
 - `/update` — Pull latest Codify skills and system updates (never touches client data)
 
 ## File Conventions
