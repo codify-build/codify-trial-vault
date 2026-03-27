@@ -1,0 +1,8 @@
+# Codify Sync Manifest
+# Tracks context file states and downstream dependencies
+# Updated automatically by /sync
+
+last-sync: null
+sync-count: 0
+context-hashes: {}
+outputs-synced: []

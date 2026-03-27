@@ -106,3 +106,14 @@ Depth levels:
 - **Draft** — Some answers, needs enrichment
 - **Working** — Solid content, cross-referenced, usable by AI
 - **Compounding** — Deep, linked, actively maintained
+
+
+## After Extraction
+
+When extraction is complete and Context files are updated, inform the user:
+
+"Context updated. Run `/sync` to propagate changes to downstream outputs."
+
+If `03-Outputs/` has existing files that depend on the updated Context file (check `source_files` in frontmatter), show the count:
+
+"Context updated. [N] existing outputs depend on the files you just changed. Run `/sync` to regenerate them with your fresh context."
