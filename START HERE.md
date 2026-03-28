@@ -11,16 +11,15 @@ You should see a prompt asking to enable community plugins. Click **Enable** —
 
 If you missed the prompt: **Settings → Community Plugins → Turn on community plugins**
 
-### Step 2: Explore the Vault
-Take a look around. Open the sidebar to see the folder structure:
+### Step 2: Explore the Sample
+This vault comes with a **filled-in example** — a fictional executive coach called Marcus Webb. Open the `00-Context` folder to see what completed context files look like:
 
-| Folder | What's inside |
-|--------|--------------|
-| **00-Context** | Your core identity — soul, offer, audience, voice |
-| **01-Decisions** | Strategic decisions and the reasoning behind them |
-| **02-Research** | Market intelligence, competitor data, signals |
-| **03-Outputs** | Everything generated from your context — ads, emails, proposals |
-| **04-Daily** | Session notes and quick observations |
+- **soul.md** — Core beliefs, origin story, contrarian positions
+- **offer.md** — What you sell and how it's structured
+- **audience.md** — Who you serve and what they're struggling with
+- **voice.md** — How you sound, your tone, your language patterns
+
+**These are samples.** When you run `/start`, they'll be overwritten with your own business context. Take a few minutes to read through them so you know what to expect.
 
 ### Step 3: Open Claude Desktop
 1. Open the **Claude Desktop** app
@@ -35,15 +34,15 @@ Take a look around. Open the sidebar to see the folder structure:
    /start
    ```
 
-The system will walk you through your first extraction — pulling your expertise out of your head and into structured files AI can use.
+The system will walk you through your first extraction — pulling your expertise out of your head and into structured files that replace the Marcus Webb samples with **your** business.
 
 ---
 
 ## What Happens Next
 
 - **/start** guides your first extraction (~30 minutes)
-- Your context files get created (soul.md, offer.md, audience.md, voice.md)
-- Every skill you run after that reads these files first
+- The sample context files get replaced with yours (soul.md, offer.md, audience.md, voice.md)
+- Every skill you run after that reads your context first
 - The more you use it, the better it gets — context compounds
 
 ---
