@@ -127,7 +127,133 @@
         }
       ],
       "timestamp": "2026-04-02T04:51:37.760Z"
+    },
+    {
+      "id": "a5ed9754-975c-4bed-abbc-d980fb030ebd",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/case-study"
+        }
+      ],
+      "timestamp": "2026-04-02T04:52:20.503Z"
+    },
+    {
+      "id": "3cec51c2-181e-4491-9d13-c2096dbad082",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "agent_thought",
+          "text": "The user ran /case-study. I need to first read the context files, then ask the interview questions one at a time."
+        },
+        {
+          "type": "text",
+          "text": "Let me read your context files first."
+        }
+      ],
+      "timestamp": "2026-04-02T04:52:23.266Z"
+    },
+    {
+      "id": "c8c0b2cf-899b-4b4e-a1e3-c5446e57ad21",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01EvEfxckCigEUm582P1uhC8",
+          "title": "Read 00-Context/soul.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/soul.md"
+          }
+        }
+      ],
+      "timestamp": "2026-04-02T04:52:23.825Z"
+    },
+    {
+      "id": "d65df5d5-6283-45b0-a94b-153ac25f3dbf",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01FPZnRGQY5TGKhbpcA9ummq",
+          "title": "Read 00-Context/audience.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/audience.md"
+          }
+        }
+      ],
+      "timestamp": "2026-04-02T04:52:24.363Z"
+    },
+    {
+      "id": "f302f516-762f-4607-93e3-2a965431aa5f",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_01A4MDsRc3QVdAjHBF8AqTAq",
+          "title": "Read 00-Context/offer.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/offer.md"
+          }
+        }
+      ],
+      "timestamp": "2026-04-02T04:52:24.870Z"
+    },
+    {
+      "id": "b1ee3643-a587-4f8f-bc5c-f11a0f99b9cf",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_call",
+          "toolCallId": "toolu_0149gpgKADbyrEXnWKiu6TCc",
+          "title": "Read 00-Context/voice.md",
+          "status": "completed",
+          "kind": "read",
+          "content": [],
+          "locations": [
+            {
+              "line": 1,
+              "path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md"
+            }
+          ],
+          "rawInput": {
+            "file_path": "/Users/michaelscott/Desktop/codify-trial-vault/00-Context/voice.md"
+          }
+        },
+        {
+          "type": "text",
+          "text": "I've got your context loaded — Marcus's voice, framework, audience, and offer are all clear.\n\nLet's build a case study. I'll walk you through it one question at a time.\n\n**Who was the client?** Name, company, industry, size. (I'll anonymize if you'd prefer.)"
+        }
+      ],
+      "timestamp": "2026-04-02T04:52:25.382Z"
     }
   ],
-  "savedAt": "2026-04-02T04:51:46.056Z"
+  "savedAt": "2026-04-02T04:52:30.787Z"
 }
