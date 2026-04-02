@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "sessionId": "e2159f88-50fe-4754-8c37-8b6105680fe9",
+  "agentId": "claude-code-acp",
+  "messages": [
+    {
+      "id": "761c750c-4580-478e-881b-5543a193eead",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/start"
+        }
+      ],
+      "timestamp": "2026-04-02T12:31:56.654Z"
+    },
+    {
+      "id": "dab36e69-0eb0-40ed-be49-1e5748256a26",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/start"
+        }
+      ],
+      "timestamp": "2026-04-02T12:32:52.166Z"
+    },
+    {
+      "id": "0a00eb86-9b87-4b0d-b1ec-a7041b77c01b",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "--model"
+        }
+      ],
+      "timestamp": "2026-04-02T12:35:47.195Z"
+    },
+    {
+      "id": "fefda60e-7212-48b3-9586-732853582884",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/setup"
+        }
+      ],
+      "timestamp": "2026-04-02T12:37:03.568Z"
+    }
+  ],
+  "savedAt": "2026-04-02T12:37:06.633Z"
+}

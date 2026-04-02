@@ -55,6 +55,14 @@
   },
   "savedSessions": [
     {
+      "sessionId": "e2159f88-50fe-4754-8c37-8b6105680fe9",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
+      "title": "/start",
+      "createdAt": "2026-04-02T12:32:00.426Z",
+      "updatedAt": "2026-04-02T12:32:00.426Z"
+    },
+    {
       "sessionId": "9d1cee7d-5582-43a7-a172-107c52d1e9dd",
       "agentId": "claude-code-acp",
       "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
