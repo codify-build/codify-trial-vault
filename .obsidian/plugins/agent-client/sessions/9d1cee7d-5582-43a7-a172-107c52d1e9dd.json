@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "sessionId": "9d1cee7d-5582-43a7-a172-107c52d1e9dd",
+  "agentId": "claude-code-acp",
+  "messages": [
+    {
+      "id": "5d565f71-2b04-4bba-a744-08bfcd58787f",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/start"
+        }
+      ],
+      "timestamp": "2026-04-02T08:16:04.468Z"
+    }
+  ],
+  "savedAt": "2026-04-02T08:16:08.196Z"
+}
