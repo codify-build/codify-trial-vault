@@ -46,14 +46,22 @@
   "sendMessageShortcut": "enter",
   "chatViewLocation": "right-tab",
   "displaySettings": {
-    "autoCollapseDiffs": false,
-    "diffCollapseThreshold": 10,
+    "autoCollapseDiffs": true,
+    "diffCollapseThreshold": 3,
     "maxNoteLength": 10000,
     "maxSelectionLength": 10000,
-    "showEmojis": true,
+    "showEmojis": false,
     "fontSize": null
   },
   "savedSessions": [
+    {
+      "sessionId": "fcb5714f-d277-4f0b-9e17-062a53b7cd34",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
+      "title": "/start",
+      "createdAt": "2026-04-03T08:13:29.115Z",
+      "updatedAt": "2026-04-03T08:13:29.116Z"
+    },
     {
       "sessionId": "87801503-7d5f-44d3-9578-1d3d4805dd69",
       "agentId": "claude-code-acp",

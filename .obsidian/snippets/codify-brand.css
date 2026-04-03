@@ -432,3 +432,9 @@ body {
     content: none;
   }
 }
+
+/* --- Hide Tool Calls in Agent Client --- */
+/* Clients don't need to see Find, Read, Edit operations */
+.agent-client-message-tool-call {
+  display: none !important;
+}
