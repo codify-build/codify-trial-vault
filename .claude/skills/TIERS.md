@@ -38,7 +38,6 @@ All skills unlocked. DIY — you run it yourself from Obsidian.
 | `/pitch` | Elevator pitch, event intro, speaker bio — multiple lengths |
 | `/research` | Research a prospect, competitor, market trend, or scan for opportunities |
 | `/audit` | Vault health check |
-| `/brief` | Morning brief — vault health, open tasks, recommended focus |
 
 **How it works:** Client opens Obsidian, types any skill in the chat pane, gets results. Everything runs on their $20/mo Claude Pro subscription. Monthly Brain Sync call with architect for vault review.
 
@@ -48,6 +47,10 @@ All skills unlocked. DIY — you run it yourself from Obsidian.
 Everything in Architect PLUS done-for-you distribution AND autonomous overnight operations.
 
 ### All Architect Skills PLUS:
+
+| Skill | What it does |
+|-------|-------------|
+| `/brief` | Morning brief — vault health, open tasks, recommended focus |
 
 ### Distribution Skills (architect runs these — the last mile from context to revenue)
 

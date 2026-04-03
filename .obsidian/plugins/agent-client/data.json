@@ -3,7 +3,7 @@
     "id": "claude-code-acp",
     "displayName": "Claude Code",
     "apiKey": "",
-    "command": "/opt/homebrew/bin/claude-agent-acp",
+    "command": "claude-agent-acp",
     "args": [],
     "env": []
   },
@@ -30,7 +30,7 @@
   "autoAllowPermissions": false,
   "autoMentionActiveNote": true,
   "debugMode": false,
-  "nodePath": "/opt/homebrew/bin/node",
+  "nodePath": "node",
   "exportSettings": {
     "defaultFolder": "Agent Client",
     "filenameTemplate": "agent_client_{date}_{time}",
@@ -51,82 +51,10 @@
     "maxNoteLength": 10000,
     "maxSelectionLength": 10000,
     "showEmojis": false,
+    "showToolCalls": false,
     "fontSize": null
   },
-  "savedSessions": [
-    {
-      "sessionId": "fcb5714f-d277-4f0b-9e17-062a53b7cd34",
-      "agentId": "claude-code-acp",
-      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
-      "title": "/start",
-      "createdAt": "2026-04-03T08:13:29.115Z",
-      "updatedAt": "2026-04-03T08:13:29.116Z"
-    },
-    {
-      "sessionId": "87801503-7d5f-44d3-9578-1d3d4805dd69",
-      "agentId": "claude-code-acp",
-      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
-      "title": "/start",
-      "createdAt": "2026-04-03T08:10:45.894Z",
-      "updatedAt": "2026-04-03T08:10:45.895Z"
-    },
-    {
-      "sessionId": "a2a11c83-ef77-4142-9b08-2089fac27a40",
-      "agentId": "claude-code-acp",
-      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
-      "title": "/start",
-      "createdAt": "2026-04-03T04:46:06.772Z",
-      "updatedAt": "2026-04-03T04:46:06.772Z"
-    },
-    {
-      "sessionId": "6606676c-74d6-45d6-b32e-eeca847a27f4",
-      "agentId": "claude-code-acp",
-      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
-      "title": "/setup",
-      "createdAt": "2026-04-02T12:44:26.618Z",
-      "updatedAt": "2026-04-02T12:44:26.619Z"
-    },
-    {
-      "sessionId": "e2159f88-50fe-4754-8c37-8b6105680fe9",
-      "agentId": "claude-code-acp",
-      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
-      "title": "/start",
-      "createdAt": "2026-04-02T12:32:00.426Z",
-      "updatedAt": "2026-04-02T12:32:00.426Z"
-    },
-    {
-      "sessionId": "9d1cee7d-5582-43a7-a172-107c52d1e9dd",
-      "agentId": "claude-code-acp",
-      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
-      "title": "/start",
-      "createdAt": "2026-04-02T08:16:08.180Z",
-      "updatedAt": "2026-04-02T08:16:08.180Z"
-    },
-    {
-      "sessionId": "148f6438-5eec-4082-b585-3fac2fb228fb",
-      "agentId": "claude-code-acp",
-      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
-      "title": "/setup",
-      "createdAt": "2026-04-02T04:51:15.373Z",
-      "updatedAt": "2026-04-02T04:51:15.375Z"
-    },
-    {
-      "sessionId": "74029042-692b-4193-adea-be72664730a2",
-      "agentId": "claude-code-acp",
-      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
-      "title": "/setup",
-      "createdAt": "2026-04-01T12:06:51.419Z",
-      "updatedAt": "2026-04-01T12:06:51.419Z"
-    },
-    {
-      "sessionId": "72a5dabc-cc8c-43d5-93ff-efeb6b3bd74e",
-      "agentId": "claude-code-acp",
-      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
-      "title": "/start",
-      "createdAt": "2026-03-26T08:43:34.115Z",
-      "updatedAt": "2026-03-26T08:43:34.115Z"
-    }
-  ],
+  "savedSessions": [],
   "lastUsedModels": {},
   "lastUsedModes": {},
   "enableFloatingChat": false,

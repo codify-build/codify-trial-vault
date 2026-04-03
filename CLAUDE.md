@@ -34,14 +34,12 @@ All work runs through skills in `.claude/skills/`:
 - `/objection` — Handle a sales objection using your context
 - `/pitch` — Elevator pitch, event intro, podcast bio, speaker page
 - `/research` — Research a prospect, competitor, market trend, or scan for opportunities
-- `/brief` — Morning brief: vault health, open tasks, recommended focus
 - `/audit` — Check vault health
+- `/brief` — Morning brief: vault health, open tasks, recommended focus (Focus tier)
 - `/security` — Vault security audit, red team simulation, hardening report
 - `/publish` — Push outputs to live channels (Focus tier)
 - `/campaign` — Full pipeline: ad + email + content + landing, then distribute (Focus tier)
 - `/repurpose` — Take one output, create versions for every channel (Focus tier)
-- `/sync` — Detect context changes and automatically regenerate all downstream outputs. The reactive engine.
-- `/funnel` — Generate and deploy marketing funnels at scale (SEO pages, launch funnels, blog batches) directly to GoHighLevel
 - `/update` — Pull latest Codify skills and system updates (never touches client data)
 
 ## File Conventions
@@ -84,11 +82,9 @@ This vault gets smarter because:
 2. Those files link back to Context files
 3. AI reads the full graph before generating anything
 4. Outputs improve because context compounds
-5. `/sync` detects context changes and regenerates all downstream outputs automatically
-6. Monthly review hardens the best insights into permanent Context files
+5. Monthly review hardens the best insights into permanent Context files
 
-**Context is upstream. Everything else is downstream. Always.**
-**Update one context file — every ad, email, funnel, and landing page regenerates.**
+**Context > Prompts. Always.**
 
 ---
 

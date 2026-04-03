@@ -64,16 +64,11 @@ Then show a brief status report:
 | `/content` | Create content for any platform |
 | `/proposal` | Create a client proposal |
 | `/landing` | Create landing page copy |
-| `/site` | Build a complete website from your context |
-| `/ghl` | Manage your CRM — contacts, emails, pipeline, workflows |
 | `/case-study` | Turn a client win into a case study |
 | `/follow-up` | Write a follow-up after a call or meeting |
 | `/objection` | Handle a sales objection |
 | `/pitch` | Elevator pitch, event intro, speaker bio |
 | `/research` | Research a prospect, competitor, or market trend |
-| `/spy` | Scrape competitor ads, websites, and social — competitive intel |
-| `/leads` | Find and qualify prospects, push to CRM |
-| `/optimise` | Analyse what's working, recommend context file updates |
 | `/audit` | See your vault health |
 | `/brief` | Summary of vault health and recommended focus |
 

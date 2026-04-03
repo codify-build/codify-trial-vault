@@ -16,10 +16,24 @@ echo "  ╚═══════════════════════
 echo ""
 
 # --- Configuration ---
-# The architect sets these before sending to the client
+# The architect MUST set these before sending to the client
 VAULT_NAME="my-vault"
 GITHUB_TEMPLATE="https://github.com/mike-scott-darwin/codify-vault-template.git"
 VAULT_PATH="$HOME/Documents/$VAULT_NAME"
+
+# Guard: architect must customize before sending
+if [[ "$VAULT_NAME" == "my-vault" ]]; then
+    echo ""
+    echo "  ERROR: VAULT_NAME has not been set."
+    echo "  The architect must edit this file and set VAULT_NAME"
+    echo "  before sending to the client."
+    echo ""
+    echo "  Open this file and change line 21:"
+    echo "    VAULT_NAME=\"client-business-name\""
+    echo ""
+    read -n 1 -s -r -p "  Press any key to close."
+    exit 1
+fi
 
 # --- Step 1: Install Homebrew (if needed) ---
 if ! command -v brew &> /dev/null; then
@@ -39,9 +53,16 @@ fi
 if ! command -v git &> /dev/null; then
     echo "  [2/5] Installing version control..."
     xcode-select --install 2>/dev/null
-    # Wait for xcode-select to finish
+    # Wait for xcode-select to finish (max 5 minutes)
+    WAIT_COUNT=0
     until command -v git &> /dev/null; do
         sleep 5
+        WAIT_COUNT=$((WAIT_COUNT + 1))
+        if [[ $WAIT_COUNT -ge 60 ]]; then
+            echo "  Git installation timed out. Please restart and try again."
+            read -n 1 -s -r -p "  Press any key to close."
+            exit 1
+        fi
     done
 else
     echo "  [2/5] Version control ready."
@@ -80,10 +101,16 @@ else
     git clone "$GITHUB_TEMPLATE" "$VAULT_PATH" 2>/dev/null
 
     if [[ $? -ne 0 ]]; then
-        # If clone fails (private repo), create from scratch
-        mkdir -p "$VAULT_PATH"
-        cd "$VAULT_PATH"
-        git init -q
+        echo ""
+        echo "  Could not download your vault template."
+        echo "  This usually means the link has expired or"
+        echo "  there is a network issue."
+        echo ""
+        echo "  Contact your Codify architect for help:"
+        echo "  hello@codify.build"
+        echo ""
+        read -n 1 -s -r -p "  Press any key to close."
+        exit 1
     fi
 fi
 

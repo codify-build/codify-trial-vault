@@ -104,14 +104,3 @@ last-updated: 2026-03-26 16:45
 ### 6. Report Progress
 
 "Your [file] moved from [old depth] to [new depth]. Next enrichment opportunity: [specific suggestion]."
-
-
-## After Enrichment
-
-When enrichment is complete and Context file is updated, inform the user:
-
-"Context enriched. Run `/sync` to propagate changes to downstream outputs."
-
-If `03-Outputs/` has existing files that depend on the enriched Context file (check `source_files` in frontmatter), show the count:
-
-"[file] enriched. [N] existing outputs depend on this file. Run `/sync` to regenerate them with your deeper context."

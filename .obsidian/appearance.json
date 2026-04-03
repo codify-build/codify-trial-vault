@@ -1,14 +1,11 @@
 {
-  "baseFontSize": 16,
-  "textFontFamily": "",
-  "monospaceFontFamily": "",
-  "interfaceFontFamily": "",
+  "baseFontSize": 15,
   "theme": "obsidian",
-  "translucency": false,
   "cssTheme": "",
   "enabledCssSnippets": [
     "codify-brand"
   ],
-  "nativeMenus": true,
-  "showViewHeader": true
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "Inter",
+  "monospaceFontFamily": "JetBrains Mono"
 }

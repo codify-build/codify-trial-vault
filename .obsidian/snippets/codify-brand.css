@@ -1,440 +1,462 @@
+/*
+ * CODIFY — Brand System
+ *
+ * Brand:        Codify
+ * Tagline:      Your context, compounding.
+ * Primary:      #1a9e6b (Codify Green — muted, trust, intelligence)
+ * Hover:        #158559
+ * Dark BG:      #0d0f12
+ * Text:         #c8cdd5
+ * Font:         Inter (body) / JetBrains Mono (code)
+ * Weight:       300 body, 400 UI, 500 headings
+ * Tone:         Dark, minimal, premium. Executive tool, not a note app.
+ *
+ * Usage:        This snippet brands Obsidian as Codify.
+ *               Title bar reads "Codify". Accent colour is Codify Green.
+ *               All shadows removed. Light font weight throughout.
+ */
+
 /* ============================================
-   CODIFY — Context Architecture Theme
-   "Context > Prompts"
+   1. COLOR SYSTEM
    ============================================ */
 
-/* --- Color System --- */
-:root {
-  /* Codify brand palette */
-  --codify-bg-primary: #0d1117;
-  --codify-bg-secondary: #161b22;
-  --codify-bg-tertiary: #1c2128;
-  --codify-bg-surface: #21262d;
-  --codify-border: #30363d;
-  --codify-border-subtle: #21262d;
-
-  --codify-text-primary: #e6edf3;
-  --codify-text-secondary: #8b949e;
-  --codify-text-muted: #6e7681;
-
-  --codify-accent: #58a6ff;
-  --codify-accent-warm: #d2a8ff;
-  --codify-accent-success: #3fb950;
-  --codify-accent-warning: #d29922;
-  --codify-accent-danger: #f85149;
-
-  --codify-link: #58a6ff;
-  --codify-tag: #d2a8ff;
-}
-
-/* --- Force dark mode overrides --- */
 .theme-dark {
-  --background-primary: var(--codify-bg-primary);
-  --background-primary-alt: var(--codify-bg-secondary);
-  --background-secondary: var(--codify-bg-secondary);
-  --background-secondary-alt: var(--codify-bg-tertiary);
-  --background-modifier-border: var(--codify-border);
-  --background-modifier-border-hover: var(--codify-border);
-  --background-modifier-border-focus: var(--codify-accent);
+  /* Background layers */
+  --background-primary: #0d0f12;
+  --background-primary-alt: #13161b;
+  --background-secondary: #0a0c0f;
+  --background-secondary-alt: #0a0c0f;
+  --background-modifier-border: #1e2229;
+  --background-modifier-form-field: #13161b;
+  --background-modifier-hover: rgba(255, 255, 255, 0.04);
+  --background-modifier-active-hover: rgba(255, 255, 255, 0.06);
+  --background-modifier-success: rgba(26, 158, 107, 0.12);
+  --background-modifier-error: rgba(255, 85, 85, 0.12);
 
-  --text-normal: var(--codify-text-primary);
-  --text-muted: var(--codify-text-secondary);
-  --text-faint: var(--codify-text-muted);
-  --text-accent: var(--codify-accent);
-  --text-accent-hover: var(--codify-accent-warm);
+  /* Text */
+  --text-normal: #c8cdd5;
+  --text-muted: #6b7280;
+  --text-faint: #404756;
+  --text-on-accent: #0d0f12;
+  --text-on-accent-inverted: #c8cdd5;
 
-  --interactive-accent: var(--codify-accent);
-  --interactive-accent-hover: var(--codify-accent-warm);
+  /* Accent — Codify green (trust, growth, intelligence) */
+  --interactive-accent: #1a9e6b;
+  --interactive-accent-hover: #158559;
+  --text-accent: #1a9e6b;
+  --text-accent-hover: #158559;
 
-  --link-color: var(--codify-link);
-  --link-color-hover: var(--codify-accent-warm);
-  --link-unresolved-color: var(--codify-text-muted);
+  /* Tags */
+  --tag-color: #1a9e6b;
+  --tag-background: rgba(26, 158, 107, 0.1);
+  --tag-color-hover: #158559;
+  --tag-background-hover: rgba(26, 158, 107, 0.15);
 
-  --tag-color: var(--codify-tag);
-  --tag-background: rgba(210, 168, 255, 0.1);
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.08);
+  --scrollbar-active-thumb-bg: rgba(26, 158, 107, 0.3);
+
+  /* Graph */
+  --graph-line: rgba(26, 158, 107, 0.15);
+  --graph-node: #1a9e6b;
+  --graph-node-focused: #fff;
+  --graph-node-tag: #1a9e6b;
+  --graph-node-attachment: #6b7280;
+
+  /* Vault name color */
+  --vault-name-color: #1a9e6b;
 }
 
-/* --- Typography --- */
+.theme-light {
+  /* Light mode fallback — keep it minimal */
+  --interactive-accent: #1a9e6b;
+  --interactive-accent-hover: #158559;
+  --text-accent: #1a9e6b;
+  --text-accent-hover: #158559;
+}
+
+
+/* ============================================
+   2. TYPOGRAPHY
+   ============================================ */
+
 body {
-  --font-text-theme: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
-  --font-monospace-theme: "SF Mono", "Fira Code", "JetBrains Mono", monospace;
-  --font-interface-theme: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+  --font-text: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-monospace: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  --font-interface: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-/* --- Headings: direct, confident --- */
-.theme-dark h1,
-.theme-dark .HyperMD-header-1 {
-  color: var(--codify-text-primary);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  border-bottom: 1px solid var(--codify-border);
+/* Headings — light, clean */
+.markdown-rendered h1,
+.cm-header-1 {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #f0f2f5;
+  border-bottom: 1px solid #1e2229;
   padding-bottom: 0.4em;
   margin-top: 1.5em;
 }
 
-.theme-dark h2,
-.theme-dark .HyperMD-header-2 {
-  color: var(--codify-text-primary);
-  font-weight: 600;
-  letter-spacing: -0.01em;
+.markdown-rendered h2,
+.cm-header-2 {
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  color: #e2e6eb;
   margin-top: 1.3em;
 }
 
-.theme-dark h3,
-.theme-dark .HyperMD-header-3 {
-  color: var(--codify-accent);
-  font-weight: 600;
-  margin-top: 1.1em;
+.markdown-rendered h3,
+.cm-header-3 {
+  font-weight: 500;
+  color: #c8cdd5;
+  margin-top: 1.2em;
 }
 
-.theme-dark h4,
-.theme-dark .HyperMD-header-4,
-.theme-dark h5,
-.theme-dark .HyperMD-header-5,
-.theme-dark h6,
-.theme-dark .HyperMD-header-6 {
-  color: var(--codify-text-secondary);
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.85em;
-  letter-spacing: 0.05em;
+/* Body text — light weight, comfortable reading */
+body {
+  --font-text-weight: 300;
 }
 
-/* --- Sidebar styling --- */
-.theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder-title {
-  font-weight: 600;
-  letter-spacing: 0.02em;
+.markdown-rendered {
+  line-height: 1.7;
+  font-size: 15px;
+  font-weight: 300;
 }
 
-/* Folder icons — cleaner */
-.theme-dark .nav-folder-title-content {
-  color: var(--codify-text-primary);
+/* All UI text lighter */
+.nav-file-title,
+.nav-folder-title,
+.workspace-tab-header {
+  font-weight: 400;
 }
 
-.theme-dark .nav-file-title-content {
-  color: var(--codify-text-secondary);
+
+/* ============================================
+   3. SIDEBAR — CLEAN, DARK
+   ============================================ */
+
+/* File explorer */
+.nav-file-title,
+.nav-folder-title {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 4px;
 }
 
-.theme-dark .nav-file-title:hover .nav-file-title-content,
-.theme-dark .nav-folder-title:hover .nav-folder-title-content {
-  color: var(--codify-accent);
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  background-color: rgba(26, 158, 107, 0.06);
 }
 
-/* Active file highlight */
-.theme-dark .nav-file-title.is-active {
-  background-color: rgba(88, 166, 255, 0.1);
-  border-left: 2px solid var(--codify-accent);
+.nav-file-title.is-active {
+  background-color: rgba(26, 158, 107, 0.1);
+  color: #1a9e6b;
 }
 
-/* --- Tables: clean executive style --- */
-.theme-dark table {
+/* Folder icons — subtle */
+.nav-folder-title .nav-folder-collapse-indicator {
+  color: #404756;
+}
+
+/* Vault name in sidebar */
+.workspace-tab-header-container {
+  border-bottom: 1px solid #1e2229;
+}
+
+
+/* ============================================
+   4. EDITOR — FOCUSED WRITING
+   ============================================ */
+
+/* Active line highlight */
+.cm-active.cm-line {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Links */
+.markdown-rendered a,
+.cm-hmd-internal-link {
+  color: #1a9e6b;
+  text-decoration: none;
+}
+
+.markdown-rendered a:hover {
+  color: #158559;
+  text-decoration: underline;
+}
+
+/* Blockquotes — executive memo style */
+.markdown-rendered blockquote {
+  border-left: 3px solid #1a9e6b;
+  background-color: rgba(26, 158, 107, 0.04);
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 0 6px 6px 0;
+  color: #9ca3af;
+}
+
+/* Inline code — commands like /extract, /enrich pop with colour */
+.markdown-rendered code,
+.cm-inline-code {
+  background-color: rgba(26, 158, 107, 0.1);
+  color: #1a9e6b;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  font-weight: 400;
+  border: none;
+}
+
+/* Code blocks */
+.markdown-rendered pre {
+  background-color: #0a0c0f;
+  border: 1px solid #1e2229;
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.markdown-rendered pre code {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #c8cdd5;
+}
+
+/* Bold text */
+.markdown-rendered strong,
+.cm-strong {
+  color: #f0f2f5;
+  font-weight: 500;
+}
+
+/* Tables — clean, grid-like */
+.markdown-rendered table {
   border-collapse: collapse;
   width: 100%;
 }
 
-.theme-dark th {
-  background-color: var(--codify-bg-tertiary);
-  color: var(--codify-text-primary);
-  font-weight: 600;
-  text-align: left;
-  padding: 10px 14px;
-  border-bottom: 2px solid var(--codify-accent);
-  font-size: 0.9em;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.theme-dark td {
-  padding: 8px 14px;
-  border-bottom: 1px solid var(--codify-border-subtle);
-  color: var(--codify-text-secondary);
-}
-
-.theme-dark tr:hover td {
-  background-color: rgba(88, 166, 255, 0.04);
-}
-
-/* --- Blockquotes: for key insights --- */
-.theme-dark blockquote {
-  border-left: 3px solid var(--codify-accent);
-  background-color: rgba(88, 166, 255, 0.05);
-  padding: 12px 16px;
-  margin: 1em 0;
-  color: var(--codify-text-primary);
-  border-radius: 0 4px 4px 0;
-}
-
-/* --- Code blocks --- */
-.theme-dark code {
-  background-color: var(--codify-bg-tertiary);
-  color: var(--codify-accent);
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-size: 0.88em;
-}
-
-.theme-dark pre {
-  background-color: var(--codify-bg-tertiary) !important;
-  border: 1px solid var(--codify-border);
-  border-radius: 6px;
-  padding: 16px;
-}
-
-.theme-dark pre code {
-  background-color: transparent !important;
-  color: var(--codify-text-primary) !important;
-  padding: 0;
-  border: none;
-  border-radius: 0;
-  font-size: 0.88em;
-  line-height: 1.6;
-}
-
-/* Ensure all code text is readable */
-.theme-dark .markdown-preview-view pre,
-.theme-dark .markdown-reading-view pre {
-  background-color: var(--codify-bg-tertiary) !important;
-}
-
-.theme-dark .markdown-preview-view pre code,
-.theme-dark .markdown-reading-view pre code,
-.theme-dark .markdown-preview-view code[class*="language-"],
-.theme-dark .markdown-reading-view code[class*="language-"] {
-  color: var(--codify-text-primary) !important;
-}
-
-/* Code block line numbers if present */
-.theme-dark .HyperMD-codeblock {
-  color: var(--codify-text-primary) !important;
-  background-color: var(--codify-bg-tertiary) !important;
-}
-
-/* --- Bold text: make it pop --- */
-.theme-dark strong {
-  color: var(--codify-text-primary);
-  font-weight: 700;
-}
-
-/* --- Links: internal wiki links --- */
-.theme-dark .internal-link {
-  color: var(--codify-link);
-  text-decoration: none;
-  border-bottom: 1px dotted rgba(88, 166, 255, 0.3);
-}
-
-.theme-dark .internal-link:hover {
-  color: var(--codify-accent-warm);
-  border-bottom-color: var(--codify-accent-warm);
-}
-
-/* --- Tags --- */
-.theme-dark .tag {
-  background-color: var(--tag-background);
-  color: var(--codify-tag);
-  border-radius: 3px;
-  padding: 2px 8px;
-  font-size: 0.85em;
-}
-
-/* --- YAML Frontmatter: subtle --- */
-.theme-dark .frontmatter-container {
-  background-color: var(--codify-bg-secondary);
-  border: 1px solid var(--codify-border-subtle);
-  border-radius: 6px;
-  padding: 8px 12px;
-}
-
-.theme-dark .frontmatter-container .frontmatter-section-label {
-  color: var(--codify-text-muted);
-  font-size: 0.8em;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-/* --- Horizontal rules --- */
-.theme-dark hr {
-  border: none;
-  border-top: 1px solid var(--codify-border);
-  margin: 2em 0;
-}
-
-/* --- Checkboxes: for dashboard tracking --- */
-.theme-dark input[type="checkbox"] {
-  accent-color: var(--codify-accent);
-}
-
-.theme-dark input[type="checkbox"]:checked + span {
-  color: var(--codify-text-muted);
-}
-
-/* --- Status bar: minimal --- */
-.theme-dark .status-bar {
-  background-color: var(--codify-bg-secondary);
-  border-top: 1px solid var(--codify-border-subtle);
-  color: var(--codify-text-muted);
-  font-size: 0.75em;
-}
-
-/* --- Tab header: clean --- */
-.theme-dark .workspace-tab-header-container {
-  background-color: var(--codify-bg-secondary);
-  border-bottom: 1px solid var(--codify-border);
-}
-
-.theme-dark .workspace-tab-header.is-active {
-  background-color: var(--codify-bg-primary);
-  border-bottom: 2px solid var(--codify-accent);
-}
-
-/* --- Hide Obsidian branding --- */
-
-/* Hide the vault name in title bar (shows as window title instead) */
-.theme-dark .titlebar-text {
-  visibility: hidden;
-}
-
-.theme-dark .titlebar-text::after {
-  content: "Codify";
-  visibility: visible;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--codify-text-secondary);
-}
-
-/* Hide "Obsidian" from help/about if visible */
-.theme-dark .modal-title:not(:empty) {
-  font-weight: 600;
-}
-
-/* --- Graph view: branded --- */
-.theme-dark .graph-view.color-fill {
-  color: var(--codify-accent);
-}
-
-.theme-dark .graph-view.color-line {
-  color: var(--codify-border);
-}
-
-.theme-dark .graph-view.color-text {
-  color: var(--codify-text-secondary);
-}
-
-.theme-dark .graph-view.color-fill-highlight {
-  color: var(--codify-accent-warm);
-}
-
-/* --- Scrollbar: subtle --- */
-.theme-dark ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-.theme-dark ::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.theme-dark ::-webkit-scrollbar-thumb {
-  background-color: var(--codify-border);
-  border-radius: 3px;
-}
-
-.theme-dark ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--codify-text-muted);
-}
-
-/* --- Dataview tables (dashboard styling) --- */
-.theme-dark .dataview.table-view-table th {
-  background-color: var(--codify-bg-tertiary);
+.markdown-rendered th {
+  background-color: #13161b;
+  color: #1a9e6b;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 11px;
   letter-spacing: 0.05em;
-  color: var(--codify-accent);
+  padding: 10px 14px;
+  border: 1px solid #1e2229;
 }
 
-.theme-dark .dataview.table-view-table td {
-  font-size: 0.9em;
+.markdown-rendered td {
+  padding: 10px 14px;
+  border: 1px solid #1e2229;
 }
 
-/* --- Callouts: for vault status messages --- */
-.theme-dark .callout[data-callout="tip"] {
-  --callout-color: 88, 166, 255;
+.markdown-rendered tr:hover td {
+  background-color: rgba(255, 255, 255, 0.02);
 }
 
-.theme-dark .callout[data-callout="warning"] {
-  --callout-color: 210, 153, 34;
+
+/* ============================================
+   5. STATUS BAR — MINIMAL
+   ============================================ */
+
+.status-bar {
+  background-color: #0a0c0f;
+  border-top: 1px solid #1e2229;
+  font-size: 11px;
+  color: #404756;
 }
 
-.theme-dark .callout[data-callout="info"] {
-  --callout-color: 139, 148, 158;
+
+/* ============================================
+   6. TABS — SLEEK
+   ============================================ */
+
+.workspace-tab-header {
+  border-radius: 6px 6px 0 0;
+  font-size: 12px;
 }
 
-/* Custom callout: context-power */
-.theme-dark .callout[data-callout="context"] {
-  --callout-color: 210, 168, 255;
-  --callout-icon: lucide-brain;
+.workspace-tab-header.is-active {
+  background-color: #0d0f12;
+  color: #c8cdd5;
 }
 
-/* Custom callout: compound-loop */
-.theme-dark .callout[data-callout="compound"] {
-  --callout-color: 63, 185, 80;
-  --callout-icon: lucide-trending-up;
+.workspace-tab-header:not(.is-active) {
+  color: #6b7280;
 }
 
-/* --- Empty state: welcome message --- */
-.theme-dark .empty-state-title {
-  font-weight: 700;
-  letter-spacing: -0.02em;
+
+/* ============================================
+   7. AGENT CLIENT — BRANDED CHAT PANE
+   ============================================ */
+
+/* Chat input area */
+.agent-client-input textarea {
+  background-color: #13161b;
+  border: 1px solid #1e2229;
+  border-radius: 8px;
+  color: #c8cdd5;
+  font-family: var(--font-text);
 }
 
-/* --- Modal dialogs: cleaner --- */
-.theme-dark .modal {
-  background-color: var(--codify-bg-secondary);
-  border: 1px solid var(--codify-border);
+.agent-client-input textarea:focus {
+  border-color: #1a9e6b;
+  box-shadow: none;
+}
+
+/* Chat messages */
+.agent-client-message.user {
+  background-color: rgba(26, 158, 107, 0.08);
   border-radius: 8px;
 }
 
-/* --- Tooltip --- */
-.theme-dark .tooltip {
-  background-color: var(--codify-bg-tertiary);
-  border: 1px solid var(--codify-border);
-  color: var(--codify-text-primary);
-  border-radius: 4px;
-  font-size: 0.85em;
+.agent-client-message.assistant {
+  background-color: #13161b;
+  border-radius: 8px;
 }
 
-/* --- Print / Export: clean for client reports --- */
-@media print {
-  body {
-    background: white;
-    color: #1a1a1a;
-  }
 
-  h1 {
-    border-bottom: 2px solid #1a1a1a;
-  }
+/* ============================================
+   8. DATAVIEW TABLES (DASHBOARDS)
+   ============================================ */
 
-  h3 {
-    color: #0366d6;
-  }
+.dataview.table-view-table th {
+  background-color: #13161b;
+  color: #1a9e6b;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
 
-  th {
-    background-color: #f6f8fa;
-    border-bottom: 2px solid #0366d6;
-  }
+.dataview.table-view-table td {
+  border-color: #1e2229;
+}
 
-  blockquote {
-    border-left: 3px solid #0366d6;
-    background-color: #f6f8fa;
-  }
 
-  a::after {
-    content: none;
-  }
+/* ============================================
+   9. HIDE OBSIDIAN BRANDING
+   ============================================ */
+
+/* Title bar → Codify */
+.titlebar-text {
+  font-size: 0;
+}
+
+.titlebar-text::after {
+  content: "Codify";
+  font-size: 13px;
+  font-weight: 400;
+  color: #1a9e6b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Vault name in sidebar → Codify branded */
+.workspace-drawer-vault-name {
+  font-size: 0;
+}
+
+.workspace-drawer-vault-name::after {
+  content: "Codify";
+  font-size: 12px;
+  font-weight: 400;
+  color: #1a9e6b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Hide Obsidian help/about references */
+.side-dock-settings .setting-item:has(.setting-item-name:empty) {
+  display: none;
+}
+
+
+/* ============================================
+   10. FRONTMATTER — CLEAN DISPLAY
+   ============================================ */
+
+.frontmatter-container {
+  background-color: #0a0c0f;
+  border: 1px solid #1e2229;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+.frontmatter-container .frontmatter-section-label {
+  color: #1a9e6b;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+
+/* ============================================
+   11. GRAPH VIEW — BRANDED
+   ============================================ */
+
+.graph-view.color-fill {
+  color: #1a9e6b;
+}
+
+.graph-view.color-line {
+  color: rgba(26, 158, 107, 0.2);
+}
+
+.graph-view.color-text {
+  color: #c8cdd5;
+}
+
+
+/* ============================================
+   12. CALLOUTS — EXECUTIVE STYLE
+   ============================================ */
+
+.callout[data-callout="tip"] {
+  --callout-color: 26, 158, 107;
+}
+
+.callout[data-callout="warning"] {
+  --callout-color: 245, 158, 11;
+}
+
+.callout[data-callout="danger"] {
+  --callout-color: 239, 68, 68;
+}
+
+.callout {
+  border-radius: 6px;
+  border-width: 1px;
+  border-left-width: 3px;
+}
+
+
+/* ============================================
+   13. SEARCH — SUBTLE
+   ============================================ */
+
+.search-result-file-title {
+  color: #1a9e6b;
+  font-weight: 600;
+}
+
+.search-result-file-matched-text {
+  color: #f0f2f5;
+  background-color: rgba(26, 158, 107, 0.15);
 }
 
 /* --- Hide Tool Calls in Agent Client --- */
 /* Clients don't need to see Find, Read, Edit operations */
 .agent-client-message-tool-call {
+  display: none !important;
+}
+
+/* --- Hide Architect Folder from Client Sidebar --- */
+.nav-folder-title[data-path="_architect"],
+.nav-folder-title[data-path="_architect"] + .nav-folder-children {
   display: none !important;
 }

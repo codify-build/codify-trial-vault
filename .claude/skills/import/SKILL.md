@@ -114,14 +114,3 @@ If yes, run the relevant `/extract` questions for just the missing sections — 
 | Document has no Soul signals | "This is useful for [audience/offer] but I didn't find much about your core beliefs. Want me to ask you a few questions about that?" |
 | Client can't find documents | "No problem. Let's do it conversationally instead." Then run `/extract`. |
 | PDF in vault can't be read | "I can see the PDF but I can't read its contents directly. Can you paste the key sections into the chat?" |
-
-
-## After Import
-
-When import is complete and Context files are updated, inform the user:
-
-"Context imported. Run `/sync` to propagate changes to downstream outputs."
-
-If `03-Outputs/` has existing files that depend on the updated Context files (check `source_files` in frontmatter), show the count:
-
-"Import complete. [N] existing outputs depend on files that just changed. Run `/sync` to regenerate them with your updated context."

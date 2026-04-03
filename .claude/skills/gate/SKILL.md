@@ -21,10 +21,10 @@ The architect sets this during `/setup`. It's a plain text file — no YAML, no 
 
 ## How Gating Works
 
-Every skill SKILL.md includes a tier requirement in its frontmatter. Before executing, check:
+The skill-to-tier mapping is centralized in the Skill Map below. Before executing any skill, check:
 
 1. Read `00-Context/.tier` (fall back to `.tier` in vault root if not found)
-2. Compare against the skill's required tier
+2. Look up the skill in the Skill Map below to find its required tier
 3. If the client's tier is sufficient, run the skill
 4. If not, show the upgrade message
 
@@ -69,14 +69,13 @@ Everything in Explore (unlimited extractions), plus:
 | `/objection` | Handle a sales objection using your context |
 | `/pitch` | Elevator pitch, event intro, podcast bio, speaker page |
 | `/research` | Research a prospect, competitor, market trend, or scan for opportunities |
-| `/brief` | Morning brief — decisions, priorities, open threads |
-
 ### Focus ($1,497 + $497/mo)
 
 Everything in Architect, plus:
 
 | Skill | Description |
 |-------|-------------|
+| `/brief` | Morning brief — decisions, priorities, open threads |
 | `/publish` | Distribute outputs to live channels |
 | `/campaign` | Full pipeline — generate + distribute across channels |
 | `/repurpose` | One piece of content → every channel |
