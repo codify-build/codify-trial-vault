@@ -51,10 +51,18 @@
     "maxNoteLength": 10000,
     "maxSelectionLength": 10000,
     "showEmojis": false,
-    "showToolCalls": false,
     "fontSize": null
   },
-  "savedSessions": [],
+  "savedSessions": [
+    {
+      "sessionId": "2b8b8570-f16b-4447-99d9-4fd6a108c1e5",
+      "agentId": "claude-code-acp",
+      "cwd": "/Users/michaelscott/Desktop/codify-trial-vault",
+      "title": "/start",
+      "createdAt": "2026-04-03T08:39:05.625Z",
+      "updatedAt": "2026-04-03T08:39:05.626Z"
+    }
+  ],
   "lastUsedModels": {},
   "lastUsedModes": {},
   "enableFloatingChat": false,
