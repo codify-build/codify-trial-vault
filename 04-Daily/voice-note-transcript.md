@@ -2,8 +2,9 @@
 type: daily
 status: active
 date: 2026-04-05
-last-updated: 2026-04-05 15:30
+last-updated: 2026-04-05 15:40
 ---
+Process the voice note transcript in the active note. Extract context files: soul.md, voice.md, audience.md, offer.md, and proof.md into 00-Context/. Then run a gap analysis into 02-Research/gap-analysis.md and surface 3 strategic opportunities into 02-Research/strategic-opportunities.md. Finally generate a LinkedIn ad and proposal into 03-Outputs/.
 
 # Voice Note Transcript
 
