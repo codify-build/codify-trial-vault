@@ -1,38 +1,37 @@
 ---
 type: context
 status: active
-date: 2026-04-01
-last-updated: 2026-04-01 12:00
+date: 2026-04-05
+last-updated: 2026-04-05 15:32
 ---
 
 # Audience
 
-## Buyer Profile
-Last client: David Park, CEO of a commercial HVAC company doing $22M. Built the company from nothing over 15 years. Smart guy. Works 65-hour weeks. Has a leadership team of 4 people who are loyal but won't make a move without his approval. David called me because he missed his daughter's college graduation for a "crisis" that turned out to be a pricing dispute his sales director could have handled. He didn't need a coach — he needed someone to show him that he'd accidentally built a company that couldn't function without him in the room.
+## Primary Buyer
+Mid-market manufacturers, $2M-$15M revenue. Operations leaders and owners who've hit a complexity ceiling their internal engineering team can't clear.
 
-## Failed Alternatives
-- Read every leadership book on the shelf. "Good to Great," "Radical Candor," the whole collection. Knows the theory. Can't apply it because nobody's watching him in real-time.
-- Hired a big-firm consultant ($80K engagement). Got a 60-page strategy deck with nice charts. Nothing changed.
-- Tried a peer group (Vistage/EO). Useful for networking, not useful for fixing the actual operating rhythm of his company.
-- His wife told him to "just delegate more." He tried. It lasted 2 weeks before he was back in every meeting.
+## Why They Buy
+"They come to us because we solve problems their engineers can't — we've seen every failure mode."
 
-## Voice of Customer
-- "I know I'm the bottleneck but I don't know how to stop."
-- "Every time I step back, things fall apart."
-- "I've got good people but they won't step up."
-- "I didn't build this company to be chained to it."
-- "My business runs fine — as long as I'm there."
+They're not buying consulting hours. They're buying access to 32 years of pattern recognition that their team doesn't have and can't build fast enough.
 
-## Buying Trigger
-A personal cost moment. Missed anniversary. Kid's event. Health scare. Doctor says blood pressure is too high. Or: they get an acquisition offer and realize the company is worthless without them in it. The trigger is almost never a business metric — it's the moment the personal cost of their operating style becomes undeniable.
+## The Real Problem They Have
+Institutional knowledge is trapped in senior people's heads. When those people leave — retire, get poached, burn out — the company spends months relearning what was lost. The "Frank problem" is universal in manufacturing.
 
-## Disqualifiers
-- CEOs under $5M revenue. They can't afford me, and frankly their problem is usually sales, not leadership structure.
-- Anyone who says "I just need someone to hold me accountable." That's not coaching, that's babysitting. I'm not interested.
-- Founders who have already decided to sell within 6 months. I need 90 days minimum for the work to take root.
-- People who want to be told they're doing a great job. I'm going to show you what's actually happening in your company. If that makes you uncomfortable, I'm not your guy.
+## Buying Triggers
+- A key person announces retirement or leaves unexpectedly
+- A quality issue that "Frank would have caught" slips through
+- Scaling hits a wall because expertise can't be cloned
+- New automation project fails because nobody captured the decision logic first
 
-## Cross-References
-- The [[soul]] explains why Marcus works this way — COO origin, structural thinking, anti-therapy stance
-- The [[offer]] is built for this exact buyer — the Decision Audit catches the "I know I'm the bottleneck" problem in 14 days
-- The [[voice]] mirrors how this audience talks — direct, no corporate filler, results-first
+## Pricing Context
+Currently paying $180/hr for consulting, $15K-$40K for implementation.
+Competitors charge $250/hr and deliver less. This buyer is getting premium value at mid-market prices — and doesn't realise it.
+
+## Segment Gap
+⚠️ He knows WHO buys but hasn't mapped WHY they choose him over competitors specifically. The differentiator is felt, not articulated.
+
+## Links
+- Shaped by [[soul]] — the institutional knowledge problem IS the audience's pain
+- Directly informs [[offer]] — pricing gap is a strategic opportunity
+- Stories from this audience feed [[proof]]

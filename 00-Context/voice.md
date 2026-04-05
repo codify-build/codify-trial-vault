@@ -1,52 +1,32 @@
 ---
 type: context
 status: active
-date: 2026-04-01
-last-updated: 2026-04-01 12:00
+date: 2026-04-05
+last-updated: 2026-04-05 15:31
 ---
 
 # Voice
 
-## Tone Calibration
-C) "I've been in the trenches. Here's what actually matters."
+## Tone
+Direct. Shop-floor pragmatic. Zero tolerance for buzzwords. Says what he means in the fewest words possible.
 
-I'm direct. I'm not harsh, but I don't soften things with qualifiers. If I say "your Monday meeting is broken," I mean it's broken — I'm not going to say "there might be an opportunity to optimize your Monday cadence." I earned the right to be direct because I've done the job. I was a COO. I sat in those meetings. I made the same mistakes my clients make. That credibility is everything.
+## Signature Patterns
+- **Leads with credentials earned, not claimed:** "32 years..." "Started on the factory floor..."
+- **Stories over statistics:** Frank's departure is the proof point — not a chart
+- **Understated confidence:** "Honestly, we should be charging more" — knows it, hasn't acted
+- **Concrete over abstract:** "Tolerances, edge cases, supplier quirks" — never "operational excellence" or "synergies"
+- **Problem-first framing:** Opens with what the industry gets wrong, not what he gets right
 
-## Signature Phrases
-- "The bottleneck is never the people. It's the operating system."
-- "You didn't hire adults to treat them like interns."
-- "If your team can't run a Tuesday without you, you don't have a team — you have an audience."
-- "Show me your calendar and I'll show you your priorities. Show me your meeting cadence and I'll show you your culture."
-- "Decision debt compounds faster than financial debt."
-- "Stop coaching your team. Start trusting your team."
+## What They Never Say
+- "Disruptive innovation" — too Silicon Valley
+- "Digital transformation" — too vague, too consultant-speak
+- "AI-powered" — they sell human expertise, not technology
+- "Best-in-class" — they'd rather show than label
 
-## Anti-Language
-- "Synergy," "leverage," "alignment" — corporate speak that means nothing
-- "Leadership journey" — I'm not a spiritual guide
-- "Empower" — you don't empower people by giving them a pep talk, you empower them by getting out of their way
-- "Let's unpack that" — I'm a coach, not a therapist
-- "Circle back," "take this offline," "deep dive" — meeting filler words
-- Anything with "transformational" in it. I help people fix their companies, not find themselves.
+## Emotional Register
+Frustrated that the industry doesn't see what he sees. Proud of the work but not the positioning. Ready to charge what it's worth but hasn't pulled the trigger.
 
-## Voice Sample
-Email I sent to a prospect last month:
-
-"David — I looked at what you sent me. You have a $22M company running on one person's judgment. That's not a leadership problem, it's a structural one. Your people aren't underperforming. They're waiting for permission.
-
-I can show you exactly where this is happening in 14 days. No surveys. No personality tests. I just need to sit in your meetings and talk to your team.
-
-If what I find doesn't surprise you, you owe me nothing.
-
-— Marcus"
-
-## Emotional Target
-After reading something from me, I want people to feel two things:
-1. **Seen.** Like someone finally described the problem they've been living with but couldn't articulate.
-2. **Impatient.** Like the cost of doing nothing just became obvious and they want to fix it now.
-
-I don't want them to feel inspired. Inspiration fades by Tuesday. I want them to feel the weight of what they're leaving on the table.
-
-## Cross-References
-- The [[soul]] origin moment (COO who watched Karen Chen) is where this voice comes from — earned authority, not academic
-- The [[audience]] responds to this voice because they speak the same way — operators, not philosophers
-- The [[offer]] is delivered in this voice — the Decision Audit presentation is blunt, visual, undeniable
+## Links
+- Derived from [[soul]] — the beliefs drive the tone
+- Applied across [[offer]] — how the value gets described to buyers
+- Must match in all [[outputs]] — if it doesn't sound like him, it's wrong

@@ -1,38 +1,32 @@
 ---
 type: context
 status: active
-date: 2026-04-01
-last-updated: 2026-04-01 12:00
+date: 2026-04-05
+last-updated: 2026-04-05 15:31
 ---
 
 # Soul
 
-## Core Description
-I help CEOs who've outgrown their leadership style. Most of my clients built something impressive — $10M to $50M companies — but they're running the business the same way they did at $2M. I don't teach leadership theory. I sit in their actual meetings, watch them operate, and show them exactly where their habits are costing them growth.
+## Core Belief
+"The real value isn't the automation system. It's the decision logic — the 'if this, then that' knowledge that took decades to build."
 
-## Contrarian Belief
-Most executive coaches are therapists in disguise. They want to talk about your childhood and your "leadership journey." I think that's a waste of time. The reason your VP of Sales isn't performing has nothing to do with your relationship with your father. It's because you're making decisions in their meetings that should be theirs to make. Fix the structure, fix the business.
-
-## Origin Moment
-I was COO of a $40M logistics company for 9 years. When the founder retired, the board brought in an outside CEO instead of promoting me. I was furious. Then I watched this new CEO — a woman named Karen Chen — completely transform the company in 18 months without changing a single person on the team. She just changed how decisions got made. That's when I realized: the bottleneck is never the people. It's the operating system the leader creates. I've built my entire practice around that insight.
+Every manufacturer has institutional knowledge. None of them have captured it. The ones who do, win.
 
 ## Anti-Positions
-- I will never sell a 12-month retainer. If I can't show measurable change in 90 days, I don't deserve your money.
-- I will never coach someone who isn't willing to let me observe their team directly. I don't work from self-reported data.
-- I will never use personality assessments (Myers-Briggs, DISC, StrengthsFinder) as the foundation of a coaching engagement. They're horoscopes for executives.
+- **Against:** "Automation replaces people" → Automation CAPTURES what people know before they leave
+- **Against:** Generic consulting → Every manufacturer has unique decision logic that demands bespoke extraction
+- **Against:** Undervaluing expertise → 32 years of pattern recognition has measurable, compounding value
+- **Against:** Knowledge as a byproduct → Knowledge capture IS the product, not a side effect of implementation
 
-## Institutional Knowledge
-How to read a leadership team's real dynamics in the first 30 minutes of a meeting. Who defers to whom. Who checks their phone when someone else is talking. Who asks permission before stating an opinion. Most consultants need months of interviews. I can map the actual power structure of a company by sitting quietly in one Monday morning standup.
+## Decision Frameworks
+- **The Frank Test:** "If this person leaves tomorrow, what do we lose?" If the answer is significant, it's not captured
+- **Knowledge Preservation ROI:** Evaluate by institutional knowledge preserved, not hours saved or systems installed
+- **Edge Case Priority:** Tolerances, supplier quirks, and failure-mode instincts ARE the expertise — not exceptions to deal with later
 
-## Proprietary Framework
-**The Decision Audit.** This is the engine behind the [[offer]] — the deliverable that makes the transformation visible. I track every decision made in a company over 14 days — who made it, at what level, and whether it was the right person making it. In every company I've worked with, at least 40% of decisions are being made by the wrong person. Usually the CEO is making decisions that should belong to their directors, and their directors are escalating because they've been trained to. The audit makes the problem visible. Once they see it, they can't unsee it.
+## Professional Identity
+Manufacturing veteran. Factory floor to C-suite in 32 years. Problem-solver by pattern recognition. Sees what others miss because he's lived every failure mode.
 
-## Cross-References
-- The [[audience]] is the CEO who built something real but can't step back — this soul exists to serve that person
-- The [[offer]] is the Decision Audit + 90-day restructure — belief system made into a deliverable
-- The [[voice]] carries the COO credibility — direct, structural, no therapy language
-
-## External Perception
-"Marcus told me something in month one that I didn't believe until month three. He said my best people were underperforming because I was accidentally teaching them not to think. He was right." — James Thornton, CEO, Meridian Supply Chain
-
-"He's the only coach I've worked with who doesn't try to change who you are. He just changes where you point your energy." — Rachel Kim, Founder, Basecamp Recruiting
+## Links
+- Drives [[voice]] — pragmatic, shop-floor tone comes from decades on the floor
+- Shapes [[offer]] — what we sell is the decision logic, not the system
+- Defines [[audience]] — we attract people who have the same institutional knowledge problem

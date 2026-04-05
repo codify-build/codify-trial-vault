@@ -1,31 +1,35 @@
 ---
 type: context
-status: compounding
-date: 2026-04-01
-last-updated: 2026-04-01 12:00
+status: active
+date: 2026-04-05
+last-updated: 2026-04-05 15:32
 ---
 
 # Offer
 
-## Transformation
-90 days after working with me, the CEO takes a 2-week vacation and nothing breaks. Their leadership team is making 80% of operational decisions without escalation. Monday morning meetings go from 2 hours of status updates to 45 minutes of strategic decisions. The CEO's calendar has white space for the first time in years. Revenue doesn't dip — it usually grows 10-15% because the team is moving faster without waiting for one person to approve everything.
+## Current Services
+- **Consulting:** $180/hr — problem-solving, diagnostics, pattern recognition
+- **Implementation:** $15K-$40K per project — automation systems for manufacturing lines
 
-## Quick Win
-Week 2: I present the Decision Audit results. The CEO sees, in black and white, that they personally made 47 decisions last week that should have been made by their directors. The look on their face is always the same — they had no idea. That single document changes the conversation from "I should delegate more" to "I have a structural problem and here's exactly where it is."
+## The Value They Actually Deliver
+Decision logic capture — the "if this, then that" knowledge that took 32 years to build. Not just installing systems, but encoding the reasoning that makes systems work in edge cases.
 
-## Delivery Mechanics
-- **Week 1:** I sit in every recurring meeting. I don't talk. I map the decision flow, the unspoken hierarchy, the bottlenecks. I interview each direct report privately — 30 minutes, one question: "What decision have you wanted to make but felt you couldn't?"
-- **Week 2:** Decision Audit presentation. We redesign the decision rights framework together. Who owns what. What needs CEO input vs. CEO approval vs. no CEO involvement at all.
-- **Week 3-4:** I attend meetings again but this time I intervene in real-time. When the CEO reaches for a decision that isn't theirs, I flag it on the spot. When a director defers unnecessarily, I redirect.
-- **Month 2-3:** Spacing out to weekly check-ins. The new operating rhythm is taking hold. We track the decision distribution weekly.
+When they implement, the real deliverable isn't the automation. It's the institutional knowledge embedded in the automation — the tolerances Frank knew, the supplier quirks nobody documented, the failure modes that only experience catches.
 
-## DIY Gap
-You can read about delegation in a book. You cannot see your own blind spots in a meeting. You need someone who has sat in 200 leadership team meetings and can spot the pattern in the first 30 minutes. My clients are brilliant operators — that's how they built $20M companies. But you can't coach yourself out of habits you can't see. The book tells you what to do. I show you what you're actually doing.
+## Pricing Gap
+Charging $180/hr vs competitors at $250/hr who deliver less.
+"We should be charging more. We just never repositioned."
 
-## Guarantee
-If you don't see a measurable shift in your decision load within 90 days — fewer escalations, fewer hours in meetings, your team making decisions without you — I refund the full engagement fee. I've offered this for 6 years. I've given exactly two refunds.
+This is a $70/hr gap on every billable hour — not a confidence problem, a positioning problem. The expertise justifies $275/hr but the framing still says "consulting" instead of "pattern recognition access."
 
-## Cross-References
-- The [[soul]] is why the Decision Audit exists — Marcus's belief that structure beats personality
-- The [[audience]] buying trigger (personal cost moment) is what makes the 90-day guarantee land — they're ready to act
-- The [[voice]] delivers this offer without softening — "47 decisions that weren't yours" hits harder in Marcus's direct tone
+## What's Missing
+- No productised offer — selling time, not outcomes
+- No recurring revenue — every engagement starts from zero
+- No knowledge capture as a standalone product — it's buried inside implementation
+- No formal competitive positioning document
+
+## Links
+- Value defined by [[soul]] — the core belief IS the product
+- Delivered to [[audience]] — mid-market manufacturers with the Frank problem
+- [[voice]] shapes how this gets described — concrete, not abstract
+- Pricing gap is Opportunity #2 in research
