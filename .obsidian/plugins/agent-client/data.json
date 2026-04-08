@@ -30,7 +30,7 @@
   "autoAllowPermissions": true,
   "autoMentionActiveNote": true,
   "debugMode": false,
-  "nodePath": "node",
+  "nodePath": "/opt/homebrew/bin/node",
   "exportSettings": {
     "defaultFolder": "Agent Client",
     "filenameTemplate": "agent_client_{date}_{time}",
